@@ -18,8 +18,14 @@ namespace GameServer
     {
         Thread thread;
         bool running = false;
+        NetService netWork;
+
         public bool Init()
         {
+            netWork = new NetService();
+            netWork.Init(8000);
+
+            MyKeyService.Instance.Init();
             DBService.Instance.Init();
             //var a = DBService.Instance.Entities.Characters.Where(s => s.TID == 2);
             //if (a != null) Console.WriteLine("{0}", a.FirstOrDefault<TCharacter>().Name);
@@ -30,6 +36,8 @@ namespace GameServer
 
         public void Start()
         {
+            netWork.Start();
+            MyKeyService.Instance.Start();
             running = true;
             thread.Start();
         }
@@ -37,6 +45,8 @@ namespace GameServer
 
         public void Stop()
         {
+            netWork.Stop();
+            MyKeyService.Instance.Stop();
             running = false;
             thread.Join();
         }
