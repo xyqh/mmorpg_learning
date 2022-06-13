@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9e639a6d6a9433b4895a16aa336b6147
+guid: def21edb286cffc45a98c9cf4578f185
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -101,7 +101,12 @@ ModelImporter:
     9500000: //RootNode
     13700000: Object07
     13700002: "\u5BF9\u8C61002"
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #82'
+    second: {fileID: 2100000, guid: 65f14cd9e9e1cca45898e3bfad5b5861, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using Services;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Services;
+using UnityEngine.Events;
 
 public class UIRegister : MonoBehaviour {
 
@@ -10,18 +11,15 @@ public class UIRegister : MonoBehaviour {
     public InputField password;
     public InputField passwordConfirm;
     public Button buttonRegister;
+    public Button buttonCancel;
 
+    public GameObject loginImg;
 
     // Use this for initialization
     void Start () {
         UserService.Instance.OnRegister = this.OnRegister;
-
-    }
+	}
 	
-    void OnRegister(SkillBridge.Message.Result result, string msg)
-    {
-        MessageBox.Show(string.Format("结果：{0} msg:{1}",result,msg));
-    }
 	// Update is called once per frame
 	void Update () {
 		
@@ -29,26 +27,42 @@ public class UIRegister : MonoBehaviour {
 
     public void OnClickRegister()
     {
-        if (string.IsNullOrEmpty(this.username.text))
+        if (string.IsNullOrEmpty(username.text))
         {
-            MessageBox.Show("请输入账号");
-            return;
+            MessageBox.Show("请输入用户名");
         }
-        if (string.IsNullOrEmpty(this.password.text))
+        else if (string.IsNullOrEmpty(password.text))
         {
             MessageBox.Show("请输入密码");
-            return;
         }
-        if (string.IsNullOrEmpty(this.passwordConfirm.text))
+        else if(string.IsNullOrEmpty(passwordConfirm.text))
         {
             MessageBox.Show("请输入确认密码");
-            return;
         }
-        if (this.password.text != this.passwordConfirm.text)
+        else if(!string.Equals(password.text, passwordConfirm.text))
         {
-            MessageBox.Show("两次输入的密码不一致");
-            return;
+            MessageBox.Show("您两次输入的密码不一致");
         }
-        UserService.Instance.SendRegister(this.username.text, this.password.text);
+        else
+        {
+            UserService.Instance.SendRegister(username.text, password.text);
+        }
+    }
+
+    void OnRegister(SkillBridge.Message.Result result, string msg)
+    {
+        UnityAction action = null;
+        if (result == SkillBridge.Message.Result.Success)
+        {
+            action = this.ShowLogin;
+        }
+
+        MessageBox.Show(msg, result.ToString(), MessageBoxType.Information, "", "", action);
+    }
+
+    void ShowLogin()
+    {
+        loginImg.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

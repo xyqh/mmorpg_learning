@@ -1,1 +1,100 @@
-2022-06-09 02:20:46,895 [ 1] INFO  Unity: LoadingManager start
+2022-06-13 02:16:44,972 [ 1] INFO  Unity: LoadingManager start
+2022-06-13 02:16:47,990 [ 1] INFO  Unity: DataManager > DataManager()
+2022-06-13 02:16:54,794 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-13 02:16:54,795 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-13 02:16:54,797 [ 1] INFO  Unity: DoConnect
+2022-06-13 02:16:54,798 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-13 02:16:54,800 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-06-13 02:16:54,809 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-06-13 02:16:54,871 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-06-13 02:16:54,872 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-06-13 02:16:54,873 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-13 02:16:54,922 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-13 02:16:56,359 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-13 02:16:56,362 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index, System.Collections.Generic.List`1[Common.Data.CharacterDefine].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+UIPanelCreate.changeCurSelChar (Int32 _name) (at Assets/Scripts/UI/UIPanelCreate.cs:91)
+UICharacterSelect.OnSelectCharacter (Int32 idx) (at Assets/Scripts/UI/UICharacterSelect.cs:79)
+UICharacterSelect+<Start>c__AnonStorey0.<>m__0 () (at Assets/Scripts/UI/UICharacterSelect.cs:37)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-06-13 02:17:08,883 [ 1] INFO  Unity: OnClickButton0
+2022-06-13 02:17:08,884 [ 1] INFO  Unity: OnClickButton can not find in dic
+2022-06-13 02:17:09,871 [ 1] INFO  Unity: OnClickButton1
+2022-06-13 02:17:09,872 [ 1] INFO  Unity: OnClickButton can not find in dic
+2022-06-13 02:17:10,170 [ 1] INFO  Unity: OnClickButton2
+2022-06-13 02:17:10,171 [ 1] INFO  Unity: OnClickButton can not find in dic
+2022-06-13 02:17:11,995 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-13 02:17:11,997 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index, System.Collections.Generic.List`1[Common.Data.CharacterDefine].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+UIPanelCreate.changeCurSelChar (Int32 _name) (at Assets/Scripts/UI/UIPanelCreate.cs:91)
+UICharacterSelect.OnSelectCharacter (Int32 idx) (at Assets/Scripts/UI/UICharacterSelect.cs:79)
+UICharacterSelect+<Start>c__AnonStorey0.<>m__0 () (at Assets/Scripts/UI/UICharacterSelect.cs:37)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-06-13 02:17:23,295 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-13 02:18:10,364 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index, System.Collections.Generic.List`1[Common.Data.CharacterDefine].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+UIPanelCreate.changeCurSelChar (Int32 _name) (at Assets/Scripts/UI/UIPanelCreate.cs:91)
+UICharacterSelect.OnSelectCharacter (Int32 idx) (at Assets/Scripts/UI/UICharacterSelect.cs:79)
+UICharacterSelect+<Start>c__AnonStorey0.<>m__0 () (at Assets/Scripts/UI/UICharacterSelect.cs:37)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-06-13 02:18:17,012 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-13 02:19:13,417 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index, System.Collections.Generic.List`1[Common.Data.CharacterDefine].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+UIPanelCreate.changeCurSelChar (Int32 _name) (at Assets/Scripts/UI/UIPanelCreate.cs:91)
+UICharacterSelect.OnSelectCharacter (Int32 idx) (at Assets/Scripts/UI/UICharacterSelect.cs:79)
+UICharacterSelect+<Start>c__AnonStorey0.<>m__0 () (at Assets/Scripts/UI/UICharacterSelect.cs:37)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-06-13 02:19:23,541 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-13 02:20:03,924 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index, System.Collections.Generic.List`1[Common.Data.CharacterDefine].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+UIPanelCreate.changeCurSelChar (Int32 _name) (at Assets/Scripts/UI/UIPanelCreate.cs:91)
+UICharacterSelect.OnSelectCharacter (Int32 idx) (at Assets/Scripts/UI/UICharacterSelect.cs:79)
+UICharacterSelect+<Start>c__AnonStorey0.<>m__0 () (at Assets/Scripts/UI/UICharacterSelect.cs:37)
+UnityEngine.Events.InvokableCall.Invoke () (at D:/unity/Runtime/Export/UnityEvent.cs:166)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent_0.cs:58)
+UnityEngine.UI.Button.Press () (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:36)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/UI/Core/Button.cs:45)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-06-13 02:20:08,192 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-06-13 02:20:08,193 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+

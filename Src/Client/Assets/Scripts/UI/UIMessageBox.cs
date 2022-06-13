@@ -28,7 +28,7 @@ public class UIMessageBox : MonoBehaviour {
 		
 	}
 
-    public void Init(string title, string message, MessageBoxType type = MessageBoxType.Information, string btnOK = "", string btnCancel = "")
+    public void Init(string title, string message, MessageBoxType type = MessageBoxType.Information, string btnOK = "", string btnCancel = "", UnityAction onYes = null, UnityAction onNo = null)
     {
         if (!string.IsNullOrEmpty(title)) this.title.text = title;
         this.message.text = message;
@@ -38,6 +38,9 @@ public class UIMessageBox : MonoBehaviour {
 
         if (!string.IsNullOrEmpty(btnOK)) this.buttonYesTitle.text = title;
         if (!string.IsNullOrEmpty(btnCancel)) this.buttonNoTitle.text = title;
+
+        this.OnYes = onYes;
+        this.OnNo = onNo;
 
         this.buttonYes.onClick.AddListener(OnClickYes);
         this.buttonNo.onClick.AddListener(OnClickNo);

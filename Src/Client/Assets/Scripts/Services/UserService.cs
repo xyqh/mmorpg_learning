@@ -13,6 +13,9 @@ namespace Services
     class UserService : Singleton<UserService>, IDisposable
     {
         public UnityEngine.Events.UnityAction<Result, string> OnRegister;
+        public UnityEngine.Events.UnityAction<Result, string> OnLogin;
+        public UnityEngine.Events.UnityAction<Result, string> OnCreateCharacter;
+
         NetMessage pendingMessage = null;
         bool connected = false;
 
@@ -21,12 +24,16 @@ namespace Services
             NetClient.Instance.OnConnect += OnGameServerConnect;
             NetClient.Instance.OnDisconnect += OnGameServerDisconnect;
             MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
-            
+            MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
+            MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+
         }
 
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
+            MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
+            MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
         }
@@ -116,6 +123,78 @@ namespace Services
             if (this.OnRegister != null)
             {
                 this.OnRegister(response.Result, response.Errormsg);
+            }
+        }
+
+        public void SendLogin(string user, string psw)
+        {
+            Debug.LogFormat("UserLoginRequest::user :{0} psw:{1}", user, psw);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.userLogin = new UserLoginRequest();
+            message.Request.userLogin.User = user;
+            message.Request.userLogin.Passward = psw;
+
+            if (this.connected && NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
+
+        void OnUserLogin(object sender, UserLoginResponse response)
+        {
+            Debug.LogFormat("OnUserLogin:{0} [{1}]", response.Result, response.Errormsg);
+
+            if(response.Result == Result.Success)
+            {
+                Models.User.Instance.SetupUserInfo(response.Userinfo);
+            }
+
+            if (this.OnLogin != null)
+            {
+                this.OnLogin(response.Result, response.Errormsg);
+            }
+        }
+
+        public void SendCreateCharacter(string charName, CharacterClass cls)
+        {
+            Debug.LogFormat("UserLoginRequest::user :{0} psw:{1}", charName, cls);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.createChar = new UserCreateCharacterRequest();
+            message.Request.createChar.Name = charName;
+            message.Request.createChar.Class = cls;
+
+            if (this.connected && NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
+
+        void OnUserCreateCharacter(object sender, UserCreateCharacterResponse response)
+        {
+            Debug.LogFormat("OnUserLogin:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
+            {
+
+            }
+
+            if (this.OnCreateCharacter != null)
+            {
+                this.OnCreateCharacter(response.Result, response.Errormsg);
             }
         }
     }

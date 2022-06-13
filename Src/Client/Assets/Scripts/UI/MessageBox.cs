@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 class MessageBox
 {
     static Object cacheObject = null;
 
-    public static UIMessageBox Show(string message, string title="", MessageBoxType type = MessageBoxType.Information, string btnOK = "", string btnCancel = "")
+    public static UIMessageBox Show(string message, string title="", MessageBoxType type = MessageBoxType.Information, string btnOK = "", string btnCancel = "", UnityAction onYes = null, UnityAction onNo = null)
     {
         if(cacheObject==null)
         {
@@ -13,7 +14,7 @@ class MessageBox
 
         GameObject go = (GameObject)GameObject.Instantiate(cacheObject);
         UIMessageBox msgbox = go.GetComponent<UIMessageBox>();
-        msgbox.Init(title, message, type, btnOK, btnCancel);
+        msgbox.Init(title, message, type, btnOK, btnCancel, onYes, onNo);
         return msgbox;
     }
 }
