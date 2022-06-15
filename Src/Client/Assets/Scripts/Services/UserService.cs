@@ -7,6 +7,7 @@ using Network;
 using UnityEngine;
 
 using SkillBridge.Message;
+using Models;
 
 namespace Services
 {
@@ -26,6 +27,9 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
             MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+            MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnUserGameEnter);
+            MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnUserGameLeave);
+            MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
 
         }
 
@@ -34,6 +38,9 @@ namespace Services
             MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
             MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
             MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+            MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnUserGameEnter);
+            MessageDistributer.Instance.Unsubscribe<UserGameLeaveResponse>(this.OnUserGameLeave);
+            MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             NetClient.Instance.OnConnect -= OnGameServerConnect;
             NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
         }
@@ -164,7 +171,7 @@ namespace Services
 
         public void SendCreateCharacter(string charName, CharacterClass cls)
         {
-            Debug.LogFormat("UserLoginRequest::user :{0} psw:{1}", charName, cls);
+            Debug.LogFormat("SendCreateCharacter::charName :{0} CharacterClass:{1}", charName, cls);
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.createChar = new UserCreateCharacterRequest();
@@ -185,17 +192,53 @@ namespace Services
 
         void OnUserCreateCharacter(object sender, UserCreateCharacterResponse response)
         {
-            Debug.LogFormat("OnUserLogin:{0} [{1}]", response.Result, response.Errormsg);
+            Debug.LogFormat("OnUserCreateCharacter:{0} [{1}]", response.Result, response.Errormsg);
 
             if (response.Result == Result.Success)
             {
-
+                Models.User.Instance.Info.Player.Characters.Clear();
+                Models.User.Instance.Info.Player.Characters.AddRange(response.Characters);
             }
 
             if (this.OnCreateCharacter != null)
             {
                 this.OnCreateCharacter(response.Result, response.Errormsg);
             }
+        }
+
+        public void SendGameEnter(int charIdx)
+        {
+            Debug.LogFormat("UserLoginRequest::charIdx :{0}", charIdx);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameEnter = new UserGameEnterRequest();
+            message.Request.gameEnter.characterIdx = charIdx;
+            NetClient.Instance.SendMessage(message);
+        }
+
+        void OnUserGameEnter(object sender, UserGameEnterResponse response)
+        {
+            Debug.LogFormat("OnUserGameEnter:{0} [{1}]", response.Result, response.Errormsg);
+            //NCharacterInfo info = response.
+        }
+
+        public void SendGameLeave()
+        {
+
+        }
+
+        void OnUserGameLeave(object sender, UserGameLeaveResponse response)
+        {
+            Debug.LogFormat("OnUserGameLeave:{0} [{1}]", response.Result, response.Errormsg);
+
+        }
+
+        void OnMapCharacterEnter(object sender, MapCharacterEnterResponse response)
+        {
+            Debug.LogFormat("OnMapCharacterEnter:{0}", response.mapId);
+            NCharacterInfo info = response.Characters[0];
+            User.Instance.CurrentCharacter = info;
+            SceneManager.Instance.LoadScene(DataManager.Instance.IMaps[response.mapId].Resource);
         }
     }
 }

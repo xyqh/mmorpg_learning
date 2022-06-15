@@ -8,11 +8,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIPanelCreate : MonoBehaviour {
-
-    private Dictionary<int, CharacterDefine> chars = new Dictionary<int, CharacterDefine>();
+    
     private List<CharacterDefine> lChars = new List<CharacterDefine>();
     private List<Button> lButton = new List<Button>();
-    private Dictionary<int, GameObject> gos = new Dictionary<int, GameObject>();
     private int preSelTag = -1;
 
     static GameObject cacheButtonObject = null;
@@ -72,6 +70,11 @@ public class UIPanelCreate : MonoBehaviour {
 		
 	}
 
+    private void OnEnable()
+    {
+        EventManager.Instance.dispatchCustomEvent("changeShowCharacter", preSelTag);
+    }
+
     private void OnClickButton(Button btn)
     {
         Debug.Log("OnClickButton" + btn.name);
@@ -88,32 +91,16 @@ public class UIPanelCreate : MonoBehaviour {
 
     public void changeCurSelChar(int _name)
     {
+        if(_name < 0 || _name >= lChars.Count)
+        {
+            return;
+        }
+
         CharacterDefine cDef = lChars[_name];
+        preSelTag = cDef.TID;
         charNameTop.texture = topNames[cDef.TID - 1];
         charDesc.text = cDef.Description;
-
-        if (gos.ContainsKey(preSelTag))
-        {
-            gos[preSelTag].SetActive(false);
-        }
-
-        preSelTag = cDef.TID;
-        GameObject go = null;
-        if (gos.ContainsKey(cDef.TID))
-        {
-            Debug.Log("OnClickButton find in dic");
-            go = gos[cDef.TID];
-        }
-        else
-        {
-            Debug.Log("OnClickButton can not find in dic");
-            cacheCharObject = Resloader.Load<GameObject>(string.Format("Models/{0}", cDef.Resource));
-            go = Instantiate(cacheCharObject, GameObject.Find("Root").transform);
-            gos[cDef.TID] = go;
-        }
-
-        go.transform.localPosition = new Vector3(0, 0, 0);
-        go.SetActive(true);
+        EventManager.Instance.dispatchCustomEvent("changeShowCharacter", cDef.TID);
     }
 
     public void OnClickCreateChar()
@@ -124,10 +111,6 @@ public class UIPanelCreate : MonoBehaviour {
             MessageBox.Show("请输入角色名称");
             return;
         }
-        if (preSelTag < 0 || preSelTag >= lChars.Count)
-        {
-            return;
-        }
-        UserService.Instance.SendCreateCharacter(lChars[preSelTag].Name, (CharacterClass)preSelTag + 1);
+        UserService.Instance.SendCreateCharacter(charName.text, (CharacterClass)preSelTag);
     }
 }

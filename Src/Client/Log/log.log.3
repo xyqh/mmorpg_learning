@@ -1,20 +1,38 @@
-2022-06-13 02:10:03,596 [ 1] INFO  Unity: LoadingManager start
-2022-06-13 02:10:06,629 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-13 02:10:12,942 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-13 02:10:12,943 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-13 02:10:12,945 [ 1] INFO  Unity: DoConnect
-2022-06-13 02:10:12,947 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-13 02:10:12,948 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-06-14 01:59:16,900 [ 1] INFO  Unity: LoadingManager start
+2022-06-14 01:59:19,939 [ 1] INFO  Unity: DataManager > DataManager()
+2022-06-14 01:59:25,601 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-14 01:59:25,603 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-14 01:59:25,604 [ 1] INFO  Unity: DoConnect
+2022-06-14 01:59:25,605 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-14 01:59:25,606 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-06-13 02:10:12,951 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-06-13 02:10:13,021 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-06-13 02:10:13,022 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-06-13 02:10:13,023 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-13 02:10:13,071 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-13 02:10:13,074 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UICharacterSelect.Start () (at Assets/Scripts/UI/UICharacterSelect.cs:38)
-}</args></log4net.Error>
-2022-06-13 02:11:12,100 [ 1] WARN  Unity: Assets/Scripts/UI/UICharacterSelect.cs(17,17): warning CS0414: The private field `UICharacterSelect.curIdx' is assigned but its value is never used
-
-2022-06-13 02:11:12,100 [ 1] WARN  Unity: Assets/Scripts/UI/UIPanelCreate.cs(12,46): warning CS0414: The private field `UIPanelCreate.chars' is assigned but its value is never used
+2022-06-14 01:59:25,610 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-06-14 01:59:25,680 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-06-14 01:59:25,680 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-06-14 01:59:25,681 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-14 01:59:25,725 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 01:59:25,730 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-14 01:59:25,735 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 01:59:25,736 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-14 01:59:28,268 [ 1] INFO  Unity: OnSelectCharacter 1
+2022-06-14 01:59:28,269 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-14 01:59:29,268 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 01:59:29,269 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-06-14 01:59:29,698 [ 1] INFO  Unity: OnSelectCharacter 1
+2022-06-14 01:59:29,700 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-06-14 01:59:30,565 [ 1] INFO  Unity: OnClickButton0
+2022-06-14 01:59:30,566 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-06-14 01:59:31,538 [ 1] INFO  Unity: OnClickButton1
+2022-06-14 01:59:31,539 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-14 01:59:32,686 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 01:59:32,687 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-06-14 01:59:33,265 [ 1] INFO  Unity: OnSelectCharacter 1
+2022-06-14 01:59:33,266 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-06-14 01:59:33,894 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 01:59:33,895 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-06-14 01:59:35,525 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-06-14 01:59:35,526 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 

@@ -1,7 +1,35 @@
-2022-06-12 23:26:30,291 [ 1] INFO  Unity: LoadingManager start
-2022-06-12 23:26:33,322 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-12 23:26:38,404 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-06-12 23:26:38,405 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-06-14 01:41:46,472 [ 1] INFO  Unity: LoadingManager start
+2022-06-14 01:41:49,489 [ 1] INFO  Unity: DataManager > DataManager()
+2022-06-14 01:41:55,987 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-14 01:41:55,989 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-14 01:41:55,990 [ 1] INFO  Unity: DoConnect
+2022-06-14 01:41:55,992 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-14 01:41:55,994 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-06-14 01:41:55,997 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-06-14 01:41:56,069 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-06-14 01:41:56,070 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-06-14 01:41:56,071 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-14 01:41:56,128 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 01:41:56,133 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-14 01:41:56,137 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 01:41:56,138 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-14 01:41:57,181 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Common.Data.CharacterDefine].get_Item (Int32 key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
+UICharacterView.changeShowCharacter (System.Object[] param) (at Assets/Scripts/UI/UICharacterView.cs:31)
+EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) (at Assets/Scripts/Managers/EventManager.cs:68)
+UIPanelCreate.OnEnable () (at Assets/Scripts/UI/UIPanelCreate.cs:75)
+UnityEngine.GameObject:SetActive(Boolean)
+UICharacterSelect:changeView(Boolean) (at Assets/Scripts/UI/UICharacterSelect.cs:76)
+UICharacterSelect:OnClickCreate() (at Assets/Scripts/UI/UICharacterSelect.cs:82)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-06-14 01:41:57,189 [ 1] INFO  Unity: OnClickButton0
+2022-06-14 01:41:57,190 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-06-14 01:41:57,841 [ 1] INFO  Unity: OnClickButton2
+2022-06-14 01:41:57,843 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-14 01:43:44,200 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-06-14 01:43:44,201 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

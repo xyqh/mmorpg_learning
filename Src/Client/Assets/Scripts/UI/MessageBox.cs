@@ -13,6 +13,7 @@ class MessageBox
         }
 
         GameObject go = (GameObject)GameObject.Instantiate(cacheObject);
+        go.transform.SetAsFirstSibling();
         UIMessageBox msgbox = go.GetComponent<UIMessageBox>();
         msgbox.Init(title, message, type, btnOK, btnCancel, onYes, onNo);
         return msgbox;

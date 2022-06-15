@@ -15,11 +15,27 @@ public class UICharacterSelect : MonoBehaviour {
     public Transform scrollView;
 
     private int curIdx = -1;
-    List<NCharacterInfo> chars = new List<NCharacterInfo>();
+    private List<NCharacterInfo> chars = new List<NCharacterInfo>();
 
     // Use this for initialization
     void Start () {
         UserService.Instance.OnCreateCharacter = OnCreateCharacter;
+        updateCharList();
+    }
+
+    private void OnEnable()
+    {
+        OnSelectCharacter(0);
+    }
+
+    void updateCharList()
+    {
+        foreach(var go in characters)
+        {
+            Destroy(go);
+        }
+        characters.Clear();
+
         chars = User.Instance.Info.Player.Characters;
 
         GameObject cacheObject = Resloader.Load<GameObject>("UI/UICharInfo");
@@ -38,6 +54,11 @@ public class UICharacterSelect : MonoBehaviour {
             });
             characters.Add(buttonObject);
             buttonObject.SetActive(true);
+        }
+
+        if(chars.Count > 0)
+        {
+            OnSelectCharacter(0);
         }
     }
 	
@@ -67,15 +88,28 @@ public class UICharacterSelect : MonoBehaviour {
 
     public void OnClickEnter()
     {
-
+        if(curIdx >= 0)
+        {
+            UserService.Instance.SendGameEnter(curIdx);
+        }
     }
 
     void OnSelectCharacter(int idx)
     {
         Debug.Log(string.Format("OnSelectCharacter {0}", idx));
+        if(idx < 0 || idx >= characters.Count)
+        {
+            return;
+        }
+
+        if(0 <= curIdx && curIdx < characters.Count)
+        {
+            characters[curIdx].GetComponent<UICharInfo>().Selected = false;
+        }
         curIdx = idx;
+        characters[curIdx].GetComponent<UICharInfo>().Selected = true;
         var cha = chars[idx];
         User.Instance.CurrentCharacter = cha;
-        panelCreate.GetComponent<UIPanelCreate>().changeCurSelChar(cha.Tid - 1);
+        EventManager.Instance.dispatchCustomEvent("changeShowCharacter", cha.Tid);
     }
 }
