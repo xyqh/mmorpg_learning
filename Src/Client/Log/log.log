@@ -1,26 +1,58 @@
-2022-06-14 22:33:42,761 [ 1] INFO  Unity: LoadingManager start
-2022-06-14 22:33:45,867 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-14 22:33:52,350 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-14 22:33:52,357 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-14 22:33:52,358 [ 1] INFO  Unity: DoConnect
-2022-06-14 22:33:52,360 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-14 22:33:52,362 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-06-17 02:20:40,522 [ 1] INFO  Unity: LoadingManager start
+2022-06-17 02:20:43,567 [ 1] INFO  Unity: DataManager > DataManager()
+2022-06-17 02:20:50,502 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-17 02:20:50,503 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-17 02:20:50,505 [ 1] INFO  Unity: DoConnect
+2022-06-17 02:20:50,506 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-17 02:20:50,508 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-06-14 22:33:52,365 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-06-14 22:33:52,429 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-06-14 22:33:52,429 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-06-14 22:33:52,430 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-14 22:33:52,477 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-14 22:33:52,482 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-14 22:33:52,487 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-14 22:33:52,488 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-14 22:33:54,171 [ 1] INFO  Unity: UserLoginRequest::charIdx :0
-2022-06-14 22:33:54,208 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-06-14 22:33:54,209 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-14 22:33:54,210 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-14 22:33:54,476 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-14 22:35:01,668 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-06-14 22:35:01,668 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-06-17 02:20:50,511 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-06-17 02:20:50,578 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-06-17 02:20:50,579 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-06-17 02:20:50,580 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-17 02:20:50,625 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-17 02:20:50,630 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-17 02:20:50,635 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-17 02:20:50,636 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-17 02:20:50,666 [ 1] INFO  Unity: SetPosition:(67700, -512, 30403)
+2022-06-17 02:20:51,893 [ 1] INFO  Unity: UserLoginRequest::charIdx :0
+2022-06-17 02:20:51,930 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-06-17 02:20:51,932 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-17 02:20:51,933 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-17 02:20:51,934 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-17 02:20:51,936 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-06-17 02:20:51,937 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-06-17 02:20:51,938 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-17 02:20:52,146 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-17 02:20:52,150 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{UnassignedReferenceException: The variable nameBarPrefab of UIWorldElementManager has not been assigned.
+You probably need to assign the nameBarPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:264)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:300)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:295)
+UIWorldElementManager.AddCharacterNameBar (UnityEngine.Transform owner, Entities.Character character) (at Assets/Scripts/UI/UIWorldElementManager.cs:25)
+GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:85)
+GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameObjectManager:Start() (at Assets/Scripts/GameObject/GameObjectManager.cs:16)
+}</args></log4net.Error>
+2022-06-17 02:20:52,304 [ 1] INFO  Unity: Character_3_솔캐 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-06-17 02:20:52,348 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-17 02:20:52,352 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{UnassignedReferenceException: The variable nameBarPrefab of UIWorldElementManager has not been assigned.
+You probably need to assign the nameBarPrefab variable of the UIWorldElementManager script in the inspector., UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, Boolean instantiateInWorldSpace) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:264)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent, Boolean worldPositionStays) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:300)
+UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, UnityEngine.Transform parent) (at D:/unity/Runtime/Export/UnityEngineObject.bindings.cs:295)
+UIWorldElementManager.AddCharacterNameBar (UnityEngine.Transform owner, Entities.Character character) (at Assets/Scripts/UI/UIWorldElementManager.cs:25)
+GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:85)
+GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameObjectManager:Start() (at Assets/Scripts/GameObject/GameObjectManager.cs:16)
+}</args></log4net.Error>
+2022-06-17 02:21:28,800 [ 1] INFO  Unity: Character_3_솔캐 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-06-17 02:21:28,802 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-06-17 02:21:28,803 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

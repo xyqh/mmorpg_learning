@@ -1,36 +1,27 @@
-2022-06-14 01:40:53,074 [ 1] INFO  Unity: LoadingManager start
-2022-06-14 01:40:56,087 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-14 01:41:02,323 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-14 01:41:02,324 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-14 01:41:02,326 [ 1] INFO  Unity: DoConnect
-2022-06-14 01:41:02,327 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-14 01:41:02,329 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-06-14 22:33:42,761 [ 1] INFO  Unity: LoadingManager start
+2022-06-14 22:33:45,867 [ 1] INFO  Unity: DataManager > DataManager()
+2022-06-14 22:33:52,350 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-14 22:33:52,357 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-14 22:33:52,358 [ 1] INFO  Unity: DoConnect
+2022-06-14 22:33:52,360 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-14 22:33:52,362 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-06-14 01:41:02,332 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-06-14 01:41:02,402 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-06-14 01:41:02,402 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-06-14 01:41:02,404 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-14 01:41:02,460 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-14 01:41:02,465 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-14 01:41:02,469 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-14 01:41:02,470 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-14 01:41:04,241 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Common.Data.CharacterDefine].get_Item (Int32 key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:751)
-UICharacterView.changeShowCharacter (System.Object[] param) (at Assets/Scripts/UI/UICharacterView.cs:31)
-EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) (at Assets/Scripts/Managers/EventManager.cs:68)
-UIPanelCreate.OnEnable () (at Assets/Scripts/UI/UIPanelCreate.cs:75)
-UnityEngine.GameObject:SetActive(Boolean)
-UICharacterSelect:changeView(Boolean) (at Assets/Scripts/UI/UICharacterSelect.cs:76)
-UICharacterSelect:OnClickCreate() (at Assets/Scripts/UI/UICharacterSelect.cs:82)
-UnityEngine.EventSystems.EventSystem:Update()
-}</args></log4net.Error>
-2022-06-14 01:41:04,249 [ 1] INFO  Unity: OnClickButton0
-2022-06-14 01:41:04,250 [ 1] INFO  Unity: changeShowCharacter find in dic
-2022-06-14 01:41:05,120 [ 1] INFO  Unity: OnClickButton2
-2022-06-14 01:41:05,122 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-14 01:41:05,957 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-14 01:41:05,958 [ 1] INFO  Unity: changeShowCharacter find in dic
-2022-06-14 01:41:06,818 [ 1] INFO  Unity: changeShowCharacter find in dic
-2022-06-14 01:41:12,004 [ 1] INFO  Unity: OnClickCreateChar 3
-2022-06-14 01:41:43,439 [ 1] WARN  Unity: Assets/Scripts/UI/UIPanelCreate.cs(17,23): warning CS0414: The private field `UIPanelCreate.cacheCharObject' is assigned but its value is never used
+2022-06-14 22:33:52,365 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-06-14 22:33:52,429 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-06-14 22:33:52,429 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-06-14 22:33:52,430 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-14 22:33:52,477 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 22:33:52,482 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-14 22:33:52,487 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-14 22:33:52,488 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-14 22:33:54,171 [ 1] INFO  Unity: UserLoginRequest::charIdx :0
+2022-06-14 22:33:54,208 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-06-14 22:33:54,209 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-14 22:33:54,210 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-14 22:33:54,476 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-14 22:35:01,668 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-06-14 22:35:01,668 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 

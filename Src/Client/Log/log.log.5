@@ -1,18 +1,46 @@
-2022-06-14 01:49:31,009 [ 1] INFO  Unity: LoadingManager start
-2022-06-14 01:49:34,025 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-14 01:49:41,474 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-14 01:49:41,482 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-14 01:49:41,483 [ 1] INFO  Unity: DoConnect
-2022-06-14 01:49:41,485 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-14 01:49:41,487 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-06-17 02:11:24,850 [ 1] INFO  Unity: LoadingManager start
+2022-06-17 02:11:29,299 [ 1] INFO  Unity: DataManager > DataManager()
+2022-06-17 02:11:35,367 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-17 02:11:35,373 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-17 02:11:35,375 [ 1] INFO  Unity: DoConnect
+2022-06-17 02:11:35,376 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-17 02:11:35,378 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-06-14 01:49:41,490 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-06-14 01:49:41,550 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-06-14 01:49:41,551 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-06-14 01:49:41,552 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-14 01:49:41,598 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-14 01:49:41,602 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-14 01:49:41,606 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-14 01:49:41,608 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-14 01:53:20,103 [ 1] WARN  Unity: Assets/Scripts/UI/UIPanelCreate.cs(17,23): warning CS0414: The private field `UIPanelCreate.cacheCharObject' is assigned but its value is never used
+2022-06-17 02:11:35,388 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-06-17 02:11:35,601 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-06-17 02:11:35,604 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-06-17 02:11:35,608 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-17 02:11:35,697 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-17 02:11:35,703 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-17 02:11:35,713 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-17 02:11:35,714 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-17 02:11:36,926 [ 1] INFO  Unity: UserLoginRequest::charIdx :0
+2022-06-17 02:11:36,967 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-06-17 02:11:36,970 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-17 02:11:36,972 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-17 02:11:36,972 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-17 02:11:36,979 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-06-17 02:11:36,986 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-06-17 02:11:36,988 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-17 02:11:37,222 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-17 02:12:38,058 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:85)
+GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameObjectManager:Start() (at Assets/Scripts/GameObject/GameObjectManager.cs:16)
+}</args></log4net.Error>
+2022-06-17 02:12:38,348 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-17 02:12:38,351 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:85)
+GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:40)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameObjectManager:Start() (at Assets/Scripts/GameObject/GameObjectManager.cs:16)
+}</args></log4net.Error>
+2022-06-17 02:13:00,999 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-06-17 02:13:01,000 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
