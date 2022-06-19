@@ -11,6 +11,7 @@ using System.Threading;
 
 using Network;
 using GameServer.Services;
+using GameServer.Managers;
 
 namespace GameServer
 {
@@ -27,9 +28,9 @@ namespace GameServer
 
             MyKeyService.Instance.Init();
             DBService.Instance.Init();
-            //var a = DBService.Instance.Entities.Characters.Where(s => s.TID == 2);
-            //if (a != null) Console.WriteLine("{0}", a.FirstOrDefault<TCharacter>().Name);
-            //else Console.WriteLine("a is null");
+            UserService.Instance.Init();
+            DataManager.Instance.Load();
+            MapManager.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
             return true;
         }
