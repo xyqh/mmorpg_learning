@@ -7,9 +7,6 @@ using UnityEngine.UI;
 public class UINameBar : MonoBehaviour {
 
     public Text avaverName;
-
-
-
     public Character character;
 
 

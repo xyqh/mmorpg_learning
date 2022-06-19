@@ -14,7 +14,6 @@ public class UIPanelCreate : MonoBehaviour {
     private int preSelTag = -1;
 
     static GameObject cacheButtonObject = null;
-    static GameObject cacheCharObject = null;
 
     public List<Sprite> pressSprites;
     public List<Sprite> normalSprites;

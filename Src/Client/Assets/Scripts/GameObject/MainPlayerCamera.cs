@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainPlayerCamera : MonoSingleton<MainPlayerCamera>
 {
-    public Camera camera;
+    //public Camera camera;
     public Transform viewPoint;
 
     public GameObject player;

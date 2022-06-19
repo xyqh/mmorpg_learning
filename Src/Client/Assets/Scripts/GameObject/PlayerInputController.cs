@@ -10,7 +10,22 @@ public class PlayerInputController : MonoBehaviour {
     public Rigidbody rb;
     SkillBridge.Message.CharacterState state;
 
-    public Character character;
+    private Character _character;
+
+    public Character character {
+        set
+        {
+            if(value == null)
+            {
+                UnityLogger.stacktraceLog("PlayerInputController character null");
+            }
+            _character = value;
+        }
+        get
+        {
+            return _character;
+        }
+    }
 
     public float rotateSpeed = 2.0f;
 
@@ -117,7 +132,7 @@ public class PlayerInputController : MonoBehaviour {
         //Debug.LogFormat("velocity {0}", this.rb.velocity.magnitude);
     }
     Vector3 lastPos;
-    float lastSync = 0;
+    //float lastSync = 0;
     private void LateUpdate()
     {
         // LateUpdate一般用来处理跟随。

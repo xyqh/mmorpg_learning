@@ -11,7 +11,7 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager> {
 
 	// Use this for initialization
 	void Start () {
-		
+        nameBarPrefab = Resloader.Load<GameObject>("UI/UINameBar");
 	}
 	
 	// Update is called once per frame

@@ -82,7 +82,7 @@ public class GameObjectManager : MonoBehaviour
                     pc.enabled = false;
                 }
             }
-            //UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, character);
+            UIWorldElementManager.Instance.AddCharacterNameBar(go.transform, character);
         }
     }
 }
