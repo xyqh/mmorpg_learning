@@ -55,6 +55,7 @@ namespace Services
             if (DataManager.Instance.IMaps.ContainsKey(mapId))
             {
                 MapDefine map = DataManager.Instance.IMaps[mapId];
+                User.Instance.currentMapDef = map;
                 SceneManager.Instance.LoadScene(map.Resource);
             }
             else

@@ -5,7 +5,6 @@
     "Type": "Normal",
     "Class": "WARRIOR",
     "Resource": "Character/Warrior",
-    "Description": "这是一个战士",
     "InitLevel": 1,
     "Speed": 300
   },
@@ -15,7 +14,6 @@
     "Type": "Normal",
     "Class": "WIZARD",
     "Resource": "Character/Wizard",
-    "Description": "这是一个法师",
     "InitLevel": 1,
     "Speed": 300
   },
@@ -25,7 +23,6 @@
     "Type": "Normal",
     "Class": "ARCHER",
     "Resource": "Character/Archer",
-    "Description": "这是一个弓箭手",
     "InitLevel": 1,
     "Speed": 300
   },

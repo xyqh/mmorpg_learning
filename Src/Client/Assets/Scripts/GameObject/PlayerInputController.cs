@@ -15,10 +15,7 @@ public class PlayerInputController : MonoBehaviour {
     public Character character {
         set
         {
-            if(value == null)
-            {
-                UnityLogger.stacktraceLog("PlayerInputController character null");
-            }
+            UnityLogger.stacktraceLog("PlayerInputController character null");
             _character = value;
         }
         get
