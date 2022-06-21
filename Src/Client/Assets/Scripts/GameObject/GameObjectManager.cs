@@ -7,15 +7,17 @@ using Services;
 using SkillBridge.Message;
 using Models;
 
-public class GameObjectManager : MonoBehaviour
+public class GameObjectManager : MonoSingleton<GameObjectManager>
 {
 
     Dictionary<int, GameObject> Characters = new Dictionary<int, GameObject>();
     // Use this for initialization
-    void Start()
+    // 单例不能写Start，要写重载过的OnStart
+    protected override void OnStart()
     {
         StartCoroutine(InitGameObjects());
         CharacterManager.Instance.OnCharacterEnter = OnCharacterEnter;
+        CharacterManager.Instance.OnCharacterLeave = OnCharacterLeave;
     }
 
     private void OnDestroy()
@@ -32,6 +34,15 @@ public class GameObjectManager : MonoBehaviour
     void OnCharacterEnter(Character cha)
     {
         CreateCharacterObject(cha);
+    }
+
+    void OnCharacterLeave(int characterId)
+    {
+        if (Characters.ContainsKey(characterId))
+        {
+            Destroy(Characters[characterId]);
+            Characters.Remove(characterId);
+        }
     }
 
     IEnumerator InitGameObjects()

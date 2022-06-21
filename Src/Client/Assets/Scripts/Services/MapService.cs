@@ -47,7 +47,8 @@ namespace Services
 
         void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
-
+            Debug.LogFormat("OnMapCharacterLeave:{0}", response.characterId);
+            CharacterManager.Instance.RemoveCharacter(response.characterId);
         }
 
         void EnterMap(int mapId)

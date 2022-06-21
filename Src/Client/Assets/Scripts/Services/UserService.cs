@@ -208,7 +208,7 @@ namespace Services
 
         public void SendGameEnter(int charIdx)
         {
-            Debug.LogFormat("UserLoginRequest::charIdx :{0}", charIdx);
+            Debug.LogFormat("SendGameEnter::charIdx :{0}", charIdx);
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.gameEnter = new UserGameEnterRequest();
@@ -224,7 +224,11 @@ namespace Services
 
         public void SendGameLeave()
         {
-
+            Debug.LogFormat("SendGameLeave");
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameLeave = new UserGameLeaveRequest();
+            NetClient.Instance.SendMessage(message);
         }
 
         void OnUserGameLeave(object sender, UserGameLeaveResponse response)

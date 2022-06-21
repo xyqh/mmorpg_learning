@@ -29,8 +29,6 @@ public class UIMiniMap : MonoBehaviour {
         float posX = playerTransform.position.x - mapBoundingBox.bounds.min.x;
         float posY = playerTransform.position.z - mapBoundingBox.bounds.min.z;
 
-        Debug.LogFormat("playerTransform.position {0}, {1}", playerTransform.position.x, playerTransform.position.z);
-
         // 计算中心点
         float pivotX = posX / realWidth;
         float pivotY = posY / realHeight;

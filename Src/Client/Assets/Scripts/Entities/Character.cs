@@ -55,13 +55,13 @@ namespace Entities
 
         public void SetDirection(Vector3Int direction)
         {
-            Debug.LogFormat("SetDirection:{0}", direction);
+            //Debug.LogFormat("SetDirection:{0}", direction);
             this.direction = direction;
         }
 
         public void SetPosition(Vector3Int position)
         {
-            Debug.LogFormat("SetPosition:{0}", position);
+            //Debug.LogFormat("SetPosition:{0}", position);
             this.position = position;
         }
     }

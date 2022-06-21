@@ -1,1322 +1,187 @@
-2022-06-20 01:29:00,509 [ 1] INFO  Unity: LoadingManager start
-2022-06-20 01:29:03,565 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-20 01:29:09,786 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-20 01:29:09,787 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-20 01:29:09,788 [ 1] INFO  Unity: DoConnect
-2022-06-20 01:29:09,790 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-20 01:29:09,792 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-06-21 02:02:58,677 [ 1] INFO  Unity: LoadingManager start
+2022-06-21 02:03:02,273 [ 1] INFO  Unity: DataManager > DataManager()
+2022-06-21 02:03:08,029 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-21 02:03:08,035 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-21 02:03:08,037 [ 1] INFO  Unity: DoConnect
+2022-06-21 02:03:08,038 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-21 02:03:08,040 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-06-20 01:29:09,795 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-06-20 01:29:09,861 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-06-20 01:29:09,861 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-06-20 01:29:09,862 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-20 01:29:09,909 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-20 01:29:09,915 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-20 01:29:09,920 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-20 01:29:09,921 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-20 01:29:09,939 [ 1] INFO  Unity: 
+2022-06-21 02:03:10,098 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:58)
+Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:153)
+UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:46)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2022-06-21 02:03:10,104 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:58)
+Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:153)
+UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:46)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2022-06-21 02:03:10,105 [ 1] INFO  Unity: DoConnect
+2022-06-21 02:03:10,105 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-21 02:03:10,106 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2022-06-21 02:03:12,152 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-06-21 02:03:12,153 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-06-21 02:03:12,183 [ 1] INFO  Unity: DoConnect
+2022-06-21 02:03:12,184 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-21 02:03:12,184 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2022-06-21 02:03:14,218 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-06-21 02:03:14,219 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-06-21 02:03:14,219 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2022-06-21 02:03:15,473 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-06-21 02:03:15,474 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-06-21 02:03:15,475 [ 1] INFO  Unity: DoConnect
+2022-06-21 02:03:15,476 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-06-21 02:03:15,477 [ 1] INFO  Unity: Connect[3] to server 127.0.0.1:8000
+
+2022-06-21 02:03:15,478 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-06-21 02:03:16,959 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-06-21 02:03:16,961 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-06-21 02:03:16,963 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-21 02:03:17,040 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-21 02:03:17,047 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-21 02:03:17,057 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-21 02:03:17,058 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-21 02:03:17,099 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
-2022-06-20 01:29:09,951 [ 1] INFO  Unity: SetPosition:(67700, -512, 30403)
-2022-06-20 01:29:11,015 [ 1] INFO  Unity: UserLoginRequest::charIdx :0
-2022-06-20 01:29:11,050 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-06-20 01:29:11,050 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-20 01:29:11,051 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-20 01:29:11,052 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-20 01:29:11,052 [ 1] INFO  Unity: AddCharacter:3:贾某 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-06-20 01:29:11,053 [ 1] INFO  Unity: AddCharacter:3:贾某 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-06-20 01:29:11,054 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-20 01:29:11,258 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-20 01:29:11,260 [ 1] INFO  Unity: 
+2022-06-21 02:03:18,144 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-06-21 02:03:18,183 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-06-21 02:03:18,187 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-21 02:03:18,188 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-21 02:03:18,189 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-21 02:03:18,190 [ 1] INFO  Unity: AddCharacter:3:贾某 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-06-21 02:03:18,192 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-21 02:03:18,430 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-21 02:03:18,442 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=80
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=41
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=91
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=52
  FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
  FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
  FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=Start FileLineNumber=17
-2022-06-20 01:29:11,264 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,286 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,404 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,418 [ 1] INFO  Unity: Character_3_贾某 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-06-20 01:29:11,466 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-20 01:29:11,470 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=24
+2022-06-21 02:03:18,652 [ 1] INFO  Unity: Character_3_贾某 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-06-21 02:03:18,697 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-21 02:03:18,701 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=80
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=41
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=91
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=52
  FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
  FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
  FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=Start FileLineNumber=17
-2022-06-20 01:29:11,471 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,491 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,502 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,519 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,535 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,552 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,568 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,585 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,602 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,618 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,635 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,651 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,668 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,684 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,701 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,718 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,734 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,751 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,767 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,784 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,801 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,817 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,834 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,850 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,867 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,883 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,900 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,917 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,933 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,950 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,966 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,983 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:11,999 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,016 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,032 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,049 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,065 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,082 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,099 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,115 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,132 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,148 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,165 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,181 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,198 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,214 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,231 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,248 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,264 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,281 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,297 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,314 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,330 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,347 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,364 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,380 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,397 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,413 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,430 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,446 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,463 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,480 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,496 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,513 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,529 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,546 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,563 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,579 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,596 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,612 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,629 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,646 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,662 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,679 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,695 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
-2022-06-20 01:29:12,696 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,712 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,728 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,745 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,762 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,778 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,794 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
-2022-06-20 01:29:12,795 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,811 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,828 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,844 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,861 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,877 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
-2022-06-20 01:29:12,878 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,894 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,911 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,927 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,944 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,960 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,977 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:12,993 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
-2022-06-20 01:29:12,994 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,010 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,026 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,043 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,060 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,076 [ 1] INFO  Unity: SetDirection:(61, 79, 0)
-2022-06-20 01:29:13,077 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,093 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,109 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,126 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,142 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,159 [ 1] INFO  Unity: SetDirection:(46, 89, 0)
-2022-06-20 01:29:13,160 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,176 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,192 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,209 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,226 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,242 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,258 [ 1] INFO  Unity: SetDirection:(27, 96, 0)
-2022-06-20 01:29:13,259 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,275 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,291 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,308 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,324 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,341 [ 1] INFO  Unity: SetDirection:(9, 100, 0)
-2022-06-20 01:29:13,341 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,358 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,375 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,391 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,407 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,424 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,440 [ 1] INFO  Unity: SetDirection:(-11, 99, 0)
-2022-06-20 01:29:13,441 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,457 [ 1] INFO  Unity: playerTransform.position 50, 40
-2022-06-20 01:29:13,474 [ 1] INFO  Unity: MoveForward
-2022-06-20 01:29:13,476 [ 1] INFO  Unity: playerTransform.position 49.99431, 40.05122
-2022-06-20 01:29:13,490 [ 1] INFO  Unity: playerTransform.position 49.98862, 40.10244
-2022-06-20 01:29:13,507 [ 1] INFO  Unity: playerTransform.position 49.98293, 40.15366
-2022-06-20 01:29:13,523 [ 1] INFO  Unity: SetDirection:(-29, 96, 0)
-2022-06-20 01:29:13,524 [ 1] INFO  Unity: playerTransform.position 49.97723, 40.20488
-2022-06-20 01:29:13,540 [ 1] INFO  Unity: playerTransform.position 49.96223, 40.25455
-2022-06-20 01:29:13,557 [ 1] INFO  Unity: playerTransform.position 49.94723, 40.30421
-2022-06-20 01:29:13,573 [ 1] INFO  Unity: playerTransform.position 49.93222, 40.35388
-2022-06-20 01:29:13,590 [ 1] INFO  Unity: playerTransform.position 49.91722, 40.40355
-2022-06-20 01:29:13,606 [ 1] INFO  Unity: playerTransform.position 49.90222, 40.45322
-2022-06-20 01:29:13,623 [ 1] INFO  Unity: playerTransform.position 49.88721, 40.50288
-2022-06-20 01:29:13,639 [ 1] INFO  Unity: SetDirection:(-47, 88, 0)
-2022-06-20 01:29:13,640 [ 1] INFO  Unity: playerTransform.position 49.87221, 40.55255
-2022-06-20 01:29:13,656 [ 1] INFO  Unity: playerTransform.position 49.84789, 40.59808
-2022-06-20 01:29:13,672 [ 1] INFO  Unity: playerTransform.position 49.82357, 40.64361
-2022-06-20 01:29:13,689 [ 1] INFO  Unity: playerTransform.position 49.79926, 40.68914
-2022-06-20 01:29:13,706 [ 1] INFO  Unity: playerTransform.position 49.77494, 40.73466
-2022-06-20 01:29:13,722 [ 1] INFO  Unity: playerTransform.position 49.75062, 40.78019
-2022-06-20 01:29:13,739 [ 1] INFO  Unity: playerTransform.position 49.7263, 40.82572
-2022-06-20 01:29:13,755 [ 1] INFO  Unity: playerTransform.position 49.70198, 40.87125
-2022-06-20 01:29:13,773 [ 1] INFO  Unity: playerTransform.position 49.67766, 40.91678
-2022-06-20 01:29:13,789 [ 1] INFO  Unity: playerTransform.position 49.65334, 40.96231
-2022-06-20 01:29:13,805 [ 1] INFO  Unity: playerTransform.position 49.62902, 41.00784
-2022-06-20 01:29:13,822 [ 1] INFO  Unity: playerTransform.position 49.60471, 41.05336
-2022-06-20 01:29:13,838 [ 1] INFO  Unity: playerTransform.position 49.58039, 41.09889
-2022-06-20 01:29:13,855 [ 1] INFO  Unity: playerTransform.position 49.55607, 41.14442
-2022-06-20 01:29:13,871 [ 1] INFO  Unity: playerTransform.position 49.53175, 41.18995
-2022-06-20 01:29:13,888 [ 1] INFO  Unity: playerTransform.position 49.50743, 41.23548
-2022-06-20 01:29:13,904 [ 1] INFO  Unity: playerTransform.position 49.48311, 41.28101
-2022-06-20 01:29:13,921 [ 1] INFO  Unity: playerTransform.position 49.45879, 41.32653
-2022-06-20 01:29:13,937 [ 1] INFO  Unity: playerTransform.position 49.43447, 41.37206
-2022-06-20 01:29:13,954 [ 1] INFO  Unity: playerTransform.position 49.41016, 41.41759
-2022-06-20 01:29:13,970 [ 1] INFO  Unity: playerTransform.position 49.38584, 41.46312
-2022-06-20 01:29:13,987 [ 1] INFO  Unity: playerTransform.position 49.36152, 41.50865
-2022-06-20 01:29:14,004 [ 1] INFO  Unity: playerTransform.position 49.3372, 41.55418
-2022-06-20 01:29:14,020 [ 1] INFO  Unity: playerTransform.position 49.31288, 41.5997
-2022-06-20 01:29:14,037 [ 1] INFO  Unity: playerTransform.position 49.28856, 41.64523
-2022-06-20 01:29:14,053 [ 1] INFO  Unity: playerTransform.position 49.26424, 41.69076
-2022-06-20 01:29:14,070 [ 1] INFO  Unity: playerTransform.position 49.23993, 41.73629
-2022-06-20 01:29:14,087 [ 1] INFO  Unity: playerTransform.position 49.21561, 41.78182
-2022-06-20 01:29:14,103 [ 1] INFO  Unity: playerTransform.position 49.19129, 41.82735
-2022-06-20 01:29:14,120 [ 1] INFO  Unity: playerTransform.position 49.16697, 41.87288
-2022-06-20 01:29:14,136 [ 1] INFO  Unity: playerTransform.position 49.14265, 41.9184
-2022-06-20 01:29:14,153 [ 1] INFO  Unity: playerTransform.position 49.11833, 41.96393
-2022-06-20 01:29:14,169 [ 1] INFO  Unity: playerTransform.position 49.09401, 42.00946
-2022-06-20 01:29:14,186 [ 1] INFO  Unity: playerTransform.position 49.06969, 42.05499
-2022-06-20 01:29:14,202 [ 1] INFO  Unity: playerTransform.position 49.04538, 42.10052
-2022-06-20 01:29:14,219 [ 1] INFO  Unity: playerTransform.position 49.02106, 42.14605
-2022-06-20 01:29:14,236 [ 1] INFO  Unity: playerTransform.position 48.99674, 42.19157
-2022-06-20 01:29:14,253 [ 1] INFO  Unity: playerTransform.position 48.97242, 42.2371
-2022-06-20 01:29:14,269 [ 1] INFO  Unity: playerTransform.position 48.9481, 42.28263
-2022-06-20 01:29:14,285 [ 1] INFO  Unity: playerTransform.position 48.92378, 42.32816
-2022-06-20 01:29:14,302 [ 1] INFO  Unity: playerTransform.position 48.89946, 42.37369
-2022-06-20 01:29:14,319 [ 1] INFO  Unity: playerTransform.position 48.87514, 42.41922
-2022-06-20 01:29:14,335 [ 1] INFO  Unity: playerTransform.position 48.85083, 42.46474
-2022-06-20 01:29:14,352 [ 1] INFO  Unity: playerTransform.position 48.82651, 42.51027
-2022-06-20 01:29:14,368 [ 1] INFO  Unity: playerTransform.position 48.80219, 42.5558
-2022-06-20 01:29:14,385 [ 1] INFO  Unity: playerTransform.position 48.77787, 42.60133
-2022-06-20 01:29:14,401 [ 1] INFO  Unity: playerTransform.position 48.75355, 42.64686
-2022-06-20 01:29:14,418 [ 1] INFO  Unity: playerTransform.position 48.72923, 42.69239
-2022-06-20 01:29:14,434 [ 1] INFO  Unity: playerTransform.position 48.70491, 42.73792
-2022-06-20 01:29:14,451 [ 1] INFO  Unity: playerTransform.position 48.6806, 42.78344
-2022-06-20 01:29:14,468 [ 1] INFO  Unity: playerTransform.position 48.65628, 42.82897
-2022-06-20 01:29:14,484 [ 1] INFO  Unity: playerTransform.position 48.63196, 42.8745
-2022-06-20 01:29:14,501 [ 1] INFO  Unity: playerTransform.position 48.60764, 42.92003
-2022-06-20 01:29:14,518 [ 1] INFO  Unity: playerTransform.position 48.58332, 42.96556
-2022-06-20 01:29:14,534 [ 1] INFO  Unity: playerTransform.position 48.559, 43.01109
-2022-06-20 01:29:14,551 [ 1] INFO  Unity: playerTransform.position 48.53468, 43.05661
-2022-06-20 01:29:14,567 [ 1] INFO  Unity: playerTransform.position 48.51036, 43.10214
-2022-06-20 01:29:14,584 [ 1] INFO  Unity: playerTransform.position 48.48605, 43.14767
-2022-06-20 01:29:14,600 [ 1] INFO  Unity: playerTransform.position 48.46173, 43.1932
-2022-06-20 01:29:14,617 [ 1] INFO  Unity: playerTransform.position 48.43741, 43.23873
-2022-06-20 01:29:14,633 [ 1] INFO  Unity: playerTransform.position 48.41309, 43.28426
-2022-06-20 01:29:14,650 [ 1] INFO  Unity: playerTransform.position 48.38877, 43.32978
-2022-06-20 01:29:14,667 [ 1] INFO  Unity: playerTransform.position 48.36445, 43.37531
-2022-06-20 01:29:14,683 [ 1] INFO  Unity: playerTransform.position 48.34013, 43.42084
-2022-06-20 01:29:14,700 [ 1] INFO  Unity: playerTransform.position 48.31581, 43.46637
-2022-06-20 01:29:14,701 [ 1] INFO  Unity: SetPosition:(4832, 4347, 820)
-2022-06-20 01:29:14,716 [ 1] INFO  Unity: playerTransform.position 48.2915, 43.5119
-2022-06-20 01:29:14,733 [ 1] INFO  Unity: playerTransform.position 48.26718, 43.55743
-2022-06-20 01:29:14,750 [ 1] INFO  Unity: playerTransform.position 48.24286, 43.60295
-2022-06-20 01:29:14,766 [ 1] INFO  Unity: playerTransform.position 48.21854, 43.64848
-2022-06-20 01:29:14,783 [ 1] INFO  Unity: playerTransform.position 48.19422, 43.69401
-2022-06-20 01:29:14,799 [ 1] INFO  Unity: playerTransform.position 48.1699, 43.73954
-2022-06-20 01:29:14,816 [ 1] INFO  Unity: playerTransform.position 48.14558, 43.78507
-2022-06-20 01:29:14,832 [ 1] INFO  Unity: playerTransform.position 48.12127, 43.8306
-2022-06-20 01:29:14,849 [ 1] INFO  Unity: playerTransform.position 48.09695, 43.87613
-2022-06-20 01:29:14,865 [ 1] INFO  Unity: playerTransform.position 48.07263, 43.92165
-2022-06-20 01:29:14,882 [ 1] INFO  Unity: playerTransform.position 48.04831, 43.96718
-2022-06-20 01:29:14,898 [ 1] INFO  Unity: playerTransform.position 48.02399, 44.01271
-2022-06-20 01:29:14,915 [ 1] INFO  Unity: playerTransform.position 47.99967, 44.05824
-2022-06-20 01:29:14,932 [ 1] INFO  Unity: playerTransform.position 47.97535, 44.10377
-2022-06-20 01:29:14,948 [ 1] INFO  Unity: playerTransform.position 47.95103, 44.1493
-2022-06-20 01:29:14,964 [ 1] INFO  Unity: playerTransform.position 47.92672, 44.19482
-2022-06-20 01:29:14,981 [ 1] INFO  Unity: playerTransform.position 47.92672, 44.19482
-2022-06-20 01:29:14,998 [ 1] INFO  Unity: playerTransform.position 47.87808, 44.28588
-2022-06-20 01:29:15,014 [ 1] INFO  Unity: playerTransform.position 47.87808, 44.28588
-2022-06-20 01:29:15,031 [ 1] INFO  Unity: playerTransform.position 47.85376, 44.33141
-2022-06-20 01:29:15,047 [ 1] INFO  Unity: playerTransform.position 47.82944, 44.37694
-2022-06-20 01:29:15,064 [ 1] INFO  Unity: playerTransform.position 47.80512, 44.42247
-2022-06-20 01:29:15,081 [ 1] INFO  Unity: playerTransform.position 47.7808, 44.46799
-2022-06-20 01:29:15,097 [ 1] INFO  Unity: playerTransform.position 47.75648, 44.51352
-2022-06-20 01:29:15,114 [ 1] INFO  Unity: playerTransform.position 47.73217, 44.55905
-2022-06-20 01:29:15,131 [ 1] INFO  Unity: playerTransform.position 47.70785, 44.60458
-2022-06-20 01:29:15,147 [ 1] INFO  Unity: playerTransform.position 47.68353, 44.65011
-2022-06-20 01:29:15,164 [ 1] INFO  Unity: playerTransform.position 47.65921, 44.69564
-2022-06-20 01:29:15,180 [ 1] INFO  Unity: playerTransform.position 47.63489, 44.74117
-2022-06-20 01:29:15,197 [ 1] INFO  Unity: playerTransform.position 47.61057, 44.78669
-2022-06-20 01:29:15,213 [ 1] INFO  Unity: playerTransform.position 47.58625, 44.83222
-2022-06-20 01:29:15,230 [ 1] INFO  Unity: playerTransform.position 47.56194, 44.87775
-2022-06-20 01:29:15,246 [ 1] INFO  Unity: playerTransform.position 47.53762, 44.92328
-2022-06-20 01:29:15,263 [ 1] INFO  Unity: playerTransform.position 47.5133, 44.96881
-2022-06-20 01:29:15,279 [ 1] INFO  Unity: playerTransform.position 47.48898, 45.01434
-2022-06-20 01:29:15,296 [ 1] INFO  Unity: playerTransform.position 47.46466, 45.05986
-2022-06-20 01:29:15,312 [ 1] INFO  Unity: playerTransform.position 47.44034, 45.10539
-2022-06-20 01:29:15,329 [ 1] INFO  Unity: playerTransform.position 47.41602, 45.15092
-2022-06-20 01:29:15,346 [ 1] INFO  Unity: playerTransform.position 47.3917, 45.19645
-2022-06-20 01:29:15,362 [ 1] INFO  Unity: SetDirection:(-63, 78, 0)
-2022-06-20 01:29:15,363 [ 1] INFO  Unity: playerTransform.position 47.36739, 45.24198
-2022-06-20 01:29:15,379 [ 1] INFO  Unity: playerTransform.position 47.33479, 45.28233
-2022-06-20 01:29:15,395 [ 1] INFO  Unity: playerTransform.position 47.30219, 45.32269
-2022-06-20 01:29:15,412 [ 1] INFO  Unity: playerTransform.position 47.2696, 45.36304
-2022-06-20 01:29:15,428 [ 1] INFO  Unity: playerTransform.position 47.237, 45.4034
-2022-06-20 01:29:15,445 [ 1] INFO  Unity: playerTransform.position 47.2044, 45.44376
-2022-06-20 01:29:15,462 [ 1] INFO  Unity: playerTransform.position 47.17181, 45.48411
-2022-06-20 01:29:15,478 [ 1] INFO  Unity: playerTransform.position 47.13921, 45.52447
-2022-06-20 01:29:15,495 [ 1] INFO  Unity: playerTransform.position 47.10661, 45.56482
-2022-06-20 01:29:15,511 [ 1] INFO  Unity: SetDirection:(-77, 64, 0)
-2022-06-20 01:29:15,512 [ 1] INFO  Unity: playerTransform.position 47.07402, 45.60518
-2022-06-20 01:29:15,528 [ 1] INFO  Unity: playerTransform.position 47.03418, 45.63829
-2022-06-20 01:29:15,544 [ 1] INFO  Unity: playerTransform.position 46.99434, 45.6714
-2022-06-20 01:29:15,561 [ 1] INFO  Unity: playerTransform.position 46.95451, 45.70451
-2022-06-20 01:29:15,578 [ 1] INFO  Unity: playerTransform.position 46.91467, 45.73763
-2022-06-20 01:29:15,594 [ 1] INFO  Unity: playerTransform.position 46.87483, 45.77074
-2022-06-20 01:29:15,611 [ 1] INFO  Unity: SetDirection:(-88, 47, 0)
-2022-06-20 01:29:15,612 [ 1] INFO  Unity: playerTransform.position 46.835, 45.80385
-2022-06-20 01:29:15,627 [ 1] INFO  Unity: playerTransform.position 46.78947, 45.82817
-2022-06-20 01:29:15,644 [ 1] INFO  Unity: playerTransform.position 46.74394, 45.85249
-2022-06-20 01:29:15,660 [ 1] INFO  Unity: playerTransform.position 46.69841, 45.8768
-2022-06-20 01:29:15,677 [ 1] INFO  Unity: playerTransform.position 46.65288, 45.90112
-2022-06-20 01:29:15,693 [ 1] INFO  Unity: playerTransform.position 46.60735, 45.92544
-2022-06-20 01:29:15,710 [ 1] INFO  Unity: playerTransform.position 46.56182, 45.94976
-2022-06-20 01:29:15,727 [ 1] INFO  Unity: playerTransform.position 46.5163, 45.97408
-2022-06-20 01:29:15,743 [ 1] INFO  Unity: SetDirection:(-95, 30, 0)
-2022-06-20 01:29:15,744 [ 1] INFO  Unity: playerTransform.position 46.47077, 45.9984
-2022-06-20 01:29:15,760 [ 1] INFO  Unity: playerTransform.position 46.42162, 46.01392
-2022-06-20 01:29:15,777 [ 1] INFO  Unity: playerTransform.position 46.37246, 46.02944
-2022-06-20 01:29:15,793 [ 1] INFO  Unity: playerTransform.position 46.32331, 46.04496
-2022-06-20 01:29:15,810 [ 1] INFO  Unity: playerTransform.position 46.27416, 46.06049
-2022-06-20 01:29:15,826 [ 1] INFO  Unity: playerTransform.position 46.22501, 46.07601
-2022-06-20 01:29:15,843 [ 1] INFO  Unity: playerTransform.position 46.17585, 46.09153
-2022-06-20 01:29:15,859 [ 1] INFO  Unity: playerTransform.position 46.1267, 46.10705
-2022-06-20 01:29:15,876 [ 1] INFO  Unity: playerTransform.position 46.07755, 46.12257
-2022-06-20 01:29:15,892 [ 1] INFO  Unity: playerTransform.position 46.0284, 46.1381
-2022-06-20 01:29:15,909 [ 1] INFO  Unity: playerTransform.position 45.97924, 46.15362
-2022-06-20 01:29:15,926 [ 1] INFO  Unity: playerTransform.position 45.93009, 46.16914
-2022-06-20 01:29:15,942 [ 1] INFO  Unity: playerTransform.position 45.88094, 46.18466
-2022-06-20 01:29:15,959 [ 1] INFO  Unity: playerTransform.position 45.83179, 46.20018
-2022-06-20 01:29:15,975 [ 1] INFO  Unity: playerTransform.position 45.78263, 46.21571
-2022-06-20 01:29:15,992 [ 1] INFO  Unity: playerTransform.position 45.73348, 46.23123
-2022-06-20 01:29:16,008 [ 1] INFO  Unity: playerTransform.position 45.68433, 46.24675
-2022-06-20 01:29:16,025 [ 1] INFO  Unity: playerTransform.position 45.63518, 46.26227
-2022-06-20 01:29:16,041 [ 1] INFO  Unity: playerTransform.position 45.58603, 46.27779
-2022-06-20 01:29:16,058 [ 1] INFO  Unity: playerTransform.position 45.53687, 46.29332
-2022-06-20 01:29:16,075 [ 1] INFO  Unity: playerTransform.position 45.48772, 46.30884
-2022-06-20 01:29:16,091 [ 1] INFO  Unity: playerTransform.position 45.43857, 46.32436
-2022-06-20 01:29:16,108 [ 1] INFO  Unity: playerTransform.position 45.38942, 46.33988
-2022-06-20 01:29:16,124 [ 1] INFO  Unity: playerTransform.position 45.34026, 46.3554
-2022-06-20 01:29:16,141 [ 1] INFO  Unity: playerTransform.position 45.29111, 46.37093
-2022-06-20 01:29:16,157 [ 1] INFO  Unity: playerTransform.position 45.24196, 46.38645
-2022-06-20 01:29:16,174 [ 1] INFO  Unity: playerTransform.position 45.19281, 46.40197
-2022-06-20 01:29:16,191 [ 1] INFO  Unity: playerTransform.position 45.14365, 46.41749
-2022-06-20 01:29:16,207 [ 1] INFO  Unity: playerTransform.position 45.0945, 46.43301
-2022-06-20 01:29:16,224 [ 1] INFO  Unity: playerTransform.position 45.04535, 46.44854
-2022-06-20 01:29:16,240 [ 1] INFO  Unity: playerTransform.position 44.9962, 46.46406
-2022-06-20 01:29:16,257 [ 1] INFO  Unity: playerTransform.position 44.94704, 46.47958
-2022-06-20 01:29:16,273 [ 1] INFO  Unity: playerTransform.position 44.89789, 46.4951
-2022-06-20 01:29:16,290 [ 1] INFO  Unity: playerTransform.position 44.84874, 46.51062
-2022-06-20 01:29:16,306 [ 1] INFO  Unity: playerTransform.position 44.79959, 46.52615
-2022-06-20 01:29:16,323 [ 1] INFO  Unity: playerTransform.position 44.75043, 46.54167
-2022-06-20 01:29:16,340 [ 1] INFO  Unity: playerTransform.position 44.70128, 46.55719
-2022-06-20 01:29:16,356 [ 1] INFO  Unity: playerTransform.position 44.65213, 46.57271
-2022-06-20 01:29:16,373 [ 1] INFO  Unity: playerTransform.position 44.60298, 46.58823
-2022-06-20 01:29:16,389 [ 1] INFO  Unity: playerTransform.position 44.55383, 46.60376
-2022-06-20 01:29:16,406 [ 1] INFO  Unity: playerTransform.position 44.50467, 46.61928
-2022-06-20 01:29:16,423 [ 1] INFO  Unity: playerTransform.position 44.45552, 46.6348
-2022-06-20 01:29:16,439 [ 1] INFO  Unity: playerTransform.position 44.40637, 46.65032
-2022-06-20 01:29:16,456 [ 1] INFO  Unity: playerTransform.position 44.35722, 46.66584
-2022-06-20 01:29:16,472 [ 1] INFO  Unity: playerTransform.position 44.30806, 46.68137
-2022-06-20 01:29:16,489 [ 1] INFO  Unity: playerTransform.position 44.25891, 46.69689
-2022-06-20 01:29:16,505 [ 1] INFO  Unity: playerTransform.position 44.20976, 46.71241
-2022-06-20 01:29:16,522 [ 1] INFO  Unity: playerTransform.position 44.16061, 46.72793
-2022-06-20 01:29:16,538 [ 1] INFO  Unity: playerTransform.position 44.11145, 46.74345
-2022-06-20 01:29:16,555 [ 1] INFO  Unity: playerTransform.position 44.0623, 46.75898
-2022-06-20 01:29:16,572 [ 1] INFO  Unity: playerTransform.position 44.01315, 46.7745
-2022-06-20 01:29:16,588 [ 1] INFO  Unity: playerTransform.position 43.964, 46.79002
-2022-06-20 01:29:16,605 [ 1] INFO  Unity: playerTransform.position 43.91484, 46.80554
-2022-06-20 01:29:16,621 [ 1] INFO  Unity: playerTransform.position 43.86569, 46.82106
-2022-06-20 01:29:16,638 [ 1] INFO  Unity: playerTransform.position 43.81654, 46.83659
-2022-06-20 01:29:16,654 [ 1] INFO  Unity: playerTransform.position 43.76739, 46.85211
-2022-06-20 01:29:16,671 [ 1] INFO  Unity: playerTransform.position 43.71824, 46.86763
-2022-06-20 01:29:16,688 [ 1] INFO  Unity: playerTransform.position 43.66908, 46.88315
-2022-06-20 01:29:16,704 [ 1] INFO  Unity: playerTransform.position 43.61993, 46.89867
-2022-06-20 01:29:16,721 [ 1] INFO  Unity: playerTransform.position 43.57078, 46.9142
-2022-06-20 01:29:16,737 [ 1] INFO  Unity: playerTransform.position 43.52163, 46.92972
-2022-06-20 01:29:16,754 [ 1] INFO  Unity: playerTransform.position 43.47247, 46.94524
-2022-06-20 01:29:16,770 [ 1] INFO  Unity: playerTransform.position 43.42332, 46.96076
-2022-06-20 01:29:16,787 [ 1] INFO  Unity: playerTransform.position 43.37417, 46.97628
-2022-06-20 01:29:16,803 [ 1] INFO  Unity: playerTransform.position 43.32502, 46.99181
-2022-06-20 01:29:16,820 [ 1] INFO  Unity: playerTransform.position 43.27586, 47.00733
-2022-06-20 01:29:16,837 [ 1] INFO  Unity: playerTransform.position 43.22671, 47.02285
-2022-06-20 01:29:16,853 [ 1] INFO  Unity: playerTransform.position 43.17756, 47.03837
-2022-06-20 01:29:16,870 [ 1] INFO  Unity: playerTransform.position 43.12841, 47.05389
-2022-06-20 01:29:16,886 [ 1] INFO  Unity: playerTransform.position 43.07925, 47.06942
-2022-06-20 01:29:16,903 [ 1] INFO  Unity: playerTransform.position 43.0301, 47.08494
-2022-06-20 01:29:16,919 [ 1] INFO  Unity: playerTransform.position 42.98095, 47.10046
-2022-06-20 01:29:16,936 [ 1] INFO  Unity: playerTransform.position 42.9318, 47.11598
-2022-06-20 01:29:16,953 [ 1] INFO  Unity: playerTransform.position 42.88264, 47.1315
-2022-06-20 01:29:16,969 [ 1] INFO  Unity: playerTransform.position 42.83349, 47.14703
-2022-06-20 01:29:16,986 [ 1] INFO  Unity: playerTransform.position 42.78434, 47.16255
-2022-06-20 01:29:17,003 [ 1] INFO  Unity: playerTransform.position 42.73519, 47.17807
-2022-06-20 01:29:17,019 [ 1] INFO  Unity: playerTransform.position 42.68604, 47.19359
-2022-06-20 01:29:17,035 [ 1] INFO  Unity: playerTransform.position 42.63688, 47.20911
-2022-06-20 01:29:17,052 [ 1] INFO  Unity: playerTransform.position 42.58773, 47.22464
-2022-06-20 01:29:17,068 [ 1] INFO  Unity: playerTransform.position 42.58773, 47.22464
-2022-06-20 01:29:17,085 [ 1] INFO  Unity: playerTransform.position 42.53858, 47.24016
-2022-06-20 01:29:17,102 [ 1] INFO  Unity: playerTransform.position 42.44027, 47.2712
-2022-06-20 01:29:17,118 [ 1] INFO  Unity: playerTransform.position 42.44027, 47.2712
-2022-06-20 01:29:17,135 [ 1] INFO  Unity: playerTransform.position 42.39112, 47.28672
-2022-06-20 01:29:17,151 [ 1] INFO  Unity: playerTransform.position 42.34197, 47.30225
-2022-06-20 01:29:17,168 [ 1] INFO  Unity: playerTransform.position 42.29282, 47.31777
-2022-06-20 01:29:17,185 [ 1] INFO  Unity: playerTransform.position 42.24366, 47.33329
-2022-06-20 01:29:17,201 [ 1] INFO  Unity: playerTransform.position 42.19451, 47.34881
-2022-06-20 01:29:17,218 [ 1] INFO  Unity: playerTransform.position 42.14536, 47.36433
-2022-06-20 01:29:17,234 [ 1] INFO  Unity: playerTransform.position 42.09621, 47.37986
-2022-06-20 01:29:17,251 [ 1] INFO  Unity: playerTransform.position 42.04705, 47.39538
-2022-06-20 01:29:17,268 [ 1] INFO  Unity: playerTransform.position 41.9979, 47.4109
-2022-06-20 01:29:17,284 [ 1] INFO  Unity: playerTransform.position 41.94875, 47.42642
-2022-06-20 01:29:17,301 [ 1] INFO  Unity: playerTransform.position 41.8996, 47.44194
-2022-06-20 01:29:17,317 [ 1] INFO  Unity: playerTransform.position 41.85044, 47.45747
-2022-06-20 01:29:17,334 [ 1] INFO  Unity: playerTransform.position 41.80129, 47.47299
-2022-06-20 01:29:17,350 [ 1] INFO  Unity: playerTransform.position 41.75214, 47.48851
-2022-06-20 01:29:17,367 [ 1] INFO  Unity: playerTransform.position 41.70299, 47.50403
-2022-06-20 01:29:17,383 [ 1] INFO  Unity: playerTransform.position 41.65384, 47.51955
-2022-06-20 01:29:17,400 [ 1] INFO  Unity: playerTransform.position 41.60468, 47.53508
-2022-06-20 01:29:17,416 [ 1] INFO  Unity: playerTransform.position 41.55553, 47.5506
-2022-06-20 01:29:17,433 [ 1] INFO  Unity: playerTransform.position 41.50638, 47.56612
-2022-06-20 01:29:17,450 [ 1] INFO  Unity: playerTransform.position 41.45723, 47.58164
-2022-06-20 01:29:17,466 [ 1] INFO  Unity: playerTransform.position 41.40807, 47.59716
-2022-06-20 01:29:17,483 [ 1] INFO  Unity: playerTransform.position 41.35892, 47.61269
-2022-06-20 01:29:17,500 [ 1] INFO  Unity: playerTransform.position 41.30977, 47.62821
-2022-06-20 01:29:17,516 [ 1] INFO  Unity: playerTransform.position 41.26062, 47.64373
-2022-06-20 01:29:17,532 [ 1] INFO  Unity: playerTransform.position 41.21146, 47.65925
-2022-06-20 01:29:17,549 [ 1] INFO  Unity: playerTransform.position 41.16231, 47.67477
-2022-06-20 01:29:17,566 [ 1] INFO  Unity: playerTransform.position 41.11316, 47.6903
-2022-06-20 01:29:17,582 [ 1] INFO  Unity: playerTransform.position 41.06401, 47.70582
-2022-06-20 01:29:17,599 [ 1] INFO  Unity: playerTransform.position 41.01485, 47.72134
-2022-06-20 01:29:17,616 [ 1] INFO  Unity: playerTransform.position 40.9657, 47.73686
-2022-06-20 01:29:17,632 [ 1] INFO  Unity: playerTransform.position 40.91655, 47.75238
-2022-06-20 01:29:17,648 [ 1] INFO  Unity: playerTransform.position 40.8674, 47.76791
-2022-06-20 01:29:17,665 [ 1] INFO  Unity: playerTransform.position 40.81824, 47.78343
-2022-06-20 01:29:17,681 [ 1] INFO  Unity: playerTransform.position 40.76909, 47.79895
-2022-06-20 01:29:17,698 [ 1] INFO  Unity: playerTransform.position 40.71994, 47.81447
-2022-06-20 01:29:17,715 [ 1] INFO  Unity: playerTransform.position 40.67079, 47.82999
-2022-06-20 01:29:17,731 [ 1] INFO  Unity: playerTransform.position 40.62164, 47.84552
-2022-06-20 01:29:17,748 [ 1] INFO  Unity: playerTransform.position 40.57248, 47.86104
-2022-06-20 01:29:17,765 [ 1] INFO  Unity: playerTransform.position 40.52333, 47.87656
-2022-06-20 01:29:17,781 [ 1] INFO  Unity: playerTransform.position 40.47418, 47.89208
-2022-06-20 01:29:17,797 [ 1] INFO  Unity: playerTransform.position 40.42503, 47.9076
-2022-06-20 01:29:17,814 [ 1] INFO  Unity: playerTransform.position 40.37587, 47.92313
-2022-06-20 01:29:17,831 [ 1] INFO  Unity: playerTransform.position 40.32672, 47.93865
-2022-06-20 01:29:17,847 [ 1] INFO  Unity: playerTransform.position 40.27757, 47.95417
-2022-06-20 01:29:17,864 [ 1] INFO  Unity: playerTransform.position 40.22842, 47.96969
-2022-06-20 01:29:17,880 [ 1] INFO  Unity: playerTransform.position 40.17926, 47.98521
-2022-06-20 01:29:17,897 [ 1] INFO  Unity: playerTransform.position 40.13011, 48.00074
-2022-06-20 01:29:17,913 [ 1] INFO  Unity: playerTransform.position 40.08096, 48.01626
-2022-06-20 01:29:17,930 [ 1] INFO  Unity: playerTransform.position 40.03181, 48.03178
-2022-06-20 01:29:17,946 [ 1] INFO  Unity: SetDirection:(-99, 12, 0)
-2022-06-20 01:29:17,947 [ 1] INFO  Unity: playerTransform.position 39.98265, 48.0473
-2022-06-20 01:29:17,963 [ 1] INFO  Unity: playerTransform.position 39.93143, 48.05351
-2022-06-20 01:29:17,980 [ 1] INFO  Unity: playerTransform.position 39.88021, 48.05972
-2022-06-20 01:29:17,996 [ 1] INFO  Unity: playerTransform.position 39.82899, 48.06593
-2022-06-20 01:29:18,013 [ 1] INFO  Unity: playerTransform.position 39.77777, 48.07214
-2022-06-20 01:29:18,030 [ 1] INFO  Unity: playerTransform.position 39.72655, 48.07835
-2022-06-20 01:29:18,046 [ 1] INFO  Unity: playerTransform.position 39.67533, 48.08456
-2022-06-20 01:29:18,062 [ 1] INFO  Unity: SetDirection:(-100, -7, 0)
-2022-06-20 01:29:18,063 [ 1] INFO  Unity: playerTransform.position 39.62411, 48.09077
-2022-06-20 01:29:18,079 [ 1] INFO  Unity: playerTransform.position 39.57238, 48.08715
-2022-06-20 01:29:18,096 [ 1] INFO  Unity: playerTransform.position 39.52064, 48.08353
-2022-06-20 01:29:18,112 [ 1] INFO  Unity: playerTransform.position 39.4689, 48.07991
-2022-06-20 01:29:18,129 [ 1] INFO  Unity: playerTransform.position 39.41716, 48.07629
-2022-06-20 01:29:18,145 [ 1] INFO  Unity: playerTransform.position 39.36542, 48.07267
-2022-06-20 01:29:18,162 [ 1] INFO  Unity: SetDirection:(-96, -27, 0)
-2022-06-20 01:29:18,162 [ 1] INFO  Unity: playerTransform.position 39.31368, 48.06905
-2022-06-20 01:29:18,179 [ 1] INFO  Unity: playerTransform.position 39.26402, 48.05508
-2022-06-20 01:29:18,195 [ 1] INFO  Unity: playerTransform.position 39.21435, 48.04111
-2022-06-20 01:29:18,212 [ 1] INFO  Unity: playerTransform.position 39.16468, 48.02715
-2022-06-20 01:29:18,228 [ 1] INFO  Unity: playerTransform.position 39.11501, 48.01318
-2022-06-20 01:29:18,245 [ 1] INFO  Unity: playerTransform.position 39.06535, 47.99921
-2022-06-20 01:29:18,261 [ 1] INFO  Unity: SetDirection:(-89, -46, 0)
-2022-06-20 01:29:18,262 [ 1] INFO  Unity: playerTransform.position 39.01568, 47.98524
-2022-06-20 01:29:18,278 [ 1] INFO  Unity: playerTransform.position 38.96963, 47.96144
-2022-06-20 01:29:18,295 [ 1] INFO  Unity: playerTransform.position 38.92358, 47.93764
-2022-06-20 01:29:18,311 [ 1] INFO  Unity: playerTransform.position 38.87754, 47.91384
-2022-06-20 01:29:18,328 [ 1] INFO  Unity: playerTransform.position 38.83149, 47.89004
-2022-06-20 01:29:18,344 [ 1] INFO  Unity: SetDirection:(-79, -61, 0)
-2022-06-20 01:29:18,345 [ 1] INFO  Unity: playerTransform.position 38.78544, 47.86624
-2022-06-20 01:29:18,361 [ 1] INFO  Unity: playerTransform.position 38.74457, 47.83468
-2022-06-20 01:29:18,377 [ 1] INFO  Unity: playerTransform.position 38.70369, 47.80312
-2022-06-20 01:29:18,394 [ 1] INFO  Unity: playerTransform.position 38.66282, 47.77156
-2022-06-20 01:29:18,410 [ 1] INFO  Unity: playerTransform.position 38.62194, 47.74
-2022-06-20 01:29:18,427 [ 1] INFO  Unity: playerTransform.position 38.58107, 47.70844
-2022-06-20 01:29:18,444 [ 1] INFO  Unity: SetDirection:(-65, -76, 0)
-2022-06-20 01:29:18,445 [ 1] INFO  Unity: playerTransform.position 38.5402, 47.67688
-2022-06-20 01:29:18,460 [ 1] INFO  Unity: playerTransform.position 38.50657, 47.63756
-2022-06-20 01:29:18,477 [ 1] INFO  Unity: playerTransform.position 38.47293, 47.59824
-2022-06-20 01:29:18,494 [ 1] INFO  Unity: playerTransform.position 38.4393, 47.55892
-2022-06-20 01:29:18,510 [ 1] INFO  Unity: playerTransform.position 38.40567, 47.5196
-2022-06-20 01:29:18,527 [ 1] INFO  Unity: playerTransform.position 38.37204, 47.48027
-2022-06-20 01:29:18,543 [ 1] INFO  Unity: SetDirection:(-50, -87, 0)
-2022-06-20 01:29:18,543 [ 1] INFO  Unity: playerTransform.position 38.33841, 47.44095
-2022-06-20 01:29:18,560 [ 1] INFO  Unity: playerTransform.position 38.31255, 47.39594
-2022-06-20 01:29:18,576 [ 1] INFO  Unity: playerTransform.position 38.28668, 47.35093
-2022-06-20 01:29:18,593 [ 1] INFO  Unity: playerTransform.position 38.26081, 47.30591
-2022-06-20 01:29:18,609 [ 1] INFO  Unity: playerTransform.position 38.23494, 47.2609
-2022-06-20 01:29:18,626 [ 1] INFO  Unity: playerTransform.position 38.20908, 47.21589
-2022-06-20 01:29:18,642 [ 1] INFO  Unity: playerTransform.position 38.18321, 47.17087
-2022-06-20 01:29:18,659 [ 1] INFO  Unity: playerTransform.position 38.15734, 47.12586
-2022-06-20 01:29:18,676 [ 1] INFO  Unity: playerTransform.position 38.13147, 47.08084
-2022-06-20 01:29:18,692 [ 1] INFO  Unity: playerTransform.position 38.10561, 47.03583
-2022-06-20 01:29:18,709 [ 1] INFO  Unity: playerTransform.position 38.07974, 46.99082
-2022-06-20 01:29:18,725 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
-2022-06-20 01:29:18,726 [ 1] INFO  Unity: playerTransform.position 38.05387, 46.9458
-2022-06-20 01:29:18,742 [ 1] INFO  Unity: playerTransform.position 38.03628, 46.89717
-2022-06-20 01:29:18,758 [ 1] INFO  Unity: playerTransform.position 38.01869, 46.84854
-2022-06-20 01:29:18,775 [ 1] INFO  Unity: playerTransform.position 38.0011, 46.7999
-2022-06-20 01:29:18,791 [ 1] INFO  Unity: playerTransform.position 37.98351, 46.75127
-2022-06-20 01:29:18,808 [ 1] INFO  Unity: playerTransform.position 37.96592, 46.70264
-2022-06-20 01:29:18,825 [ 1] INFO  Unity: playerTransform.position 37.94833, 46.654
-2022-06-20 01:29:18,841 [ 1] INFO  Unity: playerTransform.position 37.93074, 46.60537
-2022-06-20 01:29:18,858 [ 1] INFO  Unity: playerTransform.position 37.91315, 46.55674
-2022-06-20 01:29:18,874 [ 1] INFO  Unity: playerTransform.position 37.89557, 46.5081
-2022-06-20 01:29:18,891 [ 1] INFO  Unity: playerTransform.position 37.87798, 46.45947
-2022-06-20 01:29:18,908 [ 1] INFO  Unity: playerTransform.position 37.86039, 46.41084
-2022-06-20 01:29:18,924 [ 1] INFO  Unity: playerTransform.position 37.8428, 46.3622
-2022-06-20 01:29:18,941 [ 1] INFO  Unity: playerTransform.position 37.82521, 46.31357
-2022-06-20 01:29:18,957 [ 1] INFO  Unity: playerTransform.position 37.80762, 46.26493
-2022-06-20 01:29:18,974 [ 1] INFO  Unity: playerTransform.position 37.79003, 46.2163
-2022-06-20 01:29:18,990 [ 1] INFO  Unity: playerTransform.position 37.77244, 46.16767
-2022-06-20 01:29:19,007 [ 1] INFO  Unity: playerTransform.position 37.75485, 46.11903
-2022-06-20 01:29:19,024 [ 1] INFO  Unity: playerTransform.position 37.73726, 46.0704
-2022-06-20 01:29:19,040 [ 1] INFO  Unity: playerTransform.position 37.71967, 46.02177
-2022-06-20 01:29:19,056 [ 1] INFO  Unity: playerTransform.position 37.70208, 45.97313
-2022-06-20 01:29:19,073 [ 1] INFO  Unity: playerTransform.position 37.68449, 45.9245
-2022-06-20 01:29:19,090 [ 1] INFO  Unity: playerTransform.position 37.6669, 45.87587
-2022-06-20 01:29:19,106 [ 1] INFO  Unity: playerTransform.position 37.64931, 45.82723
-2022-06-20 01:29:19,123 [ 1] INFO  Unity: playerTransform.position 37.63172, 45.7786
-2022-06-20 01:29:19,139 [ 1] INFO  Unity: playerTransform.position 37.63172, 45.7786
-2022-06-20 01:29:19,156 [ 1] INFO  Unity: playerTransform.position 37.61413, 45.72997
-2022-06-20 01:29:19,173 [ 1] INFO  Unity: playerTransform.position 37.57895, 45.6327
-2022-06-20 01:29:19,189 [ 1] INFO  Unity: playerTransform.position 37.57895, 45.6327
-2022-06-20 01:29:19,206 [ 1] INFO  Unity: playerTransform.position 37.56136, 45.58406
-2022-06-20 01:29:19,222 [ 1] INFO  Unity: playerTransform.position 37.54377, 45.53543
-2022-06-20 01:29:19,239 [ 1] INFO  Unity: playerTransform.position 37.52618, 45.4868
-2022-06-20 01:29:19,255 [ 1] INFO  Unity: playerTransform.position 37.50859, 45.43816
-2022-06-20 01:29:19,272 [ 1] INFO  Unity: playerTransform.position 37.491, 45.38953
-2022-06-20 01:29:19,289 [ 1] INFO  Unity: SetDirection:(-50, -86, 0)
-2022-06-20 01:29:19,289 [ 1] INFO  Unity: playerTransform.position 37.47342, 45.3409
-2022-06-20 01:29:19,305 [ 1] INFO  Unity: playerTransform.position 37.44755, 45.2964
-2022-06-20 01:29:19,322 [ 1] INFO  Unity: playerTransform.position 37.42168, 45.25191
-2022-06-20 01:29:19,338 [ 1] INFO  Unity: playerTransform.position 37.39581, 45.20741
-2022-06-20 01:29:19,355 [ 1] INFO  Unity: playerTransform.position 37.36995, 45.16292
-2022-06-20 01:29:19,371 [ 1] INFO  Unity: playerTransform.position 37.34408, 45.11842
-2022-06-20 01:29:19,388 [ 1] INFO  Unity: SetDirection:(-66, -75, 0)
-2022-06-20 01:29:19,389 [ 1] INFO  Unity: playerTransform.position 37.31821, 45.07393
-2022-06-20 01:29:19,405 [ 1] INFO  Unity: playerTransform.position 37.28407, 45.03513
-2022-06-20 01:29:19,421 [ 1] INFO  Unity: playerTransform.position 37.24992, 44.99632
-2022-06-20 01:29:19,438 [ 1] INFO  Unity: playerTransform.position 37.21577, 44.95752
-2022-06-20 01:29:19,454 [ 1] INFO  Unity: playerTransform.position 37.18163, 44.91872
-2022-06-20 01:29:19,471 [ 1] INFO  Unity: playerTransform.position 37.14748, 44.87991
-2022-06-20 01:29:19,488 [ 1] INFO  Unity: playerTransform.position 37.11334, 44.84111
-2022-06-20 01:29:19,504 [ 1] INFO  Unity: SetDirection:(-79, -61, 0)
-2022-06-20 01:29:19,505 [ 1] INFO  Unity: playerTransform.position 37.07919, 44.80231
-2022-06-20 01:29:19,520 [ 1] INFO  Unity: playerTransform.position 37.03832, 44.77075
-2022-06-20 01:29:19,537 [ 1] INFO  Unity: playerTransform.position 36.99744, 44.73919
-2022-06-20 01:29:19,554 [ 1] INFO  Unity: playerTransform.position 36.95657, 44.70763
-2022-06-20 01:29:19,570 [ 1] INFO  Unity: playerTransform.position 36.9157, 44.67607
-2022-06-20 01:29:19,587 [ 1] INFO  Unity: playerTransform.position 36.87482, 44.64451
-2022-06-20 01:29:19,603 [ 1] INFO  Unity: playerTransform.position 36.83395, 44.61295
-2022-06-20 01:29:19,620 [ 1] INFO  Unity: playerTransform.position 36.79307, 44.58139
-2022-06-20 01:29:19,637 [ 1] INFO  Unity: playerTransform.position 36.7522, 44.54984
-2022-06-20 01:29:19,653 [ 1] INFO  Unity: playerTransform.position 36.71132, 44.51828
-2022-06-20 01:29:19,670 [ 1] INFO  Unity: playerTransform.position 36.67045, 44.48672
-2022-06-20 01:29:19,686 [ 1] INFO  Unity: playerTransform.position 36.62957, 44.45516
-2022-06-20 01:29:19,703 [ 1] INFO  Unity: playerTransform.position 36.5887, 44.4236
-2022-06-20 01:29:19,719 [ 1] INFO  Unity: playerTransform.position 36.54782, 44.39204
-2022-06-20 01:29:19,736 [ 1] INFO  Unity: playerTransform.position 36.50695, 44.36048
-2022-06-20 01:29:19,752 [ 1] INFO  Unity: playerTransform.position 36.46608, 44.32892
-2022-06-20 01:29:19,769 [ 1] INFO  Unity: playerTransform.position 36.4252, 44.29736
-2022-06-20 01:29:19,786 [ 1] INFO  Unity: playerTransform.position 36.38433, 44.2658
-2022-06-20 01:29:19,802 [ 1] INFO  Unity: playerTransform.position 36.34345, 44.23425
-2022-06-20 01:29:19,819 [ 1] INFO  Unity: playerTransform.position 36.30258, 44.20269
-2022-06-20 01:29:19,835 [ 1] INFO  Unity: playerTransform.position 36.2617, 44.17113
-2022-06-20 01:29:19,852 [ 1] INFO  Unity: playerTransform.position 36.22083, 44.13957
-2022-06-20 01:29:19,869 [ 1] INFO  Unity: SetDirection:(-67, -75, 0)
-2022-06-20 01:29:19,870 [ 1] INFO  Unity: playerTransform.position 36.17995, 44.10801
-2022-06-20 01:29:19,885 [ 1] INFO  Unity: playerTransform.position 36.14529, 44.06921
-2022-06-20 01:29:19,901 [ 1] INFO  Unity: playerTransform.position 36.11063, 44.0304
-2022-06-20 01:29:19,918 [ 1] INFO  Unity: playerTransform.position 36.07596, 43.9916
-2022-06-20 01:29:19,934 [ 1] INFO  Unity: playerTransform.position 36.0413, 43.9528
-2022-06-20 01:29:19,951 [ 1] INFO  Unity: playerTransform.position 36.00663, 43.91399
-2022-06-20 01:29:19,968 [ 1] INFO  Unity: SetDirection:(-50, -86, 0)
-2022-06-20 01:29:19,969 [ 1] INFO  Unity: playerTransform.position 35.97197, 43.87519
-2022-06-20 01:29:19,984 [ 1] INFO  Unity: playerTransform.position 35.9461, 43.8307
-2022-06-20 01:29:20,001 [ 1] INFO  Unity: playerTransform.position 35.92023, 43.7862
-2022-06-20 01:29:20,017 [ 1] INFO  Unity: playerTransform.position 35.89437, 43.74171
-2022-06-20 01:29:20,018 [ 1] INFO  Unity: SetPosition:(3589, 4374, 820)
-2022-06-20 01:29:20,034 [ 1] INFO  Unity: playerTransform.position 35.8685, 43.69721
-2022-06-20 01:29:20,051 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
-2022-06-20 01:29:20,051 [ 1] INFO  Unity: playerTransform.position 35.84263, 43.65272
-2022-06-20 01:29:20,067 [ 1] INFO  Unity: playerTransform.position 35.82504, 43.60408
-2022-06-20 01:29:20,084 [ 1] INFO  Unity: playerTransform.position 35.80745, 43.55545
-2022-06-20 01:29:20,100 [ 1] INFO  Unity: playerTransform.position 35.78986, 43.50682
-2022-06-20 01:29:20,117 [ 1] INFO  Unity: playerTransform.position 35.77227, 43.45818
-2022-06-20 01:29:20,133 [ 1] INFO  Unity: playerTransform.position 35.75468, 43.40955
-2022-06-20 01:29:20,150 [ 1] INFO  Unity: SetDirection:(-14, -99, 0)
-2022-06-20 01:29:20,150 [ 1] INFO  Unity: playerTransform.position 35.73709, 43.36092
-2022-06-20 01:29:20,166 [ 1] INFO  Unity: playerTransform.position 35.72985, 43.3097
-2022-06-20 01:29:20,183 [ 1] INFO  Unity: playerTransform.position 35.72261, 43.25848
-2022-06-20 01:29:20,200 [ 1] INFO  Unity: playerTransform.position 35.71536, 43.20726
-2022-06-20 01:29:20,216 [ 1] INFO  Unity: playerTransform.position 35.70812, 43.15604
-2022-06-20 01:29:20,233 [ 1] INFO  Unity: playerTransform.position 35.70087, 43.10482
-2022-06-20 01:29:20,249 [ 1] INFO  Unity: playerTransform.position 35.69363, 43.0536
-2022-06-20 01:29:20,266 [ 1] INFO  Unity: SetDirection:(5, -100, 0)
-2022-06-20 01:29:20,267 [ 1] INFO  Unity: playerTransform.position 35.68639, 43.00238
-2022-06-20 01:29:20,283 [ 1] INFO  Unity: playerTransform.position 35.68897, 42.95064
-2022-06-20 01:29:20,299 [ 1] INFO  Unity: playerTransform.position 35.69156, 42.8989
-2022-06-20 01:29:20,316 [ 1] INFO  Unity: playerTransform.position 35.69415, 42.84716
-2022-06-20 01:29:20,332 [ 1] INFO  Unity: playerTransform.position 35.69673, 42.79542
-2022-06-20 01:29:20,349 [ 1] INFO  Unity: playerTransform.position 35.69932, 42.74368
-2022-06-20 01:29:20,365 [ 1] INFO  Unity: playerTransform.position 35.7019, 42.69194
-2022-06-20 01:29:20,382 [ 1] INFO  Unity: playerTransform.position 35.70449, 42.64021
-2022-06-20 01:29:20,399 [ 1] INFO  Unity: playerTransform.position 35.70708, 42.58847
-2022-06-20 01:29:20,415 [ 1] INFO  Unity: playerTransform.position 35.70966, 42.53673
-2022-06-20 01:29:20,431 [ 1] INFO  Unity: playerTransform.position 35.71225, 42.48499
-2022-06-20 01:29:20,448 [ 1] INFO  Unity: playerTransform.position 35.71484, 42.43325
-2022-06-20 01:29:20,465 [ 1] INFO  Unity: playerTransform.position 35.71742, 42.38151
-2022-06-20 01:29:20,481 [ 1] INFO  Unity: playerTransform.position 35.72001, 42.32977
-2022-06-20 01:29:20,498 [ 1] INFO  Unity: playerTransform.position 35.7226, 42.27803
-2022-06-20 01:29:20,514 [ 1] INFO  Unity: playerTransform.position 35.72518, 42.2263
-2022-06-20 01:29:20,531 [ 1] INFO  Unity: playerTransform.position 35.72777, 42.17456
-2022-06-20 01:29:20,548 [ 1] INFO  Unity: playerTransform.position 35.73035, 42.12282
-2022-06-20 01:29:20,564 [ 1] INFO  Unity: playerTransform.position 35.73294, 42.07108
-2022-06-20 01:29:20,581 [ 1] INFO  Unity: playerTransform.position 35.73553, 42.01934
-2022-06-20 01:29:20,597 [ 1] INFO  Unity: playerTransform.position 35.73811, 41.9676
-2022-06-20 01:29:20,614 [ 1] INFO  Unity: playerTransform.position 35.7407, 41.91586
-2022-06-20 01:29:20,631 [ 1] INFO  Unity: playerTransform.position 35.74329, 41.86412
-2022-06-20 01:29:20,647 [ 1] INFO  Unity: playerTransform.position 35.74587, 41.81239
-2022-06-20 01:29:20,664 [ 1] INFO  Unity: playerTransform.position 35.74846, 41.76065
-2022-06-20 01:29:20,680 [ 1] INFO  Unity: playerTransform.position 35.75105, 41.70891
-2022-06-20 01:29:20,697 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,713 [ 1] INFO  Unity: Stop
-2022-06-20 01:29:20,714 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,730 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,746 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,763 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,779 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,796 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,813 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,829 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,846 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,862 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,879 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,896 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,912 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,929 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,945 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,962 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,978 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:20,995 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,012 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,028 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,044 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,061 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,077 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,094 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,111 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,127 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,144 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,161 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,177 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,193 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,210 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,227 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,243 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,260 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,276 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,293 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,309 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,326 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,343 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,359 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,376 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,392 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,409 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,425 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,442 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,459 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,475 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,492 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,509 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,525 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,541 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,558 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,575 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,591 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,608 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,624 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,641 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,657 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,674 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,690 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,707 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,724 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,741 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,757 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,773 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,790 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,807 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,823 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,840 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,856 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,873 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,889 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,906 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,923 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,939 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,956 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,972 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:21,989 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,006 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
-2022-06-20 01:29:22,006 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,022 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,038 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,055 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,072 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,088 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,105 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,122 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,138 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,154 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,171 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,187 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,204 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,221 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,237 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,254 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,270 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,287 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,304 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,320 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,337 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,353 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,370 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,386 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,403 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,419 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,436 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,453 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,469 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,486 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,502 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,519 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,535 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,552 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,568 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,585 [ 1] INFO  Unity: playerTransform.position 35.75363, 41.65717
-2022-06-20 01:29:22,601 [ 1] INFO  Unity: MoveForward
-2022-06-20 01:29:22,602 [ 1] INFO  Unity: playerTransform.position 35.76553, 41.60698
-2022-06-20 01:29:22,618 [ 1] INFO  Unity: playerTransform.position 35.77743, 41.5568
-2022-06-20 01:29:22,635 [ 1] INFO  Unity: playerTransform.position 35.78933, 41.50661
-2022-06-20 01:29:22,651 [ 1] INFO  Unity: playerTransform.position 35.80122, 41.45642
-2022-06-20 01:29:22,668 [ 1] INFO  Unity: playerTransform.position 35.81312, 41.40624
-2022-06-20 01:29:22,684 [ 1] INFO  Unity: playerTransform.position 35.82502, 41.35605
-2022-06-20 01:29:22,701 [ 1] INFO  Unity: playerTransform.position 35.83692, 41.30587
-2022-06-20 01:29:22,718 [ 1] INFO  Unity: playerTransform.position 35.84882, 41.25568
-2022-06-20 01:29:22,734 [ 1] INFO  Unity: playerTransform.position 35.86071, 41.20549
-2022-06-20 01:29:22,751 [ 1] INFO  Unity: playerTransform.position 35.87261, 41.15531
-2022-06-20 01:29:22,768 [ 1] INFO  Unity: playerTransform.position 35.88451, 41.10512
-2022-06-20 01:29:22,784 [ 1] INFO  Unity: playerTransform.position 35.89641, 41.05494
-2022-06-20 01:29:22,801 [ 1] INFO  Unity: playerTransform.position 35.90831, 41.00475
-2022-06-20 01:29:22,817 [ 1] INFO  Unity: playerTransform.position 35.9202, 40.95456
-2022-06-20 01:29:22,834 [ 1] INFO  Unity: playerTransform.position 35.9321, 40.90438
-2022-06-20 01:29:22,850 [ 1] INFO  Unity: playerTransform.position 35.944, 40.85419
-2022-06-20 01:29:22,867 [ 1] INFO  Unity: playerTransform.position 35.9559, 40.804
-2022-06-20 01:29:22,883 [ 1] INFO  Unity: playerTransform.position 35.9678, 40.75382
-2022-06-20 01:29:22,900 [ 1] INFO  Unity: playerTransform.position 35.97969, 40.70363
-2022-06-20 01:29:22,916 [ 1] INFO  Unity: playerTransform.position 35.99159, 40.65345
-2022-06-20 01:29:22,933 [ 1] INFO  Unity: playerTransform.position 36.00349, 40.60326
-2022-06-20 01:29:22,950 [ 1] INFO  Unity: playerTransform.position 36.01539, 40.55307
-2022-06-20 01:29:22,966 [ 1] INFO  Unity: playerTransform.position 36.02729, 40.50289
-2022-06-20 01:29:22,983 [ 1] INFO  Unity: playerTransform.position 36.03918, 40.4527
-2022-06-20 01:29:23,000 [ 1] INFO  Unity: playerTransform.position 36.05108, 40.40252
-2022-06-20 01:29:23,016 [ 1] INFO  Unity: playerTransform.position 36.06298, 40.35233
-2022-06-20 01:29:23,032 [ 1] INFO  Unity: playerTransform.position 36.07488, 40.30214
-2022-06-20 01:29:23,049 [ 1] INFO  Unity: playerTransform.position 36.08678, 40.25196
-2022-06-20 01:29:23,066 [ 1] INFO  Unity: playerTransform.position 36.09867, 40.20177
-2022-06-20 01:29:23,084 [ 1] INFO  Unity: playerTransform.position 36.11057, 40.15158
-2022-06-20 01:29:23,099 [ 1] INFO  Unity: playerTransform.position 36.12247, 40.1014
-2022-06-20 01:29:23,115 [ 1] INFO  Unity: playerTransform.position 36.13437, 40.05121
-2022-06-20 01:29:23,132 [ 1] INFO  Unity: SetDirection:(3, -100, 0)
-2022-06-20 01:29:23,133 [ 1] INFO  Unity: playerTransform.position 36.14627, 40.00103
-2022-06-20 01:29:23,148 [ 1] INFO  Unity: playerTransform.position 36.14782, 39.94929
-2022-06-20 01:29:23,165 [ 1] INFO  Unity: playerTransform.position 36.14937, 39.89755
-2022-06-20 01:29:23,182 [ 1] INFO  Unity: playerTransform.position 36.15092, 39.84581
-2022-06-20 01:29:23,198 [ 1] INFO  Unity: playerTransform.position 36.15248, 39.79407
-2022-06-20 01:29:23,215 [ 1] INFO  Unity: playerTransform.position 36.15403, 39.74233
-2022-06-20 01:29:23,231 [ 1] INFO  Unity: SetDirection:(-16, -99, 0)
-2022-06-20 01:29:23,232 [ 1] INFO  Unity: playerTransform.position 36.15558, 39.69059
-2022-06-20 01:29:23,248 [ 1] INFO  Unity: playerTransform.position 36.1473, 39.63937
-2022-06-20 01:29:23,264 [ 1] INFO  Unity: playerTransform.position 36.13903, 39.58815
-2022-06-20 01:29:23,281 [ 1] INFO  Unity: playerTransform.position 36.13075, 39.53693
-2022-06-20 01:29:23,298 [ 1] INFO  Unity: playerTransform.position 36.12247, 39.48571
-2022-06-20 01:29:23,318 [ 1] INFO  Unity: playerTransform.position 36.12247, 39.48571
-2022-06-20 01:29:23,331 [ 1] INFO  Unity: playerTransform.position 36.11419, 39.43449
-2022-06-20 01:29:23,347 [ 1] INFO  Unity: playerTransform.position 36.10592, 39.38327
-2022-06-20 01:29:23,364 [ 1] INFO  Unity: playerTransform.position 36.09764, 39.33205
-2022-06-20 01:29:23,380 [ 1] INFO  Unity: playerTransform.position 36.08936, 39.28083
-2022-06-20 01:29:23,397 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
-2022-06-20 01:29:23,397 [ 1] INFO  Unity: playerTransform.position 36.08108, 39.22961
-2022-06-20 01:29:23,413 [ 1] INFO  Unity: playerTransform.position 36.06349, 39.18098
-2022-06-20 01:29:23,430 [ 1] INFO  Unity: playerTransform.position 36.0459, 39.13235
-2022-06-20 01:29:23,446 [ 1] INFO  Unity: playerTransform.position 36.02831, 39.08371
-2022-06-20 01:29:23,463 [ 1] INFO  Unity: playerTransform.position 36.01072, 39.03508
-2022-06-20 01:29:23,480 [ 1] INFO  Unity: playerTransform.position 35.99313, 38.98645
-2022-06-20 01:29:23,496 [ 1] INFO  Unity: playerTransform.position 35.97554, 38.93781
-2022-06-20 01:29:23,513 [ 1] INFO  Unity: playerTransform.position 35.95795, 38.88918
-2022-06-20 01:29:23,530 [ 1] INFO  Unity: playerTransform.position 35.94036, 38.84055
-2022-06-20 01:29:23,546 [ 1] INFO  Unity: playerTransform.position 35.92278, 38.79191
-2022-06-20 01:29:23,563 [ 1] INFO  Unity: playerTransform.position 35.90519, 38.74328
-2022-06-20 01:29:23,579 [ 1] INFO  Unity: playerTransform.position 35.8876, 38.69464
-2022-06-20 01:29:23,596 [ 1] INFO  Unity: playerTransform.position 35.87001, 38.64601
-2022-06-20 01:29:23,613 [ 1] INFO  Unity: playerTransform.position 35.85242, 38.59738
-2022-06-20 01:29:23,629 [ 1] INFO  Unity: playerTransform.position 35.83483, 38.54874
-2022-06-20 01:29:23,645 [ 1] INFO  Unity: playerTransform.position 35.81724, 38.50011
-2022-06-20 01:29:23,662 [ 1] INFO  Unity: playerTransform.position 35.79965, 38.45148
-2022-06-20 01:29:23,678 [ 1] INFO  Unity: playerTransform.position 35.78206, 38.40284
-2022-06-20 01:29:23,695 [ 1] INFO  Unity: playerTransform.position 35.76447, 38.35421
-2022-06-20 01:29:23,712 [ 1] INFO  Unity: playerTransform.position 35.74688, 38.30558
-2022-06-20 01:29:23,728 [ 1] INFO  Unity: playerTransform.position 35.72929, 38.25694
-2022-06-20 01:29:23,745 [ 1] INFO  Unity: playerTransform.position 35.7117, 38.20831
-2022-06-20 01:29:23,762 [ 1] INFO  Unity: playerTransform.position 35.69411, 38.15968
-2022-06-20 01:29:23,778 [ 1] INFO  Unity: playerTransform.position 35.67652, 38.11104
-2022-06-20 01:29:23,795 [ 1] INFO  Unity: playerTransform.position 35.65893, 38.06241
-2022-06-20 01:29:23,811 [ 1] INFO  Unity: playerTransform.position 35.64134, 38.01377
-2022-06-20 01:29:23,828 [ 1] INFO  Unity: playerTransform.position 35.62375, 37.96514
-2022-06-20 01:29:23,844 [ 1] INFO  Unity: playerTransform.position 35.60616, 37.91651
-2022-06-20 01:29:23,861 [ 1] INFO  Unity: playerTransform.position 35.58857, 37.86787
-2022-06-20 01:29:23,877 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
-2022-06-20 01:29:23,878 [ 1] INFO  Unity: playerTransform.position 35.57098, 37.81924
-2022-06-20 01:29:23,894 [ 1] INFO  Unity: playerTransform.position 35.56322, 37.76802
-2022-06-20 01:29:23,911 [ 1] INFO  Unity: playerTransform.position 35.55547, 37.7168
-2022-06-20 01:29:23,927 [ 1] INFO  Unity: playerTransform.position 35.54771, 37.66558
-2022-06-20 01:29:23,944 [ 1] INFO  Unity: playerTransform.position 35.53995, 37.61436
-2022-06-20 01:29:23,960 [ 1] INFO  Unity: playerTransform.position 35.53219, 37.56314
-2022-06-20 01:29:23,976 [ 1] INFO  Unity: SetDirection:(5, -100, 0)
-2022-06-20 01:29:23,977 [ 1] INFO  Unity: playerTransform.position 35.52443, 37.51192
-2022-06-20 01:29:23,993 [ 1] INFO  Unity: playerTransform.position 35.52702, 37.46018
-2022-06-20 01:29:24,010 [ 1] INFO  Unity: playerTransform.position 35.5296, 37.40844
-2022-06-20 01:29:24,027 [ 1] INFO  Unity: playerTransform.position 35.53219, 37.3567
-2022-06-20 01:29:24,043 [ 1] INFO  Unity: playerTransform.position 35.53477, 37.30497
-2022-06-20 01:29:24,060 [ 1] INFO  Unity: SetDirection:(22, -97, 0)
-2022-06-20 01:29:24,060 [ 1] INFO  Unity: playerTransform.position 35.53736, 37.25323
-2022-06-20 01:29:24,076 [ 1] INFO  Unity: playerTransform.position 35.54874, 37.20304
-2022-06-20 01:29:24,093 [ 1] INFO  Unity: playerTransform.position 35.56013, 37.15285
-2022-06-20 01:29:24,109 [ 1] INFO  Unity: playerTransform.position 35.57151, 37.10267
-2022-06-20 01:29:24,126 [ 1] INFO  Unity: playerTransform.position 35.58289, 37.05248
-2022-06-20 01:29:24,142 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
-2022-06-20 01:29:24,143 [ 1] INFO  Unity: playerTransform.position 35.59428, 37.0023
-2022-06-20 01:29:24,159 [ 1] INFO  Unity: playerTransform.position 35.61446, 36.9547
-2022-06-20 01:29:24,176 [ 1] INFO  Unity: playerTransform.position 35.63464, 36.9071
-2022-06-20 01:29:24,192 [ 1] INFO  Unity: playerTransform.position 35.65482, 36.8595
-2022-06-20 01:29:24,209 [ 1] INFO  Unity: playerTransform.position 35.675, 36.8119
-2022-06-20 01:29:24,225 [ 1] INFO  Unity: playerTransform.position 35.69518, 36.7643
-2022-06-20 01:29:24,242 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
-2022-06-20 01:29:24,242 [ 1] INFO  Unity: playerTransform.position 35.71535, 36.7167
-2022-06-20 01:29:24,259 [ 1] INFO  Unity: playerTransform.position 35.74485, 36.67427
-2022-06-20 01:29:24,275 [ 1] INFO  Unity: playerTransform.position 35.77434, 36.63184
-2022-06-20 01:29:24,291 [ 1] INFO  Unity: playerTransform.position 35.80383, 36.58942
-2022-06-20 01:29:24,308 [ 1] INFO  Unity: playerTransform.position 35.83332, 36.54699
-2022-06-20 01:29:24,325 [ 1] INFO  Unity: playerTransform.position 35.86281, 36.50456
-2022-06-20 01:29:24,341 [ 1] INFO  Unity: SetDirection:(72, -69, 0)
-2022-06-20 01:29:24,342 [ 1] INFO  Unity: playerTransform.position 35.8923, 36.46214
-2022-06-20 01:29:24,358 [ 1] INFO  Unity: playerTransform.position 35.92955, 36.42644
-2022-06-20 01:29:24,374 [ 1] INFO  Unity: playerTransform.position 35.9668, 36.39074
-2022-06-20 01:29:24,391 [ 1] INFO  Unity: playerTransform.position 36.00406, 36.35504
-2022-06-20 01:29:24,407 [ 1] INFO  Unity: playerTransform.position 36.04131, 36.31934
-2022-06-20 01:29:24,424 [ 1] INFO  Unity: playerTransform.position 36.07856, 36.28365
-2022-06-20 01:29:24,441 [ 1] INFO  Unity: playerTransform.position 36.11581, 36.24795
-2022-06-20 01:29:24,457 [ 1] INFO  Unity: playerTransform.position 36.15306, 36.21225
-2022-06-20 01:29:24,473 [ 1] INFO  Unity: SetDirection:(83, -55, 0)
-2022-06-20 01:29:24,474 [ 1] INFO  Unity: playerTransform.position 36.19031, 36.17655
-2022-06-20 01:29:24,490 [ 1] INFO  Unity: playerTransform.position 36.23325, 36.14809
-2022-06-20 01:29:24,507 [ 1] INFO  Unity: playerTransform.position 36.27619, 36.11964
-2022-06-20 01:29:24,524 [ 1] INFO  Unity: playerTransform.position 36.31913, 36.09118
-2022-06-20 01:29:24,540 [ 1] INFO  Unity: playerTransform.position 36.36208, 36.06272
-2022-06-20 01:29:24,557 [ 1] INFO  Unity: playerTransform.position 36.40502, 36.03426
-2022-06-20 01:29:24,573 [ 1] INFO  Unity: playerTransform.position 36.44796, 36.00581
-2022-06-20 01:29:24,590 [ 1] INFO  Unity: playerTransform.position 36.4909, 35.97735
-2022-06-20 01:29:24,606 [ 1] INFO  Unity: playerTransform.position 36.53384, 35.94889
-2022-06-20 01:29:24,623 [ 1] INFO  Unity: playerTransform.position 36.57679, 35.92043
-2022-06-20 01:29:24,640 [ 1] INFO  Unity: playerTransform.position 36.61973, 35.89198
-2022-06-20 01:29:24,656 [ 1] INFO  Unity: playerTransform.position 36.66267, 35.86352
-2022-06-20 01:29:24,673 [ 1] INFO  Unity: playerTransform.position 36.70561, 35.83506
-2022-06-20 01:29:24,689 [ 1] INFO  Unity: playerTransform.position 36.74855, 35.8066
-2022-06-20 01:29:24,706 [ 1] INFO  Unity: playerTransform.position 36.7915, 35.77814
-2022-06-20 01:29:24,722 [ 1] INFO  Unity: playerTransform.position 36.83444, 35.74969
-2022-06-20 01:29:24,739 [ 1] INFO  Unity: playerTransform.position 36.87738, 35.72123
-2022-06-20 01:29:24,755 [ 1] INFO  Unity: playerTransform.position 36.92032, 35.69277
-2022-06-20 01:29:24,772 [ 1] INFO  Unity: playerTransform.position 36.96326, 35.66431
-2022-06-20 01:29:24,788 [ 1] INFO  Unity: playerTransform.position 37.00621, 35.63586
-2022-06-20 01:29:24,805 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,821 [ 1] INFO  Unity: Stop
-2022-06-20 01:29:24,822 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,838 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,855 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,872 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,888 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,904 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,921 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,937 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,954 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,971 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:24,987 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,004 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,020 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,037 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,054 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,070 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,087 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,103 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,120 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,136 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,153 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,169 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,186 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,203 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,219 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,236 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,252 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,269 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,285 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,302 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,318 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,336 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,352 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,368 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,385 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,401 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,418 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,435 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,451 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,468 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,485 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,501 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,517 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,534 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,550 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,567 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,584 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,600 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,617 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,634 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,650 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,667 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,683 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,700 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,716 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,733 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,749 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,766 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,782 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,799 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,816 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,832 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,849 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,865 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,882 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,899 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,915 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,932 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,949 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,965 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,981 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:25,998 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,015 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,031 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,047 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,064 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,081 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,098 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,114 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,131 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,147 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,164 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,180 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,197 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,214 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,230 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,247 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,263 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,280 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,296 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,312 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,329 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,346 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,362 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,379 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,396 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,412 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,429 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,445 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,462 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,478 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,495 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,511 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,528 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,544 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,561 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,578 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,594 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,611 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,627 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,644 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,661 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,677 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,694 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,710 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,727 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,743 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,760 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,776 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,793 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,810 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,826 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,843 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,859 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,876 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,892 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,909 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,926 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,942 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,959 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,975 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:26,992 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,008 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,025 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,041 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,058 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,075 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,091 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,108 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,124 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,141 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,157 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,174 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,190 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,207 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,224 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,240 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,257 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,273 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,290 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,307 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,323 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,340 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,356 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,373 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,389 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,406 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,422 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,439 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,456 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,473 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,489 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,506 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,522 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,539 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,555 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,572 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,588 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,605 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,621 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,638 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,655 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,671 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,688 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,705 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,721 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,738 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,754 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,771 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,787 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,804 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,820 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,837 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,853 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,870 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,886 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,903 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,920 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,936 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,953 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,969 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:27,986 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,003 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,019 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,036 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,052 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,069 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,086 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,102 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,118 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,135 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,151 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,168 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,185 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,201 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,218 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,235 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,251 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,267 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,284 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,301 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,317 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,334 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,351 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,367 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,384 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,400 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,417 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,433 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,450 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,466 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,483 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,499 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,516 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,533 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,549 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,566 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,583 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,599 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,616 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,632 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,648 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,665 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,682 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,698 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,715 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,731 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,748 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,765 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,781 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,798 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,814 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,831 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,847 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,864 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,880 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,897 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,914 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,930 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,947 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,963 [ 1] INFO  Unity: playerTransform.position 37.04915, 35.6074
-2022-06-20 01:29:28,980 [ 1] INFO  Unity: MoveForward
-2022-06-20 01:29:28,980 [ 1] INFO  Unity: playerTransform.position 37.09209, 35.57894
-2022-06-20 01:29:28,996 [ 1] INFO  Unity: playerTransform.position 37.13503, 35.55048
-2022-06-20 01:29:29,013 [ 1] INFO  Unity: playerTransform.position 37.17797, 35.52203
-2022-06-20 01:29:29,030 [ 1] INFO  Unity: playerTransform.position 37.22092, 35.49357
-2022-06-20 01:29:29,046 [ 1] INFO  Unity: playerTransform.position 37.26386, 35.46511
-2022-06-20 01:29:29,062 [ 1] INFO  Unity: playerTransform.position 37.3068, 35.43665
-2022-06-20 01:29:29,079 [ 1] INFO  Unity: playerTransform.position 37.34974, 35.4082
-2022-06-20 01:29:29,096 [ 1] INFO  Unity: playerTransform.position 37.39268, 35.37974
-2022-06-20 01:29:29,113 [ 1] INFO  Unity: playerTransform.position 37.43563, 35.35128
-2022-06-20 01:29:29,129 [ 1] INFO  Unity: playerTransform.position 37.47857, 35.32282
-2022-06-20 01:29:29,145 [ 1] INFO  Unity: playerTransform.position 37.52151, 35.29436
-2022-06-20 01:29:29,162 [ 1] INFO  Unity: playerTransform.position 37.56445, 35.26591
-2022-06-20 01:29:29,179 [ 1] INFO  Unity: playerTransform.position 37.6074, 35.23745
-2022-06-20 01:29:29,196 [ 1] INFO  Unity: playerTransform.position 37.65034, 35.20899
-2022-06-20 01:29:29,212 [ 1] INFO  Unity: playerTransform.position 37.69328, 35.18053
-2022-06-20 01:29:29,228 [ 1] INFO  Unity: playerTransform.position 37.73622, 35.15208
-2022-06-20 01:29:29,245 [ 1] INFO  Unity: playerTransform.position 37.77916, 35.12362
-2022-06-20 01:29:29,261 [ 1] INFO  Unity: playerTransform.position 37.82211, 35.09516
-2022-06-20 01:29:29,278 [ 1] INFO  Unity: playerTransform.position 37.86505, 35.0667
-2022-06-20 01:29:29,295 [ 1] INFO  Unity: playerTransform.position 37.90799, 35.03825
-2022-06-20 01:29:29,311 [ 1] INFO  Unity: playerTransform.position 37.95093, 35.00979
-2022-06-20 01:29:29,328 [ 1] INFO  Unity: playerTransform.position 37.99387, 34.98133
-2022-06-20 01:29:29,345 [ 1] INFO  Unity: playerTransform.position 38.03682, 34.95287
-2022-06-20 01:29:29,361 [ 1] INFO  Unity: playerTransform.position 38.07976, 34.92442
-2022-06-20 01:29:29,377 [ 1] INFO  Unity: playerTransform.position 38.1227, 34.89596
-2022-06-20 01:29:29,394 [ 1] INFO  Unity: playerTransform.position 38.16564, 34.8675
-2022-06-20 01:29:29,410 [ 1] INFO  Unity: playerTransform.position 38.20858, 34.83904
-2022-06-20 01:29:29,427 [ 1] INFO  Unity: playerTransform.position 38.25153, 34.81059
-2022-06-20 01:29:29,444 [ 1] INFO  Unity: playerTransform.position 38.29447, 34.78213
-2022-06-20 01:29:29,460 [ 1] INFO  Unity: playerTransform.position 38.33741, 34.75367
-2022-06-20 01:29:29,477 [ 1] INFO  Unity: playerTransform.position 38.38035, 34.72521
-2022-06-20 01:29:29,493 [ 1] INFO  Unity: playerTransform.position 38.42329, 34.69675
-2022-06-20 01:29:29,510 [ 1] INFO  Unity: playerTransform.position 38.42329, 34.69675
-2022-06-20 01:29:29,526 [ 1] INFO  Unity: playerTransform.position 38.46624, 34.6683
-2022-06-20 01:29:29,543 [ 1] INFO  Unity: playerTransform.position 38.50918, 34.63984
-2022-06-20 01:29:29,560 [ 1] INFO  Unity: playerTransform.position 38.55212, 34.61138
-2022-06-20 01:29:29,576 [ 1] INFO  Unity: playerTransform.position 38.59506, 34.58292
-2022-06-20 01:29:29,592 [ 1] INFO  Unity: SetDirection:(92, -40, 0)
-2022-06-20 01:29:29,593 [ 1] INFO  Unity: playerTransform.position 38.638, 34.55447
-2022-06-20 01:29:29,609 [ 1] INFO  Unity: playerTransform.position 38.6856, 34.53377
-2022-06-20 01:29:29,626 [ 1] INFO  Unity: playerTransform.position 38.7332, 34.51308
-2022-06-20 01:29:29,642 [ 1] INFO  Unity: playerTransform.position 38.7808, 34.49238
-2022-06-20 01:29:29,659 [ 1] INFO  Unity: playerTransform.position 38.8284, 34.47169
-2022-06-20 01:29:29,675 [ 1] INFO  Unity: playerTransform.position 38.876, 34.45099
-2022-06-20 01:29:29,692 [ 1] INFO  Unity: playerTransform.position 38.9236, 34.4303
-2022-06-20 01:29:29,708 [ 1] INFO  Unity: SetDirection:(98, -21, 0)
-2022-06-20 01:29:29,709 [ 1] INFO  Unity: playerTransform.position 38.9712, 34.4096
-2022-06-20 01:29:29,725 [ 1] INFO  Unity: playerTransform.position 39.02191, 34.39874
-2022-06-20 01:29:29,742 [ 1] INFO  Unity: playerTransform.position 39.07261, 34.38787
-2022-06-20 01:29:29,759 [ 1] INFO  Unity: playerTransform.position 39.12332, 34.37701
-2022-06-20 01:29:29,775 [ 1] INFO  Unity: playerTransform.position 39.17402, 34.36615
-2022-06-20 01:29:29,792 [ 1] INFO  Unity: playerTransform.position 39.22473, 34.35528
-2022-06-20 01:29:29,808 [ 1] INFO  Unity: SetDirection:(100, -3, 0)
-2022-06-20 01:29:29,809 [ 1] INFO  Unity: playerTransform.position 39.27543, 34.34442
-2022-06-20 01:29:29,825 [ 1] INFO  Unity: playerTransform.position 39.32717, 34.34286
-2022-06-20 01:29:29,841 [ 1] INFO  Unity: playerTransform.position 39.37891, 34.34131
-2022-06-20 01:29:29,858 [ 1] INFO  Unity: playerTransform.position 39.43065, 34.33976
-2022-06-20 01:29:29,875 [ 1] INFO  Unity: playerTransform.position 39.48239, 34.33821
-2022-06-20 01:29:29,891 [ 1] INFO  Unity: playerTransform.position 39.53413, 34.33665
-2022-06-20 01:29:29,907 [ 1] INFO  Unity: playerTransform.position 39.58587, 34.3351
-2022-06-20 01:29:29,924 [ 1] INFO  Unity: playerTransform.position 39.6376, 34.33355
-2022-06-20 01:29:29,941 [ 1] INFO  Unity: playerTransform.position 39.68934, 34.332
-2022-06-20 01:29:29,957 [ 1] INFO  Unity: playerTransform.position 39.74108, 34.33044
-2022-06-20 01:29:29,974 [ 1] INFO  Unity: playerTransform.position 39.79282, 34.32889
-2022-06-20 01:29:29,990 [ 1] INFO  Unity: playerTransform.position 39.84456, 34.32734
-2022-06-20 01:29:30,007 [ 1] INFO  Unity: SetDirection:(99, 14, 0)
-2022-06-20 01:29:30,008 [ 1] INFO  Unity: playerTransform.position 39.8963, 34.32579
-2022-06-20 01:29:30,024 [ 1] INFO  Unity: playerTransform.position 39.94752, 34.33303
-2022-06-20 01:29:30,040 [ 1] INFO  Unity: playerTransform.position 39.99874, 34.34027
-2022-06-20 01:29:30,057 [ 1] INFO  Unity: playerTransform.position 40.04996, 34.34752
-2022-06-20 01:29:30,073 [ 1] INFO  Unity: playerTransform.position 40.10118, 34.35476
-2022-06-20 01:29:30,090 [ 1] INFO  Unity: playerTransform.position 40.1524, 34.36201
-2022-06-20 01:29:30,106 [ 1] INFO  Unity: playerTransform.position 40.20362, 34.36925
-2022-06-20 01:29:30,123 [ 1] INFO  Unity: playerTransform.position 40.25484, 34.3765
-2022-06-20 01:29:30,139 [ 1] INFO  Unity: playerTransform.position 40.30606, 34.38374
-2022-06-20 01:29:30,156 [ 1] INFO  Unity: playerTransform.position 40.35728, 34.39098
-2022-06-20 01:29:30,172 [ 1] INFO  Unity: playerTransform.position 40.4085, 34.39823
-2022-06-20 01:29:30,189 [ 1] INFO  Unity: playerTransform.position 40.45972, 34.40547
-2022-06-20 01:29:30,206 [ 1] INFO  Unity: playerTransform.position 40.51094, 34.41272
-2022-06-20 01:29:30,222 [ 1] INFO  Unity: playerTransform.position 40.56216, 34.41996
-2022-06-20 01:29:30,239 [ 1] INFO  Unity: playerTransform.position 40.61338, 34.4272
-2022-06-20 01:29:30,255 [ 1] INFO  Unity: playerTransform.position 40.6646, 34.43445
-2022-06-20 01:29:30,272 [ 1] INFO  Unity: playerTransform.position 40.71582, 34.44169
-2022-06-20 01:29:30,289 [ 1] INFO  Unity: playerTransform.position 40.76704, 34.44894
-2022-06-20 01:29:30,305 [ 1] INFO  Unity: playerTransform.position 40.81826, 34.45618
-2022-06-20 01:29:30,322 [ 1] INFO  Unity: playerTransform.position 40.86948, 34.46342
-2022-06-20 01:29:30,323 [ 1] INFO  Unity: SetPosition:(4087, 3446, 820)
-2022-06-20 01:29:30,338 [ 1] INFO  Unity: playerTransform.position 40.9207, 34.47067
-2022-06-20 01:29:30,355 [ 1] INFO  Unity: playerTransform.position 40.97192, 34.47791
-2022-06-20 01:29:30,371 [ 1] INFO  Unity: playerTransform.position 41.02314, 34.48516
-2022-06-20 01:29:30,388 [ 1] INFO  Unity: playerTransform.position 41.07436, 34.4924
-2022-06-20 01:29:30,405 [ 1] INFO  Unity: playerTransform.position 41.12558, 34.49965
-2022-06-20 01:29:30,421 [ 1] INFO  Unity: playerTransform.position 41.1768, 34.50689
-2022-06-20 01:29:30,438 [ 1] INFO  Unity: playerTransform.position 41.22802, 34.51413
-2022-06-20 01:29:30,454 [ 1] INFO  Unity: playerTransform.position 41.27924, 34.52138
-2022-06-20 01:29:30,471 [ 1] INFO  Unity: playerTransform.position 41.33046, 34.52862
-2022-06-20 01:29:30,487 [ 1] INFO  Unity: playerTransform.position 41.38168, 34.53587
-2022-06-20 01:29:30,504 [ 1] INFO  Unity: playerTransform.position 41.4329, 34.54311
-2022-06-20 01:29:30,520 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,537 [ 1] INFO  Unity: Stop
-2022-06-20 01:29:30,537 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,554 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,570 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,587 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,603 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,620 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,636 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,653 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,669 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,686 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,703 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,719 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,736 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,752 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,769 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,786 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,802 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,819 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,835 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,852 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,868 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,885 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,902 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,918 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,935 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,951 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,968 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:30,984 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,001 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,018 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,034 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,051 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,067 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,084 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,100 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,117 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,133 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,150 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,166 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,183 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,200 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,216 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,233 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,250 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,266 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,283 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,299 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,315 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,332 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,349 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,365 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,382 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,399 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,415 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,431 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,448 [ 1] INFO  Unity: playerTransform.position 41.48412, 34.55035
-2022-06-20 01:29:31,471 [ 1] INFO  Unity: Character_3_贾某 OnDestroy :ID:0 POS:(4152, 3459, 820) DIR:(99, 14, 0) SPD:0 
-2022-06-20 01:29:31,471 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-06-20 01:29:31,472 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=24
+2022-06-21 02:03:20,448 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-06-21 02:03:20,449 [ 1] INFO  Unity: SendGameLeave
+2022-06-21 02:03:20,484 [ 1] INFO  Unity: Character_3_贾某 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-06-21 02:03:20,487 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-21 02:03:20,491 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-21 02:03:20,494 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-06-21 02:03:20,495 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-21 02:03:20,498 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
+2022-06-21 02:03:22,983 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-06-21 02:03:22,985 [ 1] INFO  Unity: RemoveCharacter:3
+2022-06-21 02:03:22,986 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-06-21 02:03:22,987 [ 1] INFO  Unity: RemoveCharacter:3
+2022-06-21 02:03:22,988 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-06-21 02:03:28,677 [ 1] INFO  Unity: OnSelectCharacter 1
+2022-06-21 02:03:28,678 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-06-21 02:03:28,691 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
+2022-06-21 02:03:29,296 [ 1] INFO  Unity: SendGameEnter::charIdx :1
+2022-06-21 02:03:29,328 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-06-21 02:03:29,329 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-21 02:03:29,330 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-06-21 02:03:29,331 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-06-21 02:03:29,332 [ 1] INFO  Unity: AddCharacter:4:贾某2 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-06-21 02:03:38,235 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at GameObjectManager.CreateCharacterObject (Entities.Character character) [0x0018a] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs:89 
+  at GameObjectManager.OnCharacterEnter (Entities.Character cha) [0x00003] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs:36 
+  at Services.CharacterManager.AddCharacter (SkillBridge.Message.NCharacterInfo cha) [0x00070] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\CharacterManager.cs:50 
+  at Services.MapService.OnMapCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse response) [0x00067] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\MapService.cs:39 
+  at (wrapper delegate-invoke) Network.MessageDistributer`1/MessageHandler`1<object, SkillBridge.Message.MapCharacterEnterResponse>:invoke_void__this___object_MapCharacterEnterResponse (object,SkillBridge.Message.MapCharacterEnterResponse)
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg) [0x00000] in <filename unknown>:0 
+2022-06-21 02:03:38,237 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:89)
+GameObjectManager.OnCharacterEnter (Entities.Character cha) (at Assets/Scripts/GameObject/GameObjectManager.cs:36)
+Services.CharacterManager.AddCharacter (SkillBridge.Message.NCharacterInfo cha) (at Assets/Scripts/Managers/CharacterManager.cs:50)
+Services.MapService.OnMapCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse response) (at Assets/Scripts/Services/MapService.cs:39)
+Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg)
+}</args></log4net.Error>
+2022-06-21 02:03:38,275 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
+2022-06-21 02:03:38,345 [ 1] INFO  Unity: Character_4_贾某2 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-06-21 02:03:38,403 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-06-21 02:03:51,334 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=91
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=52
+ FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
+ FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
+ FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=24
+2022-06-21 02:04:56,375 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-06-21 02:04:56,376 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2022-06-21 02:04:56,378 [ 1] INFO  Unity: Character_4_贾某2 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

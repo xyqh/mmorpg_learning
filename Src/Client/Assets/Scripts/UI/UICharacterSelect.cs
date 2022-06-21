@@ -71,6 +71,7 @@ public class UICharacterSelect : MonoBehaviour {
     {
         if(result == Result.Success)
         {
+            updateCharList();
             changeView(false);
         }
     }
