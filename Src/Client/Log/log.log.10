@@ -1,74 +1,7 @@
-2022-06-21 01:33:44,636 [ 1] INFO  Unity: LoadingManager start
-2022-06-21 01:33:47,960 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-21 01:33:56,128 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-21 01:33:56,136 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-21 01:33:56,137 [ 1] INFO  Unity: DoConnect
-2022-06-21 01:33:56,139 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-21 01:33:56,140 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2022-06-21 01:33:56,146 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-06-21 01:33:56,338 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-06-21 01:33:56,340 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-06-21 01:33:56,343 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-21 01:33:56,416 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 01:33:56,423 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 01:33:56,435 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 01:33:56,436 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-21 01:33:56,478 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
-2022-06-21 01:33:57,987 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-06-21 01:33:58,027 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-06-21 01:33:58,030 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-21 01:33:58,031 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-21 01:33:58,032 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-21 01:33:58,034 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-06-21 01:33:58,035 [ 1] INFO  Unity: AddCharacter:4:솔캐2 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-06-21 01:33:58,036 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-21 01:33:58,272 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 01:34:27,139 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=51
- FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
- FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
- FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=Start FileLineNumber=17
-2022-06-21 01:35:04,484 [ 1] INFO  Unity: Character_3_솔캐 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-06-21 01:35:04,613 [ 1] INFO  Unity: Character_4_솔캐2 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-06-21 01:35:06,207 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 01:35:49,136 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=51
- FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
- FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
- FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=Start FileLineNumber=17
-2022-06-21 01:36:11,734 [ 1] INFO  Unity: MoveForward
-2022-06-21 01:36:13,495 [ 1] INFO  Unity: Stop
-2022-06-21 01:36:18,162 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-21 01:36:18,370 [ 1] INFO  Unity: SendGameLeave
-2022-06-21 01:36:19,082 [ 1] INFO  Unity: Character_3_솔캐 OnDestroy :ID:0 POS:(5150, 4013, 820) DIR:(98, 19, 0) SPD:0 
-2022-06-21 01:36:19,171 [ 1] INFO  Unity: Character_4_솔캐2 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-06-21 01:36:19,311 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 01:36:19,440 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 01:36:19,599 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 01:36:19,801 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-21 01:36:20,413 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
-2022-06-21 01:36:20,685 [ 1] INFO  Unity: OnMapCharacterLeave:3
-2022-06-21 01:36:20,924 [ 1] INFO  Unity: RemoveCharacter:3
-2022-06-21 01:36:21,136 [ 1] INFO  Unity: OnMapCharacterLeave:3
-2022-06-21 01:36:21,391 [ 1] INFO  Unity: RemoveCharacter:3
-2022-06-21 01:36:21,603 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
-2022-06-21 01:36:28,967 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-06-21 01:36:28,967 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-07-13 01:21:32,807 [ 1] INFO  Unity: LoadingManager start
+2022-07-13 01:21:35,821 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-13 01:21:39,722 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-07-13 01:21:39,723 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

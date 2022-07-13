@@ -49,14 +49,10 @@ public class UILogin : MonoBehaviour {
 
     void OnLogin(SkillBridge.Message.Result result, string msg)
     {
-        //UnityAction action = null;
-        //if (result == SkillBridge.Message.Result.Success)
-        //{
-        //    action = this.LoginSuccess;
-        //}
-
-        //MessageBox.Show(msg, result.ToString(), MessageBoxType.Information, "", "", action);
-        LoginSuccess();
+        if (result == SkillBridge.Message.Result.Success)
+        {
+            LoginSuccess();
+        }
     }
 
     void LoginSuccess()

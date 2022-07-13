@@ -160,7 +160,7 @@ namespace Services
 
             if(response.Result == Result.Success)
             {
-                Models.User.Instance.SetupUserInfo(response.Userinfo);
+                User.Instance.SetupUserInfo(response.Userinfo);
             }
 
             if (this.OnLogin != null)
@@ -234,14 +234,17 @@ namespace Services
         void OnUserGameLeave(object sender, UserGameLeaveResponse response)
         {
             Debug.LogFormat("OnUserGameLeave:{0} [{1}]", response.Result, response.Errormsg);
-
+            SceneManager.Instance.LoadScene("CharSelect");
+            MapService.Instance.currentMapId = 0;
         }
 
         void OnMapCharacterEnter(object sender, MapCharacterEnterResponse response)
         {
             Debug.LogFormat("OnMapCharacterEnter:{0}", response.mapId);
-            NCharacterInfo info = response.Characters[0];
-            User.Instance.CurrentCharacter = info;
+            //NCharacterInfo info = response.Characters[0];
+            //User.Instance.CurrentCharacter = info;
+            //UnityEngine.SceneManagement.Scene curScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+            //UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(curScene);
             SceneManager.Instance.LoadScene(DataManager.Instance.IMaps[response.mapId].Resource);
         }
     }

@@ -45,6 +45,7 @@ public class UICharacterView : MonoBehaviour {
             Debug.Log("changeShowCharacter can not find in dic");
             cacheCharObject = Resloader.Load<GameObject>(cDef.Resource);
             go = Instantiate(cacheCharObject, GameObject.Find("Root").transform);
+            go.GetComponent<PlayerInputController>().isActive = false;
             gos[charId] = go;
         }
 

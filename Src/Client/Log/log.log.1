@@ -1,187 +1,55 @@
-2022-06-21 02:02:58,677 [ 1] INFO  Unity: LoadingManager start
-2022-06-21 02:03:02,273 [ 1] INFO  Unity: DataManager > DataManager()
-2022-06-21 02:03:08,029 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-21 02:03:08,035 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-21 02:03:08,037 [ 1] INFO  Unity: DoConnect
-2022-06-21 02:03:08,038 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-21 02:03:08,040 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-07-13 01:44:20,681 [ 1] INFO  Unity: LoadingManager start
+2022-07-13 01:44:23,981 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-13 01:44:30,855 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-07-13 01:44:30,861 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-07-13 01:44:30,863 [ 1] INFO  Unity: DoConnect
+2022-07-13 01:44:30,864 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-13 01:44:30,866 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-06-21 02:03:10,098 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:58)
-Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:153)
-UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:46)
-UnityEngine.EventSystems.EventSystem:Update()
-
-2022-06-21 02:03:10,104 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:58)
-Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:153)
-UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:46)
-UnityEngine.EventSystems.EventSystem:Update()
-
-2022-06-21 02:03:10,105 [ 1] INFO  Unity: DoConnect
-2022-06-21 02:03:10,105 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-21 02:03:10,106 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2022-06-21 02:03:12,152 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2022-06-21 02:03:12,153 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2022-06-21 02:03:12,183 [ 1] INFO  Unity: DoConnect
-2022-06-21 02:03:12,184 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-21 02:03:12,184 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
-
-2022-06-21 02:03:14,218 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2022-06-21 02:03:14,219 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2022-06-21 02:03:14,219 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2022-06-21 02:03:15,473 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-06-21 02:03:15,474 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-06-21 02:03:15,475 [ 1] INFO  Unity: DoConnect
-2022-06-21 02:03:15,476 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-06-21 02:03:15,477 [ 1] INFO  Unity: Connect[3] to server 127.0.0.1:8000
-
-2022-06-21 02:03:15,478 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-06-21 02:03:16,959 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-06-21 02:03:16,961 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-06-21 02:03:16,963 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-21 02:03:17,040 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 02:03:17,047 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 02:03:17,057 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 02:03:17,058 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-21 02:03:17,099 [ 1] INFO  Unity: 
+2022-07-13 01:44:30,872 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-13 01:44:31,062 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-07-13 01:44:31,066 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-07-13 01:44:31,069 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-13 01:44:31,147 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-13 01:44:31,153 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-13 01:44:31,164 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-13 01:44:31,165 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-13 01:44:31,207 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
-2022-06-21 02:03:18,144 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-06-21 02:03:18,183 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-06-21 02:03:18,187 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-21 02:03:18,188 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-21 02:03:18,189 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-21 02:03:18,190 [ 1] INFO  Unity: AddCharacter:3:贾某 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-06-21 02:03:18,192 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-21 02:03:18,430 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 02:03:18,442 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
+2022-07-13 01:44:33,229 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-13 01:44:33,269 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-13 01:44:33,272 [ 1] INFO  Unity: OnMapCharacterEnter:1
+2022-07-13 01:44:33,273 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-13 01:44:33,274 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-13 01:44:33,275 [ 1] INFO  Unity: AddCharacter:3:贾某 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-13 01:44:33,284 [ 1] INFO  Unity: AddCharacter:3:贾某 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-13 01:44:33,285 [ 1] INFO  Unity: AddCharacter:3:贾某 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-13 01:44:33,286 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-13 01:44:33,501 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-13 01:44:33,512 [ 1] INFO  Unity: scene name:MainCity
+2022-07-13 01:44:33,516 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=91
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=52
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=105
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=80
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=53
  FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
  FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
  FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=24
-2022-06-21 02:03:18,652 [ 1] INFO  Unity: Character_3_贾某 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-06-21 02:03:18,697 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 02:03:18,701 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=91
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=52
- FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
- FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
- FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=24
-2022-06-21 02:03:20,448 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-06-21 02:03:20,449 [ 1] INFO  Unity: SendGameLeave
-2022-06-21 02:03:20,484 [ 1] INFO  Unity: Character_3_贾某 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-06-21 02:03:20,487 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 02:03:20,491 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 02:03:20,494 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-06-21 02:03:20,495 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-21 02:03:20,498 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
-2022-06-21 02:03:22,983 [ 1] INFO  Unity: OnMapCharacterLeave:3
-2022-06-21 02:03:22,985 [ 1] INFO  Unity: RemoveCharacter:3
-2022-06-21 02:03:22,986 [ 1] INFO  Unity: OnMapCharacterLeave:3
-2022-06-21 02:03:22,987 [ 1] INFO  Unity: RemoveCharacter:3
-2022-06-21 02:03:22,988 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
-2022-06-21 02:03:28,677 [ 1] INFO  Unity: OnSelectCharacter 1
-2022-06-21 02:03:28,678 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-06-21 02:03:28,691 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
-2022-06-21 02:03:29,296 [ 1] INFO  Unity: SendGameEnter::charIdx :1
-2022-06-21 02:03:29,328 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-06-21 02:03:29,329 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-21 02:03:29,330 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-06-21 02:03:29,331 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-06-21 02:03:29,332 [ 1] INFO  Unity: AddCharacter:4:贾某2 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-06-21 02:03:38,235 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at GameObjectManager.CreateCharacterObject (Entities.Character character) [0x0018a] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs:89 
-  at GameObjectManager.OnCharacterEnter (Entities.Character cha) [0x00003] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs:36 
-  at Services.CharacterManager.AddCharacter (SkillBridge.Message.NCharacterInfo cha) [0x00070] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\CharacterManager.cs:50 
-  at Services.MapService.OnMapCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse response) [0x00067] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\MapService.cs:39 
-  at (wrapper delegate-invoke) Network.MessageDistributer`1/MessageHandler`1<object, SkillBridge.Message.MapCharacterEnterResponse>:invoke_void__this___object_MapCharacterEnterResponse (object,SkillBridge.Message.MapCharacterEnterResponse)
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg) [0x00000] in <filename unknown>:0 
-2022-06-21 02:03:38,237 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:89)
-GameObjectManager.OnCharacterEnter (Entities.Character cha) (at Assets/Scripts/GameObject/GameObjectManager.cs:36)
-Services.CharacterManager.AddCharacter (SkillBridge.Message.NCharacterInfo cha) (at Assets/Scripts/Managers/CharacterManager.cs:50)
-Services.MapService.OnMapCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse response) (at Assets/Scripts/Services/MapService.cs:39)
-Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg)
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=32
+2022-07-13 01:44:33,685 [ 1] INFO  Unity: Character_2_贾某 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-07-13 01:44:33,729 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-13 01:44:33,733 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
+UIMiniMap.Start () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:20)
 }</args></log4net.Error>
-2022-06-21 02:03:38,275 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=53
-2022-06-21 02:03:38,345 [ 1] INFO  Unity: Character_4_贾某2 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-06-21 02:03:38,403 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-06-21 02:03:51,334 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=91
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=52
- FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
- FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
- FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=24
-2022-06-21 02:04:56,375 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-06-21 02:04:56,376 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-07-13 01:44:43,667 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-07-13 01:44:43,668 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2022-06-21 02:04:56,378 [ 1] INFO  Unity: Character_4_贾某2 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 using Entities;
 using SkillBridge.Message;
+using Services;
 
 public class PlayerInputController : MonoBehaviour {
 
@@ -34,6 +35,8 @@ public class PlayerInputController : MonoBehaviour {
 
     public bool onAir = false;
 
+    public bool isActive = true;
+
     // Use this for initialization
     void Start () {
         state = SkillBridge.Message.CharacterState.Idle;
@@ -59,7 +62,7 @@ public class PlayerInputController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (character == null)
+        if (character == null || !isActive)
             return;
 
         // 获取sw 上下的输入来控制前后的移动
@@ -132,6 +135,8 @@ public class PlayerInputController : MonoBehaviour {
     //float lastSync = 0;
     private void LateUpdate()
     {
+        if (character == null || !isActive)
+            return;
         // LateUpdate一般用来处理跟随。
 
         // 刚体当前帧与上一帧的位置偏移。根据便宜计算速度
@@ -155,5 +160,7 @@ public class PlayerInputController : MonoBehaviour {
     {
         if (entityController != null)
             entityController.OnEntityEvent(entityEvent);
+        character.OnUpdate(Time.fixedDeltaTime);
+        MapService.Instance.SendMapEntitySync(entityEvent, character.EntityData);
     }
 }

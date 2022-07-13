@@ -11,7 +11,17 @@ namespace Models
     {
         SkillBridge.Message.NUserInfo userInfo;
         public MapDefine currentMapDef;
-        public GameObject currentCharacterObj;
+        private GameObject _currentCharacterObj;
+        public GameObject currentCharacterObj {
+            set
+            {
+                _currentCharacterObj = value;
+            }
+            get
+            {
+                return _currentCharacterObj;
+            }
+        }
 
 
         public SkillBridge.Message.NUserInfo Info
