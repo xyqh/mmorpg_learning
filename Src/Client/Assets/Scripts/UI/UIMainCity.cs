@@ -1,4 +1,5 @@
 ﻿using Models;
+using Network;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,8 @@ public class UIMainCity : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        ++NetClient.Instance.cnt;
+        Debug.LogFormat("UIMainCity --------------------- {0}", NetClient.Instance.cnt);
         this.UpdateAvatar();
 
 	}

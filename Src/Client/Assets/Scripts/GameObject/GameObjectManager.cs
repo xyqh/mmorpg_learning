@@ -65,7 +65,8 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
                 Debug.LogErrorFormat("Character[{0}] Resource[{1}] not existed.",character.Define.TID, character.Define.Resource);
                 return;
             }
-            GameObject go = (GameObject)Instantiate(obj);
+            //GameObject go = (GameObject)Instantiate(obj);
+            GameObject go = (GameObject)Instantiate(obj, new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0), gameObject.transform);
             Debug.LogFormat("scene name:{0}", go.gameObject.scene.name);
             go.name = "Character_" + character.entityId + "_" + character.Info.Name;
 

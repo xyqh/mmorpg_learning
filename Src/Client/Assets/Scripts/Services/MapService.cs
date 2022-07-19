@@ -42,8 +42,8 @@ namespace Services
             }
             if(currentMapId != response.mapId)
             {
-                EnterMap(response.mapId);
                 currentMapId = response.mapId;
+                EnterMap(response.mapId);
             }
         }
 

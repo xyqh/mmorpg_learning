@@ -13,6 +13,7 @@ namespace Network
 {
     class NetClient : MonoSingleton<NetClient>
     {
+        public int cnt = 0;
 
         const int DEF_POLL_INTERVAL_MILLISECONDS = 100; //default network thread hold on interval
         const int DEF_TRY_CONNECT_TIMES = 3;            //default the number of retries the server

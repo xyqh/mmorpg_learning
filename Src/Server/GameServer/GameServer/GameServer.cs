@@ -26,11 +26,12 @@ namespace GameServer
             netWork = new NetService();
             netWork.Init(8000);
 
+            DataManager.Instance.Load();
+            MapManager.Instance.Init();
             MyKeyService.Instance.Init();
             DBService.Instance.Init();
             UserService.Instance.Init();
-            DataManager.Instance.Load();
-            MapManager.Instance.Init();
+            MapService.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
             return true;
         }

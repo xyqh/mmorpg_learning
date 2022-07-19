@@ -1,72 +1,131 @@
-2022-07-13 01:23:40,556 [ 1] INFO  Unity: LoadingManager start
-2022-07-13 01:23:43,580 [ 1] INFO  Unity: DataManager > DataManager()
-2022-07-13 01:23:51,408 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-07-13 01:23:51,410 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-07-13 01:23:51,411 [ 1] INFO  Unity: DoConnect
-2022-07-13 01:23:51,413 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-07-13 01:23:51,414 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-07-17 16:10:14,896 [ 1] INFO  Unity: LoadingManager start
+2022-07-17 16:10:17,957 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-17 16:10:24,546 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-07-17 16:10:24,548 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-07-17 16:10:24,549 [ 1] INFO  Unity: DoConnect
+2022-07-17 16:10:24,551 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-17 16:10:24,553 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-07-13 01:23:51,417 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-07-13 01:23:51,483 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-07-13 01:23:51,483 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-07-13 01:23:51,484 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-13 01:23:51,531 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:23:51,536 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:23:51,541 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:23:51,542 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-13 01:23:51,560 [ 1] INFO  Unity: 
+2022-07-17 16:10:24,556 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-17 16:10:26,157 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-07-17 16:10:26,158 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-07-17 16:10:26,159 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 16:10:26,227 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:10:26,233 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:10:26,239 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:10:26,241 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 16:10:26,267 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
-2022-07-13 01:24:00,350 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-13 01:24:00,386 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-13 01:24:00,388 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-07-13 01:24:00,389 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:24:00,389 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-13 01:24:00,391 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:24:00,393 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:24:00,394 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:24:00,395 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:24:00,395 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:24:00,396 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(5:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:24:00,397 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:24:00,607 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:24:00,610 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:69)
-GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:53)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-GameObjectManager:OnStart() (at Assets/Scripts/GameObject/GameObjectManager.cs:18)
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:32)
-}</args></log4net.Error>
-2022-07-13 01:24:00,613 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
+2022-07-17 16:10:27,103 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 16:10:27,137 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 16:10:27,138 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:10:27,139 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:10:27,139 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 16:10:27,141 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 16:10:27,421 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:10:27,423 [ 1] INFO  Unity: scene name:MainCity
+2022-07-17 16:10:27,424 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=106
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=81
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=53
+ FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
+ FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
+ FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=32
+2022-07-17 16:10:27,428 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-07-17 16:10:31,290 [ 1] INFO  Unity: MoveForward
+2022-07-17 16:10:31,291 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
+2022-07-17 16:10:31,672 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,18,0) SPD:300 
+2022-07-17 16:10:31,771 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(94,35,0) SPD:300 
+2022-07-17 16:10:31,854 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,51,0) SPD:300 
+2022-07-17 16:10:31,953 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(74,68,0) SPD:300 
+2022-07-17 16:10:32,053 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(58,81,0) SPD:300 
+2022-07-17 16:10:32,136 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(43,90,0) SPD:300 
+2022-07-17 16:10:32,235 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(27,96,0) SPD:300 
+2022-07-17 16:10:32,317 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(9,100,0) SPD:300 
+2022-07-17 16:10:32,417 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-11,99,0) SPD:300 
+2022-07-17 16:10:32,500 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-29,96,0) SPD:300 
+2022-07-17 16:10:32,599 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-48,88,0) SPD:300 
+2022-07-17 16:10:32,698 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-65,76,0) SPD:300 
+2022-07-17 16:10:32,798 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-78,62,0) SPD:300 
+2022-07-17 16:10:32,964 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-88,47,0) SPD:300 
+2022-07-17 16:10:33,013 [ 1] INFO  Unity: Stop
+2022-07-17 16:10:33,014 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-88,47,0) SPD:0 
+2022-07-17 16:10:33,710 [ 1] INFO  Unity: SendGameLeave
+2022-07-17 16:10:33,744 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 16:10:33,745 [ 1] INFO  Unity: RemoveCharacter:3
+2022-07-17 16:10:33,751 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-07-17 16:10:33,752 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 16:10:33,753 [ 1] INFO  Unity: Character_1_솔캐 OnDestroy :ID:1 POS:(5169, 4342, 820) DIR:(-88, 47, 0) SPD:0 
+2022-07-17 16:10:33,795 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:10:33,800 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:10:33,804 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:10:33,804 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 16:10:33,808 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
+2022-07-17 16:10:35,289 [ 1] INFO  Unity: OnSelectCharacter 1
+2022-07-17 16:10:35,290 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 16:10:35,298 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
+2022-07-17 16:10:36,335 [ 1] INFO  Unity: SendGameEnter::charIdx :1
+2022-07-17 16:10:36,367 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 16:10:36,368 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:10:36,368 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:10:36,369 [ 1] INFO  Unity: AddCharacter:4:솔캐2 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 16:10:36,370 [ 1] INFO  Unity: scene name:CharSelect
+2022-07-17 16:10:36,370 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=106
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=81
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnCharacterEnter FileLineNumber=37
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\CharacterManager.cs fullname=Services.CharacterManager function=AddCharacter FileLineNumber=57
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\MapService.cs fullname=Services.MapService function=OnMapCharacterEnter FileLineNumber=41
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=RaiseEvent FileLineNumber=0
+ FileName= fullname=Network.MessageDispatch`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Dispatch FileLineNumber=0
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Distribute FileLineNumber=0
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=ProceeMessage FileLineNumber=422
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=Update FileLineNumber=440
+2022-07-17 16:10:36,371 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 16:10:36,372 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 16:10:36,372 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 16:10:36,373 [ 1] INFO  Unity: AddCharacter:4:솔캐2 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 16:10:36,374 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=106
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=81
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnCharacterEnter FileLineNumber=37
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\CharacterManager.cs fullname=Services.CharacterManager function=AddCharacter FileLineNumber=57
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\MapService.cs fullname=Services.MapService function=OnMapCharacterEnter FileLineNumber=41
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=RaiseEvent FileLineNumber=0
+ FileName= fullname=Network.MessageDispatch`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Dispatch FileLineNumber=0
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Distribute FileLineNumber=0
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=ProceeMessage FileLineNumber=422
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=Update FileLineNumber=440
+2022-07-17 16:10:36,375 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5169,4342,820),dir:(-88,47,0),spd:0
+2022-07-17 16:10:36,377 [ 1] INFO  Unity: scene name:CharSelect
+2022-07-17 16:10:36,532 [ 1] INFO  Unity: Character_1_솔캐 OnDestroy :ID:1 POS:(5169, 4342, 820) DIR:(-88, 47, 0) SPD:0 
+2022-07-17 16:10:36,533 [ 1] INFO  Unity: Character_2_솔캐2 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-07-17 16:10:36,587 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:10:36,589 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object., UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
 UIMiniMap.Start () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:20)
 }</args></log4net.Error>
-2022-07-13 01:24:00,616 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
-2022-07-13 01:24:00,819 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:24:00,822 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:69)
-GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:53)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-GameObjectManager:OnStart() (at Assets/Scripts/GameObject/GameObjectManager.cs:18)
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:32)
-}</args></log4net.Error>
-2022-07-13 01:24:00,823 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
-UIMiniMap.Start () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:20)
-}</args></log4net.Error>
-2022-07-13 01:24:00,824 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
-2022-07-13 01:24:04,265 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-07-13 01:24:04,266 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-07-17 16:10:36,591 [ 1] INFO  Unity: UIMainCity --------------------- 2
+2022-07-17 16:10:52,588 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-07-17 16:10:52,588 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
 

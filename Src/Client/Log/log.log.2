@@ -1,54 +1,97 @@
-2022-07-13 01:36:34,260 [ 1] INFO  Unity: LoadingManager start
-2022-07-13 01:36:37,581 [ 1] INFO  Unity: DataManager > DataManager()
-2022-07-13 01:38:23,541 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-07-13 01:38:23,547 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-07-13 01:38:23,549 [ 1] INFO  Unity: DoConnect
-2022-07-13 01:38:23,550 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-07-13 01:38:23,552 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-07-17 23:31:42,334 [ 1] INFO  Unity: LoadingManager start
+2022-07-17 23:31:45,352 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-17 23:31:50,730 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-07-17 23:31:50,731 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-07-17 23:31:50,732 [ 1] INFO  Unity: DoConnect
+2022-07-17 23:31:50,734 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-17 23:31:50,736 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-07-13 01:38:23,558 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-07-13 01:38:23,772 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-07-13 01:38:23,775 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-07-13 01:38:23,779 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-13 01:38:23,864 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:38:23,870 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:38:23,880 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:38:23,881 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-13 01:38:23,922 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
-2022-07-13 01:38:30,962 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-13 01:38:31,003 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-13 01:38:31,005 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-07-13 01:38:31,006 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:38:31,007 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-13 01:38:31,008 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:38:31,016 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:38:31,017 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:38:31,246 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:38:31,257 [ 1] INFO  Unity: scene name:MainCity
-2022-07-13 01:44:08,873 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=105
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=80
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=53
- FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
- FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
- FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=32
-2022-07-13 01:44:09,141 [ 1] INFO  Unity: Character_1_樂議 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-07-13 01:44:09,187 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:44:09,208 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
-UIMiniMap.Start () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:20)
-}</args></log4net.Error>
-2022-07-13 01:44:15,554 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-07-13 01:44:15,555 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-07-17 23:31:50,739 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-17 23:31:52,112 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-07-17 23:31:52,112 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-07-17 23:31:52,113 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 23:31:52,158 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:31:52,164 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:31:52,168 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:31:52,169 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 23:31:53,128 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 23:31:53,161 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 23:31:54,620 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:31:54,621 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:31:54,621 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:31:54,623 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 23:31:54,842 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:31:54,845 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 23:31:54,848 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-07-17 23:31:56,275 [ 1] INFO  Unity: MoveForward
+2022-07-17 23:31:56,277 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
+2022-07-17 23:31:57,352 [ 1] INFO  Unity: Stop
+2022-07-17 23:31:57,353 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:0 
+2022-07-17 23:31:58,098 [ 1] INFO  Unity: SendGameLeave
+2022-07-17 23:32:02,291 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 23:32:02,292 [ 1] INFO  Unity: RemoveCharacter:3
+2022-07-17 23:32:02,295 [ 1] INFO  Unity: Character_1_樂議 OnDestroy :ID:1 POS:(5325, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-07-17 23:32:23,992 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-07-17 23:32:23,993 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 23:32:24,041 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:32:24,045 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:32:24,048 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:32:24,048 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 23:32:31,662 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 23:32:31,696 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 23:33:22,282 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 23:33:26,904 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:33:26,905 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:33:26,906 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:26,907 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 23:33:26,909 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 23:33:26,910 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:26,910 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:26,911 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:26,912 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(1:pos:(5325,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:26,913 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 23:33:26,914 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 23:33:27,143 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:33:27,144 [ 1] INFO  Unity: UIMainCity --------------------- 2
+2022-07-17 23:33:27,617 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:27,617 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:27,618 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:27,621 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 23:33:27,622 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:27,622 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:27,622 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:27,623 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:27,623 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 23:33:27,623 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:27,624 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(1:pos:(5325,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:27,624 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:33:36,366 [ 1] INFO  Unity: SendGameLeave
+2022-07-17 23:34:00,823 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 23:34:00,823 [ 1] INFO  Unity: RemoveCharacter:3
+2022-07-17 23:34:00,824 [ 1] INFO  Unity: Character_2_樂議 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-07-17 23:34:02,480 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 23:34:03,906 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 23:34:11,642 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 堈最翋儂Чつ壽敕賸珨跺珋衄腔蟀諉﹝
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs:341 
+
+2022-07-17 23:34:11,643 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
 UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:355)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2022-07-17 23:34:11,658 [ 1] INFO  Unity: DoConnect
+2022-07-17 23:34:11,658 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-17 23:34:11,659 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-07-17 23:34:12,680 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-17 23:34:13,683 [ 1] INFO  Unity: Character_1_樂議 OnDestroy :ID:1 POS:(5325, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-07-17 23:34:13,684 [ 1] INFO  Unity: Character_3_樂議 OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-07-17 23:34:13,686 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-07-17 23:34:13,687 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
 

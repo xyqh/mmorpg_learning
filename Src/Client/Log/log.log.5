@@ -1,57 +1,367 @@
-2022-07-13 01:25:44,220 [ 1] INFO  Unity: LoadingManager start
-2022-07-13 01:25:48,151 [ 1] INFO  Unity: DataManager > DataManager()
-2022-07-13 01:25:54,135 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-07-13 01:25:54,142 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-07-13 01:25:54,143 [ 1] INFO  Unity: DoConnect
-2022-07-13 01:25:54,145 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-07-13 01:25:54,146 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-07-17 16:19:39,004 [ 1] INFO  Unity: LoadingManager start
+2022-07-17 16:19:42,048 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-17 16:19:59,171 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-07-17 16:19:59,172 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-07-17 16:19:59,173 [ 1] INFO  Unity: DoConnect
+2022-07-17 16:19:59,174 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-17 16:19:59,175 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-07-13 01:25:54,152 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-07-13 01:25:54,361 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-07-13 01:25:54,364 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-07-13 01:25:54,368 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-13 01:25:54,447 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:25:54,454 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:25:54,466 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:25:54,467 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-13 01:25:54,510 [ 1] INFO  Unity: 
+2022-07-17 16:19:59,176 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-17 16:20:00,617 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-07-17 16:20:00,617 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-07-17 16:20:00,622 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 16:20:00,673 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:20:00,679 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:20:00,683 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:20:00,685 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 16:20:00,703 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
-2022-07-13 01:25:55,534 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-13 01:25:55,573 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-13 01:25:55,576 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-07-13 01:25:55,577 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:25:55,578 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-13 01:25:55,579 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:25:55,587 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:25:55,587 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:25:55,589 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:25:59,074 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:28:01,953 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, GameObjectManager.CreateCharacterObject (Entities.Character character) (at Assets/Scripts/GameObject/GameObjectManager.cs:69)
-GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:53)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-GameObjectManager:OnStart() (at Assets/Scripts/GameObject/GameObjectManager.cs:18)
-MonoSingleton`1:Start() (at Assets/Scripts/Utilities/MonoSingleton.cs:32)
-}</args></log4net.Error>
-2022-07-13 01:28:01,963 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
-UIMiniMap.Start () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:20)
-}</args></log4net.Error>
-2022-07-13 01:28:01,966 [ 1] INFO  Unity: 
+2022-07-17 16:20:01,849 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 16:20:01,886 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 16:20:01,888 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:20:01,888 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:20:01,890 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 16:20:01,892 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 16:20:02,112 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:20:02,115 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 16:20:02,116 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=106
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=81
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=53
+ FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
+ FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
+ FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=32
+2022-07-17 16:20:02,119 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-07-17 16:20:06,051 [ 1] INFO  Unity: SendGameLeave
+2022-07-17 16:20:06,085 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 16:20:06,087 [ 1] INFO  Unity: RemoveCharacter:3
+2022-07-17 16:20:06,090 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-07-17 16:20:06,091 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 16:20:06,092 [ 1] INFO  Unity: Character_1_솔캐 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-07-17 16:20:06,141 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:20:06,145 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:20:06,148 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 16:20:06,149 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 16:20:06,153 [ 1] INFO  Unity: 
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
  FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
-2022-07-13 01:28:02,278 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:28:02,279 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
-UIMiniMap.Start () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:20)
-}</args></log4net.Error>
-2022-07-13 01:28:32,330 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-07-13 01:28:32,330 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+2022-07-17 16:20:11,146 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 16:20:11,178 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 16:20:11,179 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:20:11,179 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 16:20:11,180 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 16:20:11,181 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 16:20:11,182 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=106
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=81
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnCharacterEnter FileLineNumber=37
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\CharacterManager.cs fullname=Services.CharacterManager function=AddCharacter FileLineNumber=57
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\MapService.cs fullname=Services.MapService function=OnMapCharacterEnter FileLineNumber=41
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=RaiseEvent FileLineNumber=0
+ FileName= fullname=Network.MessageDispatch`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Dispatch FileLineNumber=0
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Distribute FileLineNumber=0
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=ProceeMessage FileLineNumber=422
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=Update FileLineNumber=440
+2022-07-17 16:20:11,182 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 16:20:11,183 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 16:20:11,183 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
+2022-07-17 16:20:11,184 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 16:20:11,184 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=106
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=81
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnCharacterEnter FileLineNumber=37
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\CharacterManager.cs fullname=Services.CharacterManager function=AddCharacter FileLineNumber=57
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\MapService.cs fullname=Services.MapService function=OnMapCharacterEnter FileLineNumber=41
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=RaiseEvent FileLineNumber=0
+ FileName= fullname=Network.MessageDispatch`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Dispatch FileLineNumber=0
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Distribute FileLineNumber=0
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=ProceeMessage FileLineNumber=422
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=Update FileLineNumber=440
+2022-07-17 16:20:11,185 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 16:20:11,186 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 16:20:11,186 [ 1] INFO  Unity: 
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=106
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=81
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnCharacterEnter FileLineNumber=37
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\CharacterManager.cs fullname=Services.CharacterManager function=AddCharacter FileLineNumber=57
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\MapService.cs fullname=Services.MapService function=OnMapCharacterEnter FileLineNumber=41
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=RaiseEvent FileLineNumber=0
+ FileName= fullname=Network.MessageDispatch`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Dispatch FileLineNumber=0
+ FileName= fullname=Network.MessageDistributer`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] function=Distribute FileLineNumber=0
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=ProceeMessage FileLineNumber=422
+ FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs fullname=Network.NetClient function=Update FileLineNumber=440
+2022-07-17 16:20:11,402 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 16:20:11,403 [ 1] INFO  Unity: UIMainCity --------------------- 2
+2022-07-17 16:20:13,063 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(98,-18,0) SPD:0 
+2022-07-17 16:20:13,064 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,-18,0) SPD:0 
+2022-07-17 16:20:13,098 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(98, -18, 0) SPD:0
+2022-07-17 16:20:13,098 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(98,-18,0),spd:0
+
+2022-07-17 16:20:13,130 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(98, -18, 0) SPD:0
+2022-07-17 16:20:13,131 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(98,-18,0),spd:0
+
+2022-07-17 16:20:13,162 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(93,-36,0) SPD:0 
+2022-07-17 16:20:13,162 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(93,-36,0) SPD:0 
+2022-07-17 16:20:13,195 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(93, -36, 0) SPD:0
+2022-07-17 16:20:13,196 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(93,-36,0),spd:0
+
+2022-07-17 16:20:13,229 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(93, -36, 0) SPD:0
+2022-07-17 16:20:13,229 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(93,-36,0),spd:0
+
+2022-07-17 16:20:13,262 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(84,-54,0) SPD:0 
+2022-07-17 16:20:13,262 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(84,-54,0) SPD:0 
+2022-07-17 16:20:13,296 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(84, -54, 0) SPD:0
+2022-07-17 16:20:13,296 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(84,-54,0),spd:0
+
+2022-07-17 16:20:13,329 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(84, -54, 0) SPD:0
+2022-07-17 16:20:13,330 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(84,-54,0),spd:0
+
+2022-07-17 16:20:13,344 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(73,-68,0) SPD:0 
+2022-07-17 16:20:13,345 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(73,-68,0) SPD:0 
+2022-07-17 16:20:13,378 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(73, -68, 0) SPD:0
+2022-07-17 16:20:13,379 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(73,-68,0),spd:0
+
+2022-07-17 16:20:13,411 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(73, -68, 0) SPD:0
+2022-07-17 16:20:13,412 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(73,-68,0),spd:0
+
+2022-07-17 16:20:13,444 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(58,-82,0) SPD:0 
+2022-07-17 16:20:13,445 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(58,-82,0) SPD:0 
+2022-07-17 16:20:13,478 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(58, -82, 0) SPD:0
+2022-07-17 16:20:13,479 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(58,-82,0),spd:0
+
+2022-07-17 16:20:13,511 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(58, -82, 0) SPD:0
+2022-07-17 16:20:13,512 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(58,-82,0),spd:0
+
+2022-07-17 16:20:13,527 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(43,-90,0) SPD:0 
+2022-07-17 16:20:13,528 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(43,-90,0) SPD:0 
+2022-07-17 16:20:13,561 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(43, -90, 0) SPD:0
+2022-07-17 16:20:13,562 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(43,-90,0),spd:0
+
+2022-07-17 16:20:13,594 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(43, -90, 0) SPD:0
+2022-07-17 16:20:13,594 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(43,-90,0),spd:0
+
+2022-07-17 16:20:13,610 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(26,-96,0) SPD:0 
+2022-07-17 16:20:13,611 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(26,-96,0) SPD:0 
+2022-07-17 16:20:13,643 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(26, -96, 0) SPD:0
+2022-07-17 16:20:13,644 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(26,-96,0),spd:0
+
+2022-07-17 16:20:13,676 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(26, -96, 0) SPD:0
+2022-07-17 16:20:13,677 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(26,-96,0),spd:0
+
+2022-07-17 16:20:13,709 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(6,-100,0) SPD:0 
+2022-07-17 16:20:13,710 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(6,-100,0) SPD:0 
+2022-07-17 16:20:13,742 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(6, -100, 0) SPD:0
+2022-07-17 16:20:13,743 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(6,-100,0),spd:0
+
+2022-07-17 16:20:13,775 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(6, -100, 0) SPD:0
+2022-07-17 16:20:13,776 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(6,-100,0),spd:0
+
+2022-07-17 16:20:13,792 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-12,-99,0) SPD:0 
+2022-07-17 16:20:13,792 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-12,-99,0) SPD:0 
+2022-07-17 16:20:13,825 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-12, -99, 0) SPD:0
+2022-07-17 16:20:13,826 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-12,-99,0),spd:0
+
+2022-07-17 16:20:13,858 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-12, -99, 0) SPD:0
+2022-07-17 16:20:13,859 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-12,-99,0),spd:0
+
+2022-07-17 16:20:13,891 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-32,-95,0) SPD:0 
+2022-07-17 16:20:13,891 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-32,-95,0) SPD:0 
+2022-07-17 16:20:13,925 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-32, -95, 0) SPD:0
+2022-07-17 16:20:13,925 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-32,-95,0),spd:0
+
+2022-07-17 16:20:13,958 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-32, -95, 0) SPD:0
+2022-07-17 16:20:13,958 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-32,-95,0),spd:0
+
+2022-07-17 16:20:13,974 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-48,-88,0) SPD:0 
+2022-07-17 16:20:13,974 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-48,-88,0) SPD:0 
+2022-07-17 16:20:14,008 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-48, -88, 0) SPD:0
+2022-07-17 16:20:14,008 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-48,-88,0),spd:0
+
+2022-07-17 16:20:14,041 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-48, -88, 0) SPD:0
+2022-07-17 16:20:14,042 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-48,-88,0),spd:0
+
+2022-07-17 16:20:14,057 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-63,-78,0) SPD:0 
+2022-07-17 16:20:14,057 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-63,-78,0) SPD:0 
+2022-07-17 16:20:14,091 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-63, -78, 0) SPD:0
+2022-07-17 16:20:14,091 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-63,-78,0),spd:0
+
+2022-07-17 16:20:14,123 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-63, -78, 0) SPD:0
+2022-07-17 16:20:14,124 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-63,-78,0),spd:0
+
+2022-07-17 16:20:14,156 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-77,-63,0) SPD:0 
+2022-07-17 16:20:14,156 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-77,-63,0) SPD:0 
+2022-07-17 16:20:14,189 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-77, -63, 0) SPD:0
+2022-07-17 16:20:14,190 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-77,-63,0),spd:0
+
+2022-07-17 16:20:14,224 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-77, -63, 0) SPD:0
+2022-07-17 16:20:14,225 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-77,-63,0),spd:0
+
+2022-07-17 16:20:14,256 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-88,-48,0) SPD:0 
+2022-07-17 16:20:14,257 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-88,-48,0) SPD:0 
+2022-07-17 16:20:14,290 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-88, -48, 0) SPD:0
+2022-07-17 16:20:14,291 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-88,-48,0),spd:0
+
+2022-07-17 16:20:14,323 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-88, -48, 0) SPD:0
+2022-07-17 16:20:14,324 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-88,-48,0),spd:0
+
+2022-07-17 16:20:14,785 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-77,-64,0) SPD:0 
+2022-07-17 16:20:14,786 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-77,-64,0) SPD:0 
+2022-07-17 16:20:14,820 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-77, -64, 0) SPD:0
+2022-07-17 16:20:14,820 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-77,-64,0),spd:0
+
+2022-07-17 16:20:14,852 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-77, -64, 0) SPD:0
+2022-07-17 16:20:14,853 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-77,-64,0),spd:0
+
+2022-07-17 16:20:14,869 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-65,-76,0) SPD:0 
+2022-07-17 16:20:14,869 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-65,-76,0) SPD:0 
+2022-07-17 16:20:14,902 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-65, -76, 0) SPD:0
+2022-07-17 16:20:14,903 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-65,-76,0),spd:0
+
+2022-07-17 16:20:14,936 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-65, -76, 0) SPD:0
+2022-07-17 16:20:14,936 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-65,-76,0),spd:0
+
+2022-07-17 16:20:14,952 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-50,-86,0) SPD:0 
+2022-07-17 16:20:14,952 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-50,-86,0) SPD:0 
+2022-07-17 16:20:14,985 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-50, -86, 0) SPD:0
+2022-07-17 16:20:14,986 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-50,-86,0),spd:0
+
+2022-07-17 16:20:15,018 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-50, -86, 0) SPD:0
+2022-07-17 16:20:15,018 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-50,-86,0),spd:0
+
+2022-07-17 16:20:15,051 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-31,-95,0) SPD:0 
+2022-07-17 16:20:15,051 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-31,-95,0) SPD:0 
+2022-07-17 16:20:15,084 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-31, -95, 0) SPD:0
+2022-07-17 16:20:15,085 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-31,-95,0),spd:0
+
+2022-07-17 16:20:15,117 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-31, -95, 0) SPD:0
+2022-07-17 16:20:15,118 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-31,-95,0),spd:0
+
+2022-07-17 16:20:15,150 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(-11,-99,0) SPD:0 
+2022-07-17 16:20:15,151 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-11,-99,0) SPD:0 
+2022-07-17 16:20:15,184 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(-11, -99, 0) SPD:0
+2022-07-17 16:20:15,184 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(-11,-99,0),spd:0
+
+2022-07-17 16:20:15,217 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(-11, -99, 0) SPD:0
+2022-07-17 16:20:15,218 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(-11,-99,0),spd:0
+
+2022-07-17 16:20:15,250 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(7,-100,0) SPD:0 
+2022-07-17 16:20:15,250 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(7,-100,0) SPD:0 
+2022-07-17 16:20:15,284 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(7, -100, 0) SPD:0
+2022-07-17 16:20:15,284 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(7,-100,0),spd:0
+
+2022-07-17 16:20:15,316 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(7, -100, 0) SPD:0
+2022-07-17 16:20:15,317 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(7,-100,0),spd:0
+
+2022-07-17 16:20:15,431 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(25,-97,0) SPD:0 
+2022-07-17 16:20:15,432 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(25,-97,0) SPD:0 
+2022-07-17 16:20:15,469 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(25, -97, 0) SPD:0
+2022-07-17 16:20:15,469 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(25,-97,0),spd:0
+
+2022-07-17 16:20:15,499 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(25, -97, 0) SPD:0
+2022-07-17 16:20:15,499 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(25,-97,0),spd:0
+
+2022-07-17 16:20:18,466 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(42,-91,0) SPD:0 
+2022-07-17 16:20:18,466 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(42,-91,0) SPD:0 
+2022-07-17 16:20:18,500 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(42, -91, 0) SPD:0
+2022-07-17 16:20:18,501 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(42,-91,0),spd:0
+
+2022-07-17 16:20:18,533 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(42, -91, 0) SPD:0
+2022-07-17 16:20:18,534 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(42,-91,0),spd:0
+
+2022-07-17 16:20:18,566 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(58,-81,0) SPD:0 
+2022-07-17 16:20:18,566 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(58,-81,0) SPD:0 
+2022-07-17 16:20:18,599 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(58, -81, 0) SPD:0
+2022-07-17 16:20:18,600 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(58,-81,0),spd:0
+
+2022-07-17 16:20:18,632 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(58, -81, 0) SPD:0
+2022-07-17 16:20:18,632 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(58,-81,0),spd:0
+
+2022-07-17 16:20:18,665 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(74,-67,0) SPD:0 
+2022-07-17 16:20:18,665 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(74,-67,0) SPD:0 
+2022-07-17 16:20:18,699 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(74, -67, 0) SPD:0
+2022-07-17 16:20:18,699 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(74,-67,0),spd:0
+
+2022-07-17 16:20:18,731 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(74, -67, 0) SPD:0
+2022-07-17 16:20:18,732 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(74,-67,0),spd:0
+
+2022-07-17 16:20:18,765 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(86,-51,0) SPD:0 
+2022-07-17 16:20:18,765 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,-51,0) SPD:0 
+2022-07-17 16:20:18,798 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(86, -51, 0) SPD:0
+2022-07-17 16:20:18,799 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(86,-51,0),spd:0
+
+2022-07-17 16:20:18,831 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(86, -51, 0) SPD:0
+2022-07-17 16:20:18,832 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(86,-51,0),spd:0
+
+2022-07-17 16:20:18,881 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(94,-34,0) SPD:0 
+2022-07-17 16:20:18,881 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(94,-34,0) SPD:0 
+2022-07-17 16:20:18,913 [ 1] INFO  Unity: OnEntityChanged:ID:2 POS:(5000, 4000, 820) DIR:(94, -34, 0) SPD:0
+2022-07-17 16:20:18,914 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [2]evt:None entity:(2:pos:(5000,4000,820),dir:(94,-34,0),spd:0
+
+2022-07-17 16:20:18,947 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(5000, 4000, 820) DIR:(94, -34, 0) SPD:0
+2022-07-17 16:20:18,948 [ 1] INFO  Unity: MapEntityUpdateResponse:Entitys:1
+   [1]evt:None entity:(1:pos:(5000,4000,820),dir:(94,-34,0),spd:0
 

@@ -240,12 +240,16 @@ namespace Services
 
         void OnMapCharacterEnter(object sender, MapCharacterEnterResponse response)
         {
-            Debug.LogFormat("OnMapCharacterEnter:{0}", response.mapId);
-            //NCharacterInfo info = response.Characters[0];
-            //User.Instance.CurrentCharacter = info;
-            //UnityEngine.SceneManagement.Scene curScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
-            //UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(curScene);
-            SceneManager.Instance.LoadScene(DataManager.Instance.IMaps[response.mapId].Resource);
+            Debug.LogFormat("OnMapCharacterEnter:{0}, {1}", response.mapId, MapService.Instance.currentMapId);
+            if (MapService.Instance.currentMapId != response.mapId)
+            {
+                NCharacterInfo info = response.Characters[0];
+                User.Instance.CurrentCharacter = info;
+                //UnityEngine.SceneManagement.Scene curScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+                //UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(curScene);
+                //MapService.Instance.currentMapId = response.mapId;
+                //SceneManager.Instance.LoadScene(DataManager.Instance.IMaps[response.mapId].Resource);
+            }
         }
     }
 }

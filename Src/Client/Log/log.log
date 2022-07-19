@@ -1,50 +1,101 @@
-2022-07-13 01:44:58,604 [ 1] INFO  Unity: LoadingManager start
-2022-07-13 01:45:01,966 [ 1] INFO  Unity: DataManager > DataManager()
-2022-07-13 01:45:09,169 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-07-13 01:45:09,176 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-07-13 01:45:09,177 [ 1] INFO  Unity: DoConnect
-2022-07-13 01:45:09,179 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-07-13 01:45:09,180 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-07-17 23:35:06,354 [ 1] INFO  Unity: LoadingManager start
+2022-07-17 23:35:09,381 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-17 23:35:17,024 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-07-17 23:35:17,025 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-07-17 23:35:17,026 [ 1] INFO  Unity: DoConnect
+2022-07-17 23:35:17,028 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-17 23:35:17,030 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-07-13 01:45:09,187 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-07-13 01:45:09,393 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-07-13 01:45:09,396 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-07-13 01:45:09,400 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-13 01:45:09,476 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:45:09,483 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:45:09,496 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-13 01:45:09,497 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-13 01:45:09,541 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=Start FileLineNumber=56
-2022-07-13 01:45:10,402 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-13 01:45:10,443 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-13 01:45:10,446 [ 1] INFO  Unity: OnMapCharacterEnter:1
-2022-07-13 01:45:10,447 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:45:10,448 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-13 01:45:10,449 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:45:10,457 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:45:10,457 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:45:10,458 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-13 01:45:10,460 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-13 01:45:10,671 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:45:10,683 [ 1] INFO  Unity: scene name:MainCity
-2022-07-13 01:46:46,379 [ 1] INFO  Unity: 
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Log\UnityLogger.cs fullname=UnityLogger function=stacktraceLog FileLineNumber=47
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\PlayerInputController.cs fullname=PlayerInputController function=set_character FileLineNumber=19
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=InitGameObject FileLineNumber=105
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=CreateCharacterObject FileLineNumber=80
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager+<InitGameObjects>c__Iterator0 function=MoveNext FileLineNumber=53
- FileName=D:\unity\Runtime\Export\Coroutines.cs fullname=UnityEngine.SetupCoroutine function=InvokeMoveNext FileLineNumber=17
- FileName= fullname=UnityEngine.MonoBehaviour function=StartCoroutineManaged2 FileLineNumber=0
- FileName=D:\unity\Runtime\Export\MonoBehaviour.bindings.cs fullname=UnityEngine.MonoBehaviour function=StartCoroutine FileLineNumber=90
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\GameObject\GameObjectManager.cs fullname=GameObjectManager function=OnStart FileLineNumber=18
- FileName=D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Utilities\MonoSingleton.cs fullname=MonoSingleton`1 function=Start FileLineNumber=32
-2022-07-13 01:46:46,637 [ 1] INFO  Unity: Character_3_솔캐 OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-07-13 01:46:46,687 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-13 01:46:46,689 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
-Your script should either check if it is null or you should not destroy the object., UIMiniMap.updateMap () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:55)
-UIMiniMap.Start () (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:20)
-}</args></log4net.Error>
+2022-07-17 23:35:17,033 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-17 23:35:18,356 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-07-17 23:35:18,356 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-07-17 23:35:18,357 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 23:35:18,397 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:35:18,403 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:35:18,408 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:35:18,409 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 23:35:21,559 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 23:35:21,592 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 23:35:28,734 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:35:28,735 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:35:28,736 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:35:28,739 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 23:35:28,968 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:35:28,971 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 23:35:28,974 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-07-17 23:35:30,820 [ 1] INFO  Unity: MoveForward
+2022-07-17 23:35:30,821 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
+2022-07-17 23:35:31,334 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,18,0) SPD:300 
+2022-07-17 23:35:31,432 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(93,35,0) SPD:300 
+2022-07-17 23:35:31,516 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,51,0) SPD:300 
+2022-07-17 23:35:31,599 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(76,65,0) SPD:300 
+2022-07-17 23:35:31,714 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(63,78,0) SPD:300 
+2022-07-17 23:35:32,244 [ 1] INFO  Unity: Stop
+2022-07-17 23:35:32,245 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(63,78,0) SPD:0 
+2022-07-17 23:35:33,256 [ 1] INFO  Unity: SendGameLeave
+2022-07-17 23:35:42,567 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 23:35:42,568 [ 1] INFO  Unity: RemoveCharacter:3
+2022-07-17 23:35:42,569 [ 1] INFO  Unity: Character_1_솔캐 OnDestroy :ID:1 POS:(5380, 4193, 820) DIR:(63, 78, 0) SPD:0 
+2022-07-17 23:35:46,527 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-07-17 23:35:46,528 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 23:35:46,568 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:35:46,573 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:35:46,575 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:35:46,576 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 23:35:48,805 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-17 23:35:48,838 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 23:35:55,039 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:35:55,040 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:35:55,040 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:35:55,041 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 23:35:55,042 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 23:35:55,254 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:35:55,255 [ 1] INFO  Unity: UIMainCity --------------------- 2
+2022-07-17 23:35:56,756 [ 1] INFO  Unity: MoveForward
+2022-07-17 23:35:56,757 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
+2022-07-17 23:35:57,501 [ 1] INFO  Unity: Stop
+2022-07-17 23:35:57,502 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:0 
+2022-07-17 23:35:57,618 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(98,18,0) SPD:0 
+2022-07-17 23:35:57,717 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(94,35,0) SPD:0 
+2022-07-17 23:35:57,816 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(85,53,0) SPD:0 
+2022-07-17 23:35:57,949 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(74,67,0) SPD:0 
+2022-07-17 23:35:58,595 [ 1] INFO  Unity: SendGameLeave
+2022-07-17 23:36:00,140 [ 1] INFO  Unity: OnMapCharacterLeave:3
+2022-07-17 23:36:00,140 [ 1] INFO  Unity: RemoveCharacter:3
+2022-07-17 23:36:00,141 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-07-17 23:36:00,141 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-17 23:36:00,142 [ 1] INFO  Unity: Character_2_솔캐 OnDestroy :ID:2 POS:(5230, 4000, 820) DIR:(74, 67, 0) SPD:0 
+2022-07-17 23:36:00,182 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:36:00,188 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:36:00,192 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-17 23:36:00,193 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 23:36:03,768 [ 1] INFO  Unity: OnSelectCharacter 1
+2022-07-17 23:36:03,769 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-17 23:36:04,468 [ 1] INFO  Unity: SendGameEnter::charIdx :1
+2022-07-17 23:36:04,501 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-07-17 23:36:04,502 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:36:04,502 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-07-17 23:36:04,503 [ 1] INFO  Unity: AddCharacter:4:솔캐2 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-07-17 23:36:04,505 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-07-17 23:36:04,506 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-07-17 23:36:04,716 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-17 23:36:04,717 [ 1] INFO  Unity: UIMainCity --------------------- 3
+2022-07-17 23:36:05,328 [ 1] INFO  Unity: MoveForward
+2022-07-17 23:36:05,329 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
+2022-07-17 23:36:05,924 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(98,18,0) SPD:300 
+2022-07-17 23:36:06,023 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(94,35,0) SPD:300 
+2022-07-17 23:36:06,106 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(86,51,0) SPD:300 
+2022-07-17 23:36:06,205 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(74,68,0) SPD:300 
+2022-07-17 23:36:06,289 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(61,79,0) SPD:300 
+2022-07-17 23:36:06,371 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(46,89,0) SPD:300 
+2022-07-17 23:36:06,470 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(28,96,0) SPD:300 
+2022-07-17 23:36:06,637 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(10,99,0) SPD:300 
+2022-07-17 23:36:06,785 [ 1] INFO  Unity: Stop
+2022-07-17 23:36:06,786 [ 1] INFO  Unity: MapEntitySyncRequest :ID:3 POS:SkillBridge.Message.NVector3 DIR:(10,99,0) SPD:0 
+2022-07-17 23:36:07,087 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-07-17 23:36:07,087 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
+
+2022-07-17 23:36:07,088 [ 1] INFO  Unity: Character_3_솔캐2 OnDestroy :ID:3 POS:(5354, 4210, 820) DIR:(10, 99, 0) SPD:0 
