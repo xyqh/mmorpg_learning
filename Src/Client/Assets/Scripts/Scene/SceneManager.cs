@@ -42,5 +42,6 @@ public class SceneManager : MonoSingleton<SceneManager>
         if (onProgress != null)
             onProgress(1f);
         Debug.Log("LevelLoadCompleted:" + obj.progress);
+        UIMainCity.Instance.updateMiniMap();
     }
 }

@@ -234,6 +234,7 @@ namespace Services
         void OnUserGameLeave(object sender, UserGameLeaveResponse response)
         {
             Debug.LogFormat("OnUserGameLeave:{0} [{1}]", response.Result, response.Errormsg);
+            User.Instance.CurrentCharacter = null;
             SceneManager.Instance.LoadScene("CharSelect");
             MapService.Instance.currentMapId = 0;
         }

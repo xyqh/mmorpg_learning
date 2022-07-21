@@ -93,17 +93,17 @@ namespace GameServer.Models
         /// 角色离开地图
         /// </summary>
         /// <param name="character"></param>
-        internal void CharacterLeave(NetConnection<NetSession> conn, Character character)
+        internal void CharacterLeave(Character character)
         {
             Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, character.Id);
             foreach (var kv in this.MapCharacters)
             {
-                this.SendCharacterLeaveMap(kv.Value.connection, character.Info);
+                this.SendCharacterLeaveMap(kv.Value.connection, character);
             }
             MapCharacters.Remove(character.Info.Id);
         }
 
-        void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();

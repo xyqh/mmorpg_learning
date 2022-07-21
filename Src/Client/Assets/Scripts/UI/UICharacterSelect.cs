@@ -110,7 +110,7 @@ public class UICharacterSelect : MonoBehaviour {
         curIdx = idx;
         characters[curIdx].GetComponent<UICharInfo>().Selected = true;
         var cha = chars[idx];
-        User.Instance.CurrentCharacter = cha;
+        //User.Instance.CurrentCharacter = cha;
         EventManager.Instance.dispatchCustomEvent("changeShowCharacter", cha.Tid);
     }
 }

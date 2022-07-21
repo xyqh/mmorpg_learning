@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMainCity : MonoBehaviour {
+public class UIMainCity : MonoSingleton<UIMainCity> {
 
     public Text avatarName;
     public Text avatarLevel;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    protected override void OnStart () {
         ++NetClient.Instance.cnt;
         Debug.LogFormat("UIMainCity --------------------- {0}", NetClient.Instance.cnt);
         this.UpdateAvatar();
@@ -32,5 +32,10 @@ public class UIMainCity : MonoBehaviour {
     public void BackToCharSelect()
     {
         Services.UserService.Instance.SendGameLeave();
+    }
+
+    public void updateMiniMap()
+    {
+        gameObject.GetComponentInChildren<UIMiniMap>().updateMap();
     }
 }

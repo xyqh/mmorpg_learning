@@ -34,7 +34,7 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:{0}, {1}", response.mapId, currentMapId);
             foreach(var cha in response.Characters)
             {
-                if(User.Instance.CurrentCharacter.Id == cha.Id)
+                if(User.Instance.CurrentCharacter == null || User.Instance.CurrentCharacter.Id == cha.Id)
                 {
                     User.Instance.CurrentCharacter = cha;
                 }
@@ -101,6 +101,16 @@ namespace Services
                 sb.AppendLine();
             }
             Debug.Log(sb.ToString());
+        }
+
+        public void SendMapTeleport(int teleporterID)
+        {
+            Debug.LogFormat("MapTeleportRequest :teleporterID:{0}", teleporterID);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.mapTeleport = new MapTeleportRequest();
+            message.Request.mapTeleport.teleporterId = teleporterID;
+            NetClient.Instance.SendMessage(message);
         }
 
         public void Init()

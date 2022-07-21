@@ -55,7 +55,7 @@ namespace GameServer.Services
                 message.Response.userLogin.Result = Result.Success;
                 message.Response.userLogin.Errormsg = "None";
                 message.Response.userLogin.Userinfo = new NUserInfo();
-                message.Response.userLogin.Userinfo.Id = 1;
+                message.Response.userLogin.Userinfo.Id = (int)user.ID;
                 message.Response.userLogin.Userinfo.Player = new NPlayerInfo();
                 message.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
                 foreach(var c in user.Player.Characters)
@@ -63,6 +63,7 @@ namespace GameServer.Services
                     NCharacterInfo info = new NCharacterInfo();
                     info.Id = c.ID;
                     info.Name = c.Name;
+                    info.Type = CharacterType.Player;
                     info.Class = (CharacterClass)c.Class;
                     info.Tid = c.TID;
                     message.Response.userLogin.Userinfo.Player.Characters.Add(info);
@@ -165,7 +166,7 @@ namespace GameServer.Services
             Log.InfoFormat("UserGameLeaveRequest:characterID:{0}:{1} Map:{2}", character.Id, character.Info.Name, character.Info.mapId);
 
             CharacterManager.Instance.RemoveCharacter(character.Data.ID);
-            MapManager.Instance[character.Info.mapId].CharacterLeave(sender, character);
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.gameLeave = new UserGameLeaveResponse();

@@ -22,6 +22,10 @@ public class UIMiniMap : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(playerTransform == null)
+        {
+            playerTransform = MiniMapManager.Instance.PlayerTransform;
+        }
         if (mapBoundingBox == null || playerTransform == null) return;
 
         float realWidth = mapBoundingBox.bounds.size.x;
@@ -46,12 +50,15 @@ public class UIMiniMap : MonoBehaviour {
 
     public void updateMap()
     {
+        if(mapBoundingBox == null)
+        {
+            mapBoundingBox = FindObjectOfType<MiniMapBoundBox>().GetComponent<Collider>();
+        }
         mapName.text = User.Instance.currentMapDef.Name;
         // overrideSprite 优先展示override，当override为null时，展示sprite
         map.overrideSprite = MiniMapManager.Instance.LoadCurrentMiniMap();
 
         map.SetNativeSize();
         map.transform.localPosition = Vector3.zero;
-        this.playerTransform = User.Instance.currentCharacterObj.transform;
     }
 }

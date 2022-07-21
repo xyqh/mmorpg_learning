@@ -2481,6 +2481,7 @@ MonoBehaviour:
   speed: 0
   entityController: {fileID: 0}
   onAir: 0
+  isActive: 1
 --- !u!114 &114740278904477952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2496,7 +2497,6 @@ MonoBehaviour:
   rb: {fileID: 54506352173826224}
   position: {x: 0, y: 0, z: 0}
   direction: {x: 0, y: 0, z: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
   speed: 0
   animSpeed: 1.5
   jumpPower: 3
@@ -2508,7 +2508,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1508946035981132}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
