@@ -1727,7 +1727,6 @@ GameObject:
   - component: {fileID: 212395632}
   - component: {fileID: 212395631}
   - component: {fileID: 212395630}
-  - component: {fileID: 212395634}
   m_Layer: 0
   m_Name: MiniMapBoundBox
   m_TagString: Untagged
@@ -1802,17 +1801,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &212395634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 212395629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea197221e9fbea44790a68e1bd000116, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &223896865
 GameObject:
   m_ObjectHideFlags: 0
@@ -9944,7 +9932,6 @@ GameObject:
   - component: {fileID: 1153071699}
   - component: {fileID: 1153071698}
   - component: {fileID: 1153071697}
-  - component: {fileID: 1153071696}
   m_Layer: 0
   m_Name: SpawnPoint1
   m_TagString: Untagged
@@ -9965,18 +9952,6 @@ Transform:
   m_Father: {fileID: 593856279}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 5.3640003, z: 0}
---- !u!114 &1153071696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1153071694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff82d7d76eafc64480acababa249f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 1
 --- !u!135 &1153071697
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13388,7 +13363,6 @@ GameObject:
   - component: {fileID: 1583917076}
   - component: {fileID: 1583917075}
   - component: {fileID: 1583917074}
-  - component: {fileID: 1583917073}
   m_Layer: 0
   m_Name: SpawnPoint6
   m_TagString: Untagged
@@ -13409,18 +13383,6 @@ Transform:
   m_Father: {fileID: 593856279}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -58.516003, z: 0}
---- !u!114 &1583917073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1583917071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff82d7d76eafc64480acababa249f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 6
 --- !u!135 &1583917074
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15175,7 +15137,6 @@ GameObject:
   - component: {fileID: 1719572897}
   - component: {fileID: 1719572896}
   - component: {fileID: 1719572895}
-  - component: {fileID: 1719572894}
   m_Layer: 0
   m_Name: SpawnPoint2
   m_TagString: Untagged
@@ -15196,18 +15157,6 @@ Transform:
   m_Father: {fileID: 593856279}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 11.259001, z: 0}
---- !u!114 &1719572894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1719572892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff82d7d76eafc64480acababa249f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 2
 --- !u!135 &1719572895
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16835,6 +16784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889144874}
+  - component: {fileID: 1889144875}
   m_Layer: 0
   m_Name: MapRoot
   m_TagString: Untagged
@@ -16868,6 +16818,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1889144875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889144873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451955bc2bbe50d48b7a566d3c2df897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapBoundingBox: {fileID: 212395630}
 --- !u!1 &1896930650
 GameObject:
   m_ObjectHideFlags: 0
@@ -17177,7 +17139,6 @@ GameObject:
   - component: {fileID: 1923025549}
   - component: {fileID: 1923025548}
   - component: {fileID: 1923025547}
-  - component: {fileID: 1923025546}
   m_Layer: 0
   m_Name: SpawnPoint4
   m_TagString: Untagged
@@ -17198,18 +17159,6 @@ Transform:
   m_Father: {fileID: 593856279}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 163.91101, z: 0}
---- !u!114 &1923025546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1923025544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff82d7d76eafc64480acababa249f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 4
 --- !u!135 &1923025547
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18064,7 +18013,6 @@ GameObject:
   - component: {fileID: 2007677321}
   - component: {fileID: 2007677320}
   - component: {fileID: 2007677319}
-  - component: {fileID: 2007677318}
   m_Layer: 0
   m_Name: SpawnPoint5
   m_TagString: Untagged
@@ -18085,18 +18033,6 @@ Transform:
   m_Father: {fileID: 593856279}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -72.087006, z: 0}
---- !u!114 &2007677318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2007677316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff82d7d76eafc64480acababa249f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 5
 --- !u!135 &2007677319
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19065,7 +19001,6 @@ GameObject:
   - component: {fileID: 2110615295}
   - component: {fileID: 2110615294}
   - component: {fileID: 2110615293}
-  - component: {fileID: 2110615292}
   m_Layer: 0
   m_Name: SpawnPoint3
   m_TagString: Untagged
@@ -19086,18 +19021,6 @@ Transform:
   m_Father: {fileID: 593856279}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -17.631, z: 0}
---- !u!114 &2110615292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2110615290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff82d7d76eafc64480acababa249f1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 3
 --- !u!135 &2110615293
 SphereCollider:
   m_ObjectHideFlags: 0

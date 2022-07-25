@@ -17,6 +17,7 @@ public class UIMiniMap : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        MiniMapManager.Instance.minimap = this;
         updateMap();
     }
 	
@@ -50,10 +51,13 @@ public class UIMiniMap : MonoBehaviour {
 
     public void updateMap()
     {
-        if(mapBoundingBox == null)
-        {
-            mapBoundingBox = FindObjectOfType<MiniMapBoundBox>().GetComponent<Collider>();
-        }
+        //if(mapBoundingBox == null)
+        //{
+        //    mapBoundingBox = FindObjectOfType<MiniMapBoundBox>().GetComponent<Collider>();
+        //}
+        mapBoundingBox = MiniMapManager.Instance.MinimapBoundingBox;
+        playerTransform = null;
+
         mapName.text = User.Instance.currentMapDef.Name;
         // overrideSprite 优先展示override，当override为null时，展示sprite
         map.overrideSprite = MiniMapManager.Instance.LoadCurrentMiniMap();

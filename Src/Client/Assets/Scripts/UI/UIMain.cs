@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIMainCity : MonoSingleton<UIMainCity> {
+public class UIMain : MonoSingleton<UIMain> {
 
     public Text avatarName;
     public Text avatarLevel;
@@ -37,5 +37,17 @@ public class UIMainCity : MonoSingleton<UIMainCity> {
     public void updateMiniMap()
     {
         gameObject.GetComponentInChildren<UIMiniMap>().updateMap();
+    }
+
+    public void OnClickTest()
+    {
+        UITest test = UIManager.Instance.Show<UITest>();
+        test.setTitle("测试弹窗标题");
+        test.OnClose += Test_OnClose;
+    }
+
+    private void Test_OnClose(UIWindow sender, UIWindow.WindowResult result)
+    {
+        MessageBox.Show("点击了对话框的：" + result, "对话框响应结果", MessageBoxType.Information);
     }
 }

@@ -104,6 +104,20 @@ namespace Network
                     {
                         handler(sender, msg);
                     }
+                    //catch (DbEntityValidationException dbEx)
+                    //{
+                    //    foreach (var validationErrors in dbEx.EntityValidationErrors)
+                    //    {
+                    //        foreach (var validationError in validationErrors.ValidationErrors)
+                    //        {
+                    //            string exLog = string.Format("Class: {0}, Property: {1}, Error: {2}", validationErrors.Entry.Entity.GetType().FullName,
+                    //                validationError.PropertyName,
+                    //                validationError.ErrorMessage);
+                    //            Log.Warning(exLog);
+                    //        }
+                    //    }
+                    //    throw;
+                    //}
                     catch (System.Exception ex)
                     {
                         Log.ErrorFormat("Message handler exception:{0}, {1}, {2}, {3}", ex.InnerException, ex.Message, ex.Source, ex.StackTrace);

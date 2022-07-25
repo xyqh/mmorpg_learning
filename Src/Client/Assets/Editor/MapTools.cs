@@ -21,7 +21,7 @@ public class MapTools : MonoBehaviour {
             return;
         }
 
-        List<TeleporterObject> allTeleporters = new List<TeleporterObject>();
+        //List<TeleporterObject> allTeleporters = new List<TeleporterObject>();
 
         foreach(var map in DataManager.Instance.IMaps)
         {

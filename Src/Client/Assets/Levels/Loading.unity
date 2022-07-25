@@ -990,6 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   global: 1
+  cnt: 0
 --- !u!4 &423691976
 Transform:
   m_ObjectHideFlags: 0

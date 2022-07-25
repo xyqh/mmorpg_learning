@@ -20,7 +20,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>1</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -56,9 +56,11 @@
   <ItemGroup>
     <Compile Include="BufferUtility.cs" />
     <Compile Include="Data\CharacterDefine.cs" />
+    <Compile Include="Data\ItemDefine.cs" />
     <Compile Include="Data\SpawnRuleDefine.cs" />
     <Compile Include="Data\SpawnPointDefine.cs" />
     <Compile Include="Data\SpawnType.cs" />
+    <Compile Include="Data\NpcDefine.cs" />
     <Compile Include="Data\TeleporterDefine.cs" />
     <Compile Include="Data\MapDefine.cs" />
     <Compile Include="MessageExtend.cs" />
@@ -78,6 +80,9 @@
       <Project>{ecf59eee-d33e-41ee-b2f8-b59bcdba856f}</Project>
       <Name>Protocol</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

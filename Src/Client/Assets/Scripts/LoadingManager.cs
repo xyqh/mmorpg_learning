@@ -47,6 +47,10 @@ public class LoadingManager : MonoBehaviour {
         MapService.Instance.Init();
         UserService.Instance.Init();
 
+#if UNITY_EDITOR
+        TestManager.Instance.Init();
+#endif
+
 
         // Fake Loading Simulate
         for (float i = 50; i < 100;)

@@ -1,78 +1,34 @@
-2022-07-20 23:05:56,572 [ 1] INFO  Unity: LoadingManager start
-2022-07-20 23:05:59,622 [ 1] INFO  Unity: DataManager > DataManager()
-2022-07-20 23:06:09,512 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-07-20 23:06:09,513 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-07-20 23:06:09,514 [ 1] INFO  Unity: DoConnect
-2022-07-20 23:06:09,516 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-07-20 23:06:09,518 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-07-25 22:02:09,346 [ 1] INFO  Unity: LoadingManager start
+2022-07-25 22:02:12,359 [ 1] INFO  Unity: DataManager > DataManager()
+2022-07-25 22:02:18,631 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-07-25 22:02:18,632 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-07-25 22:02:18,633 [ 1] INFO  Unity: DoConnect
+2022-07-25 22:02:18,635 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-07-25 22:02:18,637 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-07-20 23:06:09,520 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-07-20 23:06:09,595 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-07-20 23:06:09,595 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-07-20 23:06:09,596 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-20 23:06:09,641 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-20 23:06:09,646 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-20 23:06:09,650 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-20 23:06:09,652 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-20 23:06:10,487 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-20 23:06:10,523 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-20 23:06:10,524 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-20 23:06:10,525 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-20 23:06:10,526 [ 1] INFO  Unity: AddCharacter:4:樂議 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-20 23:06:10,529 [ 1] INFO  Unity: AddCharacter:1:樂議 Map:1 Entity:(1:pos:(6275,2584,820),dir:(100,9,0),spd:0
-2022-07-20 23:06:10,529 [ 1] INFO  Unity: AddCharacter:2:樂議 Map:1 Entity:(2:pos:(7414,2361,820),dir:(97,24,0),spd:0
-2022-07-20 23:06:10,530 [ 1] INFO  Unity: AddCharacter:3:樂議 Map:1 Entity:(3:pos:(6528,2670,820),dir:(100,-1,0),spd:0
-2022-07-20 23:06:10,532 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-20 23:06:10,840 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-20 23:06:10,843 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-20 23:06:10,846 [ 1] INFO  Unity: UIMainCity --------------------- 1
-2022-07-20 23:06:10,869 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-20 23:06:10,877 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-20 23:06:10,894 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-20 23:06:11,457 [ 1] INFO  Unity: MoveForward
-2022-07-20 23:06:11,458 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
-2022-07-20 23:06:11,788 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(98,-18,0) SPD:300 
-2022-07-20 23:06:11,887 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(94,-35,0) SPD:300 
-2022-07-20 23:06:11,971 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(86,-51,0) SPD:300 
-2022-07-20 23:06:12,086 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(74,-68,0) SPD:300 
-2022-07-20 23:06:12,170 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(61,-79,0) SPD:300 
-2022-07-20 23:06:12,252 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(46,-89,0) SPD:300 
-2022-07-20 23:06:12,351 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(29,-96,0) SPD:300 
-2022-07-20 23:06:12,468 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(11,-99,0) SPD:300 
-2022-07-20 23:06:12,567 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(-6,-100,0) SPD:300 
-2022-07-20 23:06:13,958 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(12,-99,0) SPD:300 
-2022-07-20 23:06:14,125 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(12,-99,0) SPD:300 
-2022-07-20 23:06:15,085 [ 1] INFO  Unity: Stop
-2022-07-20 23:06:15,086 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(12,-99,0) SPD:0 
-2022-07-20 23:06:15,598 [ 1] INFO  Unity: MoveForward
-2022-07-20 23:06:15,599 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(12,-99,0) SPD:300 
-2022-07-20 23:06:15,880 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(30,-95,0) SPD:300 
-2022-07-20 23:06:15,997 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(49,-87,0) SPD:300 
-2022-07-20 23:06:16,078 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(64,-77,0) SPD:300 
-2022-07-20 23:06:16,178 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(78,-62,0) SPD:300 
-2022-07-20 23:06:16,295 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(89,-45,0) SPD:300 
-2022-07-20 23:06:16,376 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(96,-28,0) SPD:300 
-2022-07-20 23:06:16,476 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,-8,0) SPD:300 
-2022-07-20 23:06:16,478 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,-8,0) SPD:300 
-2022-07-20 23:06:16,559 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,10,0) SPD:300 
-2022-07-20 23:06:16,675 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(96,29,0) SPD:300 
-2022-07-20 23:06:16,990 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(99,10,0) SPD:300 
-2022-07-20 23:06:17,089 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,-10,0) SPD:300 
-2022-07-20 23:06:17,205 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(96,-29,0) SPD:300 
-2022-07-20 23:06:18,697 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(96,-29,0) SPD:300 
-2022-07-20 23:06:20,105 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(99,-12,0) SPD:300 
-2022-07-20 23:06:20,204 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,8,0) SPD:300 
-2022-07-20 23:06:20,303 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(97,26,0) SPD:300 
-2022-07-20 23:06:21,132 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,7,0) SPD:300 
-2022-07-20 23:06:23,418 [ 1] INFO  Unity: Stop
-2022-07-20 23:06:23,419 [ 1] INFO  Unity: MapEntitySyncRequest :ID:4 POS:SkillBridge.Message.NVector3 DIR:(100,7,0) SPD:0 
-2022-07-20 23:08:29,566 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-07-20 23:08:29,566 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-07-25 22:02:18,639 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-07-25 22:02:19,849 [ 1] INFO  Unity: OnUserLogin:Failed [蚚誧祥湔婓]
+2022-07-25 22:02:28,323 [ 1] INFO  Unity: UserRegisterRequest::user :user1 psw:123456
+2022-07-25 22:02:28,671 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2022-07-25 22:02:30,459 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-07-25 22:02:30,514 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-07-25 22:02:30,515 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-07-25 22:02:30,516 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-07-25 22:02:30,562 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-25 22:02:30,567 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-07-25 22:02:31,279 [ 1] INFO  Unity: OnClickButton0
+2022-07-25 22:02:31,280 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-07-25 22:02:34,308 [ 1] INFO  Unity: OnClickCreateChar 1
+2022-07-25 22:02:34,309 [ 1] INFO  Unity: SendCreateCharacter::charName :樂 CharacterClass:Warrior
+2022-07-25 22:02:34,374 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2022-07-25 22:02:34,376 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-25 22:02:34,377 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-07-25 22:02:34,378 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-07-25 22:02:34,379 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-07-25 22:02:34,871 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-07-25 22:02:38,232 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-07-25 22:02:38,233 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
 
-2022-07-20 23:08:29,568 [ 1] INFO  Unity: Character_4_樂議 OnDestroy :ID:4 POS:(7505, 2706, 820) DIR:(100, 7, 0) SPD:0 
-2022-07-20 23:08:29,568 [ 1] INFO  Unity: Character_1_樂議 OnDestroy :ID:1 POS:(6275, 2584, 820) DIR:(100, 9, 0) SPD:0 
-2022-07-20 23:08:29,569 [ 1] INFO  Unity: Character_2_樂議 OnDestroy :ID:2 POS:(7414, 2361, 820) DIR:(97, 24, 0) SPD:0 
-2022-07-20 23:08:29,569 [ 1] INFO  Unity: Character_3_樂議 OnDestroy :ID:3 POS:(6528, 2670, 820) DIR:(100, -1, 0) SPD:0 
