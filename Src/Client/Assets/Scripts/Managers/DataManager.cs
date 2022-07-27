@@ -17,6 +17,7 @@ public class DataManager : Singleton<DataManager>
     private Dictionary<int, CharacterDefine> Characters = null;
     private Dictionary<int, TeleporterDefine> Teleporters = null;
     private Dictionary<int, NpcDefine> NPCs = null;
+    private Dictionary<int, ItemDefine> Items = null;
     private Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;
 
     public Dictionary<int, MapDefine> IMaps
@@ -55,6 +56,14 @@ public class DataManager : Singleton<DataManager>
         }
     }
 
+    public Dictionary<int, ItemDefine> IItems
+    {
+        get
+        {
+            return Items;
+        }
+    }
+
 
     public DataManager()
     {
@@ -75,6 +84,9 @@ public class DataManager : Singleton<DataManager>
         
         json = File.ReadAllText(this.DataPath + "NpcDefine.txt");
         this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NpcDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "ItemDefine.txt");
+        this.Items = JsonConvert.DeserializeObject<Dictionary<int, ItemDefine>>(json);
 
         json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
         this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>> (json);
@@ -100,6 +112,11 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "NpcDefine.txt");
         this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NpcDefine>>(json);
+
+        yield return null;
+        
+        json = File.ReadAllText(this.DataPath + "ItemDefine.txt");
+        this.Items = JsonConvert.DeserializeObject<Dictionary<int, ItemDefine>>(json);
 
         yield return null;
 

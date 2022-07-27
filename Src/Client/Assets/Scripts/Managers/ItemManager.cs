@@ -1,6 +1,4 @@
 ﻿using Common.Data;
-using Microsoft.Analytics.Interfaces;
-using Microsoft.Analytics.Types.Sql;
 using Models;
 using SkillBridge.Message;
 using System;
