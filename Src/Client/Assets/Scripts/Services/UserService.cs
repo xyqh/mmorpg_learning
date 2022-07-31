@@ -226,6 +226,7 @@ namespace Services
                 {
                     NCharacterInfo info = response.Character;
                     ItemManager.Instance.Init(info.Items);
+                    BagManager.Instance.Init(info.Bag);
                 }
             }
         }

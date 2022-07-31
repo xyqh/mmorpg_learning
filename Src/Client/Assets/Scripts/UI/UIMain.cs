@@ -46,6 +46,11 @@ public class UIMain : MonoSingleton<UIMain> {
         test.OnClose += Test_OnClose;
     }
 
+    public void OnClickBackPack()
+    {
+        UIManager.Instance.Show<UIBackPack>();
+    }
+
     private void Test_OnClose(UIWindow sender, UIWindow.WindowResult result)
     {
         MessageBox.Show("点击了对话框的：" + result, "对话框响应结果", MessageBoxType.Information);

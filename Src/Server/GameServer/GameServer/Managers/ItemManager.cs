@@ -83,7 +83,7 @@ namespace GameServer.Managers
                 items.Add(itemId, item);
             }
             Log.InfoFormat("[{0}]AddItem[{1}] addCount:{2}", owner.Data.ID, item, count);
-            DBService.Instance.Save();
+            //DBService.Instance.Save();
 
             return true;
         }
@@ -102,7 +102,7 @@ namespace GameServer.Managers
             }
             item.Remove(count);
             Log.InfoFormat("[{0}]RemoveItem[{1}] removeCount:{2}", owner.Data.ID, item, count);
-            DBService.Instance.Save();
+            //DBService.Instance.Save();
             return true;
         }
 
@@ -112,6 +112,28 @@ namespace GameServer.Managers
             {
                 list.Add(new NItemInfo() { Id = item.Value.itemId, Count = item.Value.count });
             }
+        }
+
+        unsafe public NBagInfo GetBagInfo(int unlocked)
+        {
+            NBagInfo info = new NBagInfo();
+            List<BagItem> bagItems = new List<BagItem>();
+            foreach(var kv in items)
+            {
+                bagItems.Add(new BagItem(kv.Key, kv.Value.count));
+            }
+            info.Items = new byte[sizeof(BagItem) * unlocked];
+            info.Unlocked = unlocked;
+
+            fixed (byte* pt = info.Items)
+            {
+                for (int i = 0; i < unlocked && i < bagItems.Count; ++i)
+                {
+                    BagItem* item = (BagItem*)(pt + i * sizeof(BagItem));
+                    *item = bagItems[i];
+                }
+            }
+            return info;
         }
     }
 }

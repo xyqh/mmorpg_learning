@@ -16,6 +16,7 @@ public class UIManager : Singleton<UIManager> {
     public UIManager()
     {
         UIResources.Add(typeof(UITest), new UIElement() { Resources = "UI/UITest", Cache = true });
+        UIResources.Add(typeof(UIBackPack), new UIElement() { Resources = "UI/UIBackPack", Cache = true });
     }
 
     ~UIManager()

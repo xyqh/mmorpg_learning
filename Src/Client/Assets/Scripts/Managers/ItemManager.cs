@@ -16,7 +16,7 @@ namespace Managers
 
         internal void Init(List<NItemInfo> items)
         {
-            items.Clear();
+            this.items.Clear();
             foreach(var info in items)
             {
                 Item item = new Item(info);

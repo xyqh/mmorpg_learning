@@ -1,100 +1,36 @@
-2022-07-27 01:52:07,022 [ 1] INFO  Unity: LoadingManager start
-2022-07-27 01:52:10,041 [ 1] INFO  Unity: DataManager > DataManager()
-2022-07-27 01:52:15,569 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-07-27 01:52:15,571 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-07-27 01:52:15,572 [ 1] INFO  Unity: DoConnect
-2022-07-27 01:52:15,574 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-07-27 01:52:15,576 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-08-01 02:10:38,982 [ 1] INFO  Unity: LoadingManager start
+2022-08-01 02:10:42,050 [ 1] INFO  Unity: DataManager > DataManager()
+2022-08-01 02:11:04,307 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-08-01 02:11:04,309 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-08-01 02:11:04,310 [ 1] INFO  Unity: DoConnect
+2022-08-01 02:11:04,312 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-08-01 02:11:04,314 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-07-27 01:52:15,580 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-07-27 01:52:17,006 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-07-27 01:52:17,007 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-07-27 01:52:17,008 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-27 01:52:17,082 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-27 01:52:17,087 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-27 01:52:17,093 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-27 01:52:17,094 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-27 01:52:17,918 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-27 01:52:18,002 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-27 01:52:18,018 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-27 01:52:18,019 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-27 01:52:18,019 [ 1] INFO  Unity: AddCharacter:1:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:18,021 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-27 01:52:18,329 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-27 01:52:18,428 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-27 01:52:18,430 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-27 01:52:18,435 [ 1] INFO  Unity: UIMainCity --------------------- 1
-2022-07-27 01:52:18,437 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-27 01:52:18,438 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:18,438 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:18,439 [ 1] INFO  Unity: AddCharacter:2:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:18,440 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-27 01:52:18,440 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:18,441 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:18,441 [ 1] INFO  Unity: AddCharacter:2:솔캐 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:18,442 [ 1] INFO  Unity: AddCharacter:1:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:18,487 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{InvalidOperationException: out of sync, System.Collections.Generic.Dictionary`2+Enumerator[System.Int32,Entities.Character].VerifyState () (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:912)
-System.Collections.Generic.Dictionary`2+Enumerator[System.Int32,Entities.Character].MoveNext () (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:835)
-System.Collections.Generic.Dictionary`2+ValueCollection+Enumerator[System.Int32,Entities.Character].MoveNext () (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:1145)
-GameObjectManager+<InitGameObjects>c__Iterator0.MoveNext () (at Assets/Scripts/GameObject/GameObjectManager.cs:51)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-}</args></log4net.Error>
-2022-07-27 01:52:25,982 [ 1] INFO  Unity: SendGameLeave
-2022-07-27 01:52:26,016 [ 1] INFO  Unity: OnMapCharacterLeave:2
-2022-07-27 01:52:26,017 [ 1] INFO  Unity: RemoveCharacter:2
-2022-07-27 01:52:26,018 [ 1] INFO  Unity: OnMapCharacterLeave:2
-2022-07-27 01:52:26,018 [ 1] INFO  Unity: RemoveCharacter:2
-2022-07-27 01:52:26,019 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
-2022-07-27 01:52:26,019 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-27 01:52:26,020 [ 1] INFO  Unity: Character_2_솔캐 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-07-27 01:52:26,068 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-27 01:52:26,073 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-27 01:52:26,076 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-27 01:52:26,076 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-27 01:52:26,965 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-27 01:52:26,998 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-27 01:52:26,999 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-27 01:52:26,999 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-27 01:52:27,000 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:27,001 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-27 01:52:27,003 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-27 01:52:27,003 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:27,004 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:27,005 [ 1] INFO  Unity: AddCharacter:3:솔캐 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:27,005 [ 1] INFO  Unity: AddCharacter:1:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:27,325 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-27 01:52:29,245 [ 1] INFO  Unity: SendGameLeave
-2022-07-27 01:52:29,277 [ 1] INFO  Unity: OnMapCharacterLeave:3
-2022-07-27 01:52:29,279 [ 1] INFO  Unity: RemoveCharacter:1
-2022-07-27 01:52:29,280 [ 1] INFO  Unity: RemoveCharacter:3
-2022-07-27 01:52:29,281 [ 1] INFO  Unity: OnMapCharacterLeave:3
-2022-07-27 01:52:29,282 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
-2022-07-27 01:52:29,282 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-07-27 01:52:29,285 [ 1] INFO  Unity: Character_1_솔캐 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-07-27 01:52:29,286 [ 1] INFO  Unity: Character_3_솔캐 OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-07-27 01:52:29,331 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-27 01:52:29,336 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-27 01:52:29,338 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-07-27 01:52:29,339 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-07-27 01:52:29,957 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-07-27 01:52:29,990 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-07-27 01:52:29,991 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-27 01:52:29,991 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-07-27 01:52:29,992 [ 1] INFO  Unity: AddCharacter:4:솔캐 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:29,992 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-27 01:52:29,993 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-07-27 01:52:29,994 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:29,994 [ 1] INFO  Unity: OnMapCharacterEnter:1, 1
-2022-07-27 01:52:29,994 [ 1] INFO  Unity: AddCharacter:4:솔캐 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:29,995 [ 1] INFO  Unity: AddCharacter:1:솔캐 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-07-27 01:52:29,996 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-07-27 01:52:30,321 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-07-27 01:52:32,403 [ 1] INFO  Unity: Character_4_솔캐 OnDestroy :ID:4 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-07-27 01:52:32,403 [ 1] INFO  Unity: Character_1_솔캐 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-07-27 01:52:32,405 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-07-27 01:52:32,405 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-08-01 02:11:04,317 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-08-01 02:11:04,384 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-08-01 02:11:04,384 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-08-01 02:11:04,385 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-08-01 02:11:04,444 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-08-01 02:11:04,449 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-08-01 02:11:04,454 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-08-01 02:11:04,455 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-08-01 02:11:13,245 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-08-01 02:11:13,284 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-08-01 02:11:13,287 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
+2022-08-01 02:11:13,287 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-08-01 02:11:13,288 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-08-01 02:11:13,289 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-08-01 02:11:13,292 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-08-01 02:11:13,293 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-08-01 02:11:13,294 [ 1] INFO  Unity: AddCharacter:6:솔캐 Map:1 Entity:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-08-01 02:11:13,297 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-08-01 02:11:13,653 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-08-01 02:11:13,655 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-08-01 02:11:13,659 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-08-01 02:11:17,422 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-08-01 02:11:17,423 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
 
+2022-08-01 02:11:17,424 [ 1] INFO  Unity: Character_6_솔캐 OnDestroy :ID:6 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

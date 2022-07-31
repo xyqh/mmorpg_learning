@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\MapTools.cs" />
+    <Compile Include="Assets\Scripts\UI\UIModel\ScrollView\Editor\ScrollViewEditor.cs" />
+    <Compile Include="Assets\Scripts\UI\UIModel\ScrollView\Editor\ScrollViewExEditor.cs" />
     <Reference Include="Assembly-UnityScript">
       <HintPath>D:/Unity_Learning/mmorpg_branch/Src/Client/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
     </Reference>
