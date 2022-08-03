@@ -2,9 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UIShopItem : MonoBehaviour {
+public class UIShopItem : MonoBehaviour, ISelectHandler
+{
 
     public Image imageBtm;
     public UICommonItem goItem;
@@ -30,11 +32,16 @@ public class UIShopItem : MonoBehaviour {
         this.owner = owner;
         this.shopItemDefine = shopItemDefine;
 
-        this.itemId = shopItemDefine.ItemID;
-        goItem.UpdateShow(this.itemId, shopItemDefine.Count);
+        this.itemId = this.shopItemDefine.ItemID;
+        goItem.UpdateShow(this.itemId, this.shopItemDefine.Count);
 
         // 更新道具名称价格
         textItemName.text = DataManager.Instance.IItems[this.itemId].Name;
         textItemPrice.text = shopItemDefine.Price.ToString();
+    }
+
+    public void OnSelect(BaseEventData eventData)
+    {
+        this.owner.selShopItemId = this.itemId;
     }
 }
