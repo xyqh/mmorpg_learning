@@ -35,6 +35,7 @@ public class UIShop : MonoBehaviour {
                 {
                     ShopItemDefine itemData = itemDatas[i - 1];
                     item.GetComponent<UIShopItem>().UpdateShow(itemData, this);
+                    item.tag = itemData.ShopItemID.ToString();
                     item.SetActive(true);
                 }
             }
@@ -51,9 +52,14 @@ public class UIShop : MonoBehaviour {
             return count;
         });
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    public void RefreshSelectItem(int shopItemID)
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 

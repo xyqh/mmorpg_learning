@@ -16,6 +16,7 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
     private UIShop owner;
     private ShopItemDefine shopItemDefine;
     private int itemId = -1;
+    private bool selected = false;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +43,7 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
-        this.owner.selShopItemId = this.itemId;
+        selected = !selected;
+        this.owner.RefreshSelectItem(this.shopItemDefine.ShopItemID);
     }
 }
