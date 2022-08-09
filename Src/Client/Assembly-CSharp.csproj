@@ -93,7 +93,9 @@
     <Compile Include="Assets\Scripts\Models\User.cs" />
     <Compile Include="Assets\Scripts\Network\NetClient.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Services\ItemService.cs" />
     <Compile Include="Assets\Scripts\Services\MapService.cs" />
+    <Compile Include="Assets\Scripts\Services\StatusService.cs" />
     <Compile Include="Assets\Scripts\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\Test\MyTest\MyTest.cs" />
     <Compile Include="Assets\Scripts\Test\TestLargeAmount.cs" />

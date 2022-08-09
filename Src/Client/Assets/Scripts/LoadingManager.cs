@@ -47,6 +47,8 @@ public class LoadingManager : MonoBehaviour {
         CharacterManager.Instance.Init();
         MapService.Instance.Init();
         UserService.Instance.Init();
+        ItemService.Instance.Init();
+        StatusService.Instance.Init();
 
 #if UNITY_EDITOR
         TestManager.Instance.Init();

@@ -1,65 +1,92 @@
-2022-08-01 01:57:32,893 [ 1] INFO  Unity: LoadingManager start
-2022-08-01 01:57:36,225 [ 1] INFO  Unity: DataManager > DataManager()
-2022-08-01 01:57:42,744 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-08-01 01:57:42,750 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-08-01 01:57:42,752 [ 1] INFO  Unity: DoConnect
-2022-08-01 01:57:42,754 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-08-01 01:57:42,756 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-08-09 05:40:15,298 [ 1] INFO  Unity: LoadingManager start
+2022-08-09 05:40:18,310 [ 1] INFO  Unity: DataManager > DataManager()
+2022-08-09 05:40:26,804 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
+2022-08-09 05:40:26,811 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-08-09 05:40:26,812 [ 1] INFO  Unity: DoConnect
+2022-08-09 05:40:26,814 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-08-09 05:40:26,815 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-08-01 01:57:42,763 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-08-01 01:57:44,237 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-08-01 01:57:44,239 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-08-01 01:57:44,242 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-08-01 01:57:44,308 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-08-01 01:57:44,316 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-08-01 01:57:44,326 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-08-01 01:57:44,327 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-08-01 01:57:45,241 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-08-01 01:57:45,350 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-08-01 01:58:02,309 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-08-01 01:58:02,310 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-08-01 01:58:02,312 [ 1] INFO  Unity: AddCharacter:1:樂議 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-08-01 01:58:02,320 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-08-01 01:58:02,691 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-08-01 01:58:02,703 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-08-01 01:58:02,719 [ 1] INFO  Unity: UIMainCity --------------------- 1
-2022-08-01 01:58:30,035 [ 1] INFO  Unity: SendGameLeave
-2022-08-01 01:58:30,072 [ 1] INFO  Unity: OnMapCharacterLeave:1
-2022-08-01 01:58:30,075 [ 1] INFO  Unity: RemoveCharacter:1
-2022-08-01 01:58:30,077 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
-2022-08-01 01:58:30,079 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-08-01 01:58:30,081 [ 1] INFO  Unity: Character_1_樂議 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-08-01 01:58:30,127 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-08-01 01:58:30,132 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-08-01 01:58:30,134 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-08-01 01:58:30,135 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-08-01 01:58:54,246 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-08-01 01:58:54,281 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-08-01 02:04:40,629 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-08-01 02:04:40,630 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-08-01 02:04:40,631 [ 1] INFO  Unity: AddCharacter:2:樂議 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-08-01 02:04:40,633 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-08-01 02:04:40,635 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-08-01 02:04:40,942 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 堈最翋儂Чつ壽敕賸珨跺珋衄腔蟀諉﹝
-
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Network\NetClient.cs:341 
-
-2022-08-01 02:04:40,943 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:355)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
-
-2022-08-01 02:04:40,997 [ 1] INFO  Unity: DoConnect
-2022-08-01 02:04:40,998 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-08-01 02:04:40,999 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2022-08-01 02:04:41,000 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-08-01 02:04:41,149 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-08-01 02:04:43,049 [ 1] INFO  Unity: Character_2_樂議 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-08-01 02:04:43,050 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-08-01 02:04:43,051 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-08-09 05:40:26,822 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-08-09 05:40:28,344 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-08-09 05:40:28,347 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-08-09 05:40:28,351 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-08-09 05:40:28,411 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-08-09 05:40:28,418 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-08-09 05:40:28,427 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-08-09 05:40:28,428 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-08-09 05:40:29,945 [ 1] INFO  Unity: OnSelectCharacter 2
+2022-08-09 05:40:29,946 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-08-09 05:40:30,625 [ 1] INFO  Unity: SendGameEnter::charIdx :2
+2022-08-09 05:40:30,736 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-08-09 05:40:30,742 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:1]
+2022-08-09 05:40:30,743 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-08-09 05:40:30,743 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-08-09 05:40:30,744 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-08-09 05:40:30,756 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-08-09 05:40:30,757 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-08-09 05:40:30,757 [ 1] INFO  Unity: AddCharacter:1:樂議 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-08-09 05:40:30,765 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-08-09 05:40:31,116 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-08-09 05:40:31,127 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-08-09 05:40:31,141 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-08-09 05:40:31,824 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,18,0) SPD:0 
+2022-08-09 05:40:31,923 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(94,35,0) SPD:0 
+2022-08-09 05:40:32,006 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,51,0) SPD:0 
+2022-08-09 05:40:32,106 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(74,68,0) SPD:0 
+2022-08-09 05:40:32,205 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(58,81,0) SPD:0 
+2022-08-09 05:40:32,222 [ 1] INFO  Unity: MoveForward
+2022-08-09 05:40:32,224 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(58,81,0) SPD:300 
+2022-08-09 05:40:32,288 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(43,90,0) SPD:300 
+2022-08-09 05:40:32,371 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(27,96,0) SPD:300 
+2022-08-09 05:40:32,453 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(10,100,0) SPD:300 
+2022-08-09 05:40:32,553 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-8,100,0) SPD:300 
+2022-08-09 05:40:34,408 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-8,100,0) SPD:300 
+2022-08-09 05:40:36,348 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-8,100,0) SPD:300 
+2022-08-09 05:40:37,308 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(11,99,0) SPD:300 
+2022-08-09 05:40:37,804 [ 1] INFO  Unity: Stop
+2022-08-09 05:40:37,805 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(11,99,0) SPD:0 
+2022-08-09 05:40:38,236 [ 1] INFO  Unity: NPCManager.Interactive NPC:[ID:2 Name:嗣璨佪 Type:Functional]
+2022-08-09 05:40:38,237 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop :NPC:[2:嗣璨佪] Type:Functional Func:InvokeShop
+2022-08-09 05:40:40,054 [ 1] INFO  Unity: UIShop:OnClickButtonBuy:1
+2022-08-09 05:40:40,055 [ 1] INFO  Unity: ItemService:SendItemBuy 1, 1
+2022-08-09 05:41:21,001 [ 1] INFO  Unity: SendGameLeave
+2022-08-09 05:41:25,320 [ 1] INFO  Unity: OnMapCharacterLeave:1
+2022-08-09 05:41:25,324 [ 1] INFO  Unity: RemoveCharacter:1
+2022-08-09 05:41:25,327 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-08-09 05:41:25,328 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-08-09 05:41:25,330 [ 1] INFO  Unity: Character_1_樂議 OnDestroy :ID:1 POS:(4972, 5720, 820) DIR:(11, 99, 0) SPD:0 
+2022-08-09 05:41:25,423 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-08-09 05:41:25,428 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-08-09 05:41:25,431 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-08-09 05:41:25,431 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-08-09 05:41:28,161 [ 1] INFO  Unity: OnSelectCharacter 2
+2022-08-09 05:41:28,162 [ 1] INFO  Unity: changeShowCharacter find in dic
+2022-08-09 05:41:28,740 [ 1] INFO  Unity: SendGameEnter::charIdx :2
+2022-08-09 05:42:04,238 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-08-09 05:42:04,239 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:1]
+2022-08-09 05:42:04,240 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-08-09 05:42:04,241 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-08-09 05:42:04,242 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-08-09 05:42:04,243 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-08-09 05:42:04,243 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-08-09 05:42:04,244 [ 1] INFO  Unity: AddCharacter:2:樂議 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-08-09 05:42:04,246 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-08-09 05:42:04,247 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-08-09 05:42:09,070 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-08-09 05:42:11,893 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(98,19,0) SPD:0 
+2022-08-09 05:42:12,385 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(93,37,0) SPD:0 
+2022-08-09 05:42:13,226 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(85,53,0) SPD:0 
+2022-08-09 05:42:16,365 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(74,67,0) SPD:0 
+2022-08-09 05:42:16,865 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(61,79,0) SPD:0 
+2022-08-09 05:42:17,436 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(44,90,0) SPD:0 
+2022-08-09 05:42:17,942 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(27,96,0) SPD:0 
+2022-08-09 05:42:19,845 [ 1] INFO  Unity: MoveForward
+2022-08-09 05:42:19,991 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(27,96,0) SPD:300 
+2022-08-09 05:42:21,941 [ 1] INFO  Unity: Stop
+2022-08-09 05:42:22,088 [ 1] INFO  Unity: MapEntitySyncRequest :ID:2 POS:SkillBridge.Message.NVector3 DIR:(27,96,0) SPD:0 
+2022-08-09 05:42:22,757 [ 1] INFO  Unity: Character_2_樂議 OnDestroy :ID:2 POS:(5031, 4155, 820) DIR:(27, 96, 0) SPD:0 
+2022-08-09 05:42:22,758 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-08-09 05:42:22,759 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)

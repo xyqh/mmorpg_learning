@@ -1,5 +1,6 @@
 ﻿using Common.Data;
 using Models;
+using Services;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,52 @@ namespace Managers
 
                 Debug.LogFormat("ItemManager:Init[{0}]", item);
             }
+            StatusService.Instance.RegisterStatusNotify(StatusType.Item, this.OnItemNotify);
+        }
+
+        private bool OnItemNotify(NStatus status)
+        {
+            if(status.Action == StatusAction.Add)
+            {
+                this.AddItem(status.Id, status.Value);
+            }
+            if (status.Action == StatusAction.Delete)
+            {
+                this.RemoveItem(status.Id, status.Value);
+            }
+
+            return true;
+        }
+
+        private void AddItem(int itemId, int count)
+        {
+            Item item = null;
+            if(items.TryGetValue(itemId, out item))
+            {
+                items[itemId].count += count;
+            }
+            else
+            {
+                item = new Item(itemId, count);
+                items[itemId] = item;
+            }
+            BagManager.Instance.AddItem(itemId, count);
+        }
+
+        private void RemoveItem(int itemId, int count)
+        {
+            if (!this.items.ContainsKey(itemId))
+            {
+                return;
+            }
+            Item item = this.items[itemId];
+            if(item.count < count)
+            {
+                return;
+            }
+            item.count -= count;
+
+            BagManager.Instance.RemoveItem(itemId, count);
         }
 
         public ItemDefine GetItem(int itemId)

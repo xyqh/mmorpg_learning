@@ -112,6 +112,7 @@ namespace GameServer.Services
                 Class = (int)request.Class,
                 TID = (int)request.Class,
                 MapID = 1,
+                Gold = 100000,
                 MapPosX = 5000,
                 MapPosY = 4000,
                 MapPosZ = 820,

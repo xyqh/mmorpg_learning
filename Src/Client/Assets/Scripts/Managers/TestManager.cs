@@ -14,8 +14,10 @@ public class TestManager : Singleton<TestManager> {
     {
         NpcDefine npcDefine = (NpcDefine)param[0];
         Debug.LogFormat("TestManager.OnNpcInvokeShop :NPC:[{0}:{1}] Type:{2} Func:{3}", npcDefine.ID, npcDefine.Name, npcDefine.Type, npcDefine.Function);
-        UITest uiTest = UIManager.Instance.Show<UITest>();
-        uiTest.setTitle(npcDefine.Name);
+        //UITest uiTest = UIManager.Instance.Show<UITest>();
+        //uiTest.setTitle(npcDefine.Name);
+        UIShop uiShop = UIManager.Instance.Show<UIShop>();
+        uiShop.InitData(npcDefine.Param);
     }
 
     private void OnNpcInvokeInsrance(params object[] param)

@@ -22,11 +22,11 @@ public class NPCManager : Singleton<NPCManager> {
     public bool Interactive(NpcDefine npcDefine)
     {
         Debug.LogFormat("NPCManager.Interactive NPC:[ID:{0} Name:{1} Type:{2}]", npcDefine.ID, npcDefine.Name, npcDefine.Type);
-        if(npcDefine.Type == NpcType.Task)
+        if (npcDefine.Type == NpcType.Task)
         {
             return DoTaskInteractive(npcDefine);
         }
-        else if(npcDefine.Type == NpcType.Functional)
+        else if (npcDefine.Type == NpcType.Functional)
         {
             return DoFunctionalInteractive(npcDefine);
         }
@@ -36,17 +36,23 @@ public class NPCManager : Singleton<NPCManager> {
     private bool DoTaskInteractive(NpcDefine npcDefine)
     {
         //MessageBox.Show("点击了NPC:" + npcDefine.Name);
-        EventManager.Instance.dispatchCustomEvent("InvokeShop", npcDefine);
+        EventManager.Instance.dispatchCustomEvent("Task", npcDefine);
         return true;
     }
 
     private bool DoFunctionalInteractive(NpcDefine npcDefine)
     {
-        if(npcDefine.Type != NpcType.Functional)
+        if(npcDefine.Function == NpcFunction.InvokeShop)
         {
-            return false;
+            EventManager.Instance.dispatchCustomEvent("InvokeShop", npcDefine);
+        }else if(npcDefine.Function == NpcFunction.InvokeInsrance)
+        {
+            EventManager.Instance.dispatchCustomEvent("InvokeInsrance", npcDefine);
         }
-        EventManager.Instance.dispatchCustomEvent("InvokeInsrance", npcDefine);
+        else
+        {
+
+        }
         return true;
     }
 }

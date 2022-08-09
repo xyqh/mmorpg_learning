@@ -1,11 +1,12 @@
 ﻿using Common.Data;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UIShopItem : MonoBehaviour, ISelectHandler
+public class UIShopItem : MonoBehaviour
 {
 
     public Image imageBtm;
@@ -20,11 +21,11 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
 
 	// Use this for initialization
 	void Start () {
-		
+        EventManager.Instance.addEventListener("ShopOnSelectItem", this.onSelectItem);
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -41,9 +42,29 @@ public class UIShopItem : MonoBehaviour, ISelectHandler
         textItemPrice.text = shopItemDefine.Price.ToString();
     }
 
-    public void OnSelect(BaseEventData eventData)
+    public void refreshIsSelected(bool isSel)
     {
-        selected = !selected;
-        this.owner.RefreshSelectItem(this.shopItemDefine.ShopItemID);
+        EventManager.Instance.dispatchCustomEvent("ShopOnSelectItem", this.shopItemDefine.ShopItemID);
+    }
+
+    private void onSelectItem(object[] param)
+    {
+        if (this.shopItemDefine == null) return;
+
+        int selShopItemId = (int)param[0];
+
+        bool isSel = this.shopItemDefine.ShopItemID == selShopItemId;
+        if (this.selected == isSel) return;
+
+        this.selected = isSel;
+        if (this.selected)
+        {
+            owner.refreshSelectedShopItemId(this.shopItemDefine.ShopItemID);
+            this.imageBtm.overrideSprite = Resources.Load<Sprite>("UI/common/common_bg_03.png");
+        }
+        else
+        {
+            this.imageBtm.overrideSprite = null;
+        }
     }
 }

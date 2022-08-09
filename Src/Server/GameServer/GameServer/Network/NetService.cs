@@ -8,8 +8,6 @@ using System.Net;
 using System.Net.Sockets;
 using GameServer;
 using Common;
-using GameServer.Managers;
-using GameServer.Entities;
 
 namespace Network
 {

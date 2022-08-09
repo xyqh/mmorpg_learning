@@ -63,6 +63,11 @@ public class UIBackPack : UIWindow
         scrollView.UpdateData();
     }
 
+    public void UpdateMoney()
+    {
+
+    }
+
     // Update is called once per frame
     void Update () {
 		
@@ -80,10 +85,5 @@ public class UIBackPack : UIWindow
 
             itemDatas.Add(data);
         }
-    }
-
-    public void OnButtonClose()
-    {
-        Destroy(this.gameObject);
     }
 }

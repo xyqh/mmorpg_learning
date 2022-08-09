@@ -1,16 +1,19 @@
 ﻿using AillieoUtils;
 using Common.Data;
+using Models;
+using Services;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIShop : MonoBehaviour {
+public class UIShop : UIWindow {
 
     public ScrollView scrollView;
     public Text shopName;
     public Button buy;
+    public Text money;
     public int selShopItemId = -1;
 
     private int shopId = -1;
@@ -35,7 +38,6 @@ public class UIShop : MonoBehaviour {
                 {
                     ShopItemDefine itemData = itemDatas[i - 1];
                     item.GetComponent<UIShopItem>().UpdateShow(itemData, this);
-                    item.tag = itemData.ShopItemID.ToString();
                     item.SetActive(true);
                 }
             }
@@ -51,11 +53,8 @@ public class UIShop : MonoBehaviour {
             int count = (int)Math.Ceiling((double)itemDatas.Count / 2);
             return count;
         });
-    }
 
-    public void RefreshSelectItem(int shopItemID)
-    {
-        
+        this.scrollView.UpdateData();
     }
 
     // Update is called once per frame
@@ -63,7 +62,7 @@ public class UIShop : MonoBehaviour {
 		
 	}
 
-    void InitData(int shopId)
+    public void InitData(int shopId)
     {
         this.shopId = shopId;
         this.shopDefine = DataManager.Instance.IShops[this.shopId];
@@ -78,5 +77,22 @@ public class UIShop : MonoBehaviour {
         }
 
         this.scrollView.UpdateData();
+    }
+
+    public void refreshSelectedShopItemId(int shopItemId)
+    {
+        this.selShopItemId = shopItemId;
+    }
+
+    public void OnClickButtonBuy()
+    {
+        Debug.LogFormat("UIShop:OnClickButtonBuy:{0}", this.selShopItemId);
+        if (this.selShopItemId == -1) return;
+        ItemService.Instance.SendItemBuy(this.shopId, this.selShopItemId);
+    }
+
+    public void UpdateMoney()
+    {
+        money.text = User.Instance.CurrentCharacter.Gold.ToString();
     }
 }

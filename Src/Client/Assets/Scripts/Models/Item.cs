@@ -15,9 +15,16 @@ namespace Models
 
         public Item(NItemInfo item)
         {
-            id = item.Id;
-            count = item.Count;
-            define = DataManager.Instance.IItems[item.Id];
+            this.id = item.Id;
+            this.count = item.Count;
+            this.define = DataManager.Instance.IItems[item.Id];
+        }
+
+        public Item(int id, int count)
+        {
+            this.id = id;
+            this.count = count;
+            this.define = DataManager.Instance.IItems[id];
         }
 
         public override string ToString()

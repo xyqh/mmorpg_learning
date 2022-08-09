@@ -61,6 +61,45 @@ namespace Managers
             //++i;
         }
 
+        public void AddItem(int itemId, int count)
+        {
+            ushort addCount = (ushort)count;
+            for(int i = 0; i < this.bagItems.Count; ++i)
+            {
+                if(bagItems[i].itemId == itemId)
+                {
+                    ushort canAdd = (ushort)(DataManager.Instance.IItems[itemId].StackLimit - this.bagItems[i].count);
+                    if(canAdd >= addCount)
+                    {
+                        BagItem item = this.bagItems[i];
+                        this.bagItems[i] = new BagItem(itemId, item.count + addCount);
+                        addCount = 0;
+                        break;
+                    }
+                    else{
+                        BagItem item = this.bagItems[i];
+                        this.bagItems[i] = new BagItem(itemId, item.count + canAdd);
+                        addCount -= canAdd;
+                    }
+                }
+            }
+            if(addCount > 0)
+            {
+                for(int i = 0; i < bagItems.Count; ++i)
+                {
+                    if(this.bagItems[i].itemId == 0)
+                    {
+                        this.bagItems[i] = new BagItem(itemId, addCount);
+                    }
+                }
+            }
+        }
+
+        public void RemoveItem(int itemId, int count)
+        {
+            
+        }
+
         unsafe void Analyze(byte[] data)
         {
             fixed(byte * pt = data)
