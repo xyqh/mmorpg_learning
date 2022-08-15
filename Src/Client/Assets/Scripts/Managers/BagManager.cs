@@ -90,6 +90,7 @@ namespace Managers
                     if(this.bagItems[i].itemId == 0)
                     {
                         this.bagItems[i] = new BagItem(itemId, addCount);
+                        break;
                     }
                 }
             }

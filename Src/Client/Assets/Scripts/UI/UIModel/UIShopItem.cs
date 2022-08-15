@@ -60,7 +60,7 @@ public class UIShopItem : MonoBehaviour
         if (this.selected)
         {
             owner.refreshSelectedShopItemId(this.shopItemDefine.ShopItemID);
-            this.imageBtm.overrideSprite = Resources.Load<Sprite>("UI/common/common_bg_03.png");
+            this.imageBtm.overrideSprite = Resources.Load<Sprite>("UI/common/common_bg_03");
         }
         else
         {

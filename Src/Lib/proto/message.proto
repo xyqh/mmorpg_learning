@@ -51,6 +51,20 @@ enum ItemType
 	NORMAL = 0;
 	MATERIAL = 1;
 	TASK = 2;
+	EQUIP = 3;
+	RIDE = 4;
+}
+
+enum EquipSlot
+{
+	WEAPON = 0;
+	ACCESSORY = 1;	//头盔
+	HELMET = 2;		//胸甲
+	CHEST = 3;		//护肩
+	SHOULDER = 4;	//裤子
+	PANTS = 5;		//靴子
+	BOOTS = 6;
+	SLOT_MAX = 7;
 }
 
 message NUserInfo {
@@ -76,6 +90,7 @@ message NCharacterInfo {
 
 	repeated NItemInfo Items = 10;
 	NBagInfo Bag = 11;
+	bytes Equips = 12;
 }
 
 message NItemInfo
@@ -181,6 +196,7 @@ message NetMessageRequest{
 	FirstTestRequest firstRequest = 10;
 
 	ItemBuyRequest itemBuy = 11;
+	ItemEquipRequest itemEquip = 12;
 }
 
 message NetMessageResponse{
@@ -196,6 +212,7 @@ message NetMessageResponse{
 	MapEntitySyncResponse mapEntitySync = 8;
 	
 	ItemBuyResponse itemBuy = 11;
+	ItemEquipResponse itemEquip = 12;
 
 	StatusNotify statusNotify = 100;
 }
@@ -316,6 +333,19 @@ message BagSaveRequest
 }
 
 message BagSaveResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+message ItemEquipRequest
+{
+	int32 slot = 1;
+	int32 itemId = 2;
+	bool isEquip = 3;
+}
+
+message ItemEquipResponse
 {
 	RESULT result = 1;
 	string errormsg = 2;

@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 222396441568911194}
   - component: {fileID: 114722321335354872}
   - component: {fileID: 114006856950480576}
-  - component: {fileID: 114610407980676392}
   - component: {fileID: 114184300328405022}
   m_Layer: 5
   m_Name: shopItem
@@ -265,21 +264,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
---- !u!114 &114610407980676392
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1149989311167048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac78b71f4a1d2bb4ab014a1ecd6423ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageBtm: {fileID: 114722321335354872}
-  goItem: {fileID: 114691253447268290}
-  textItemName: {fileID: 114985722808261112}
-  textItemPrice: {fileID: 114464366676812266}
 --- !u!114 &114632294925274644
 MonoBehaviour:
   m_ObjectHideFlags: 1

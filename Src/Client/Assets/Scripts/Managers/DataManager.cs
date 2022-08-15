@@ -21,6 +21,7 @@ public class DataManager : Singleton<DataManager>
     private Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;
     public Dictionary<int, ShopDefine> Shops = null;
     public Dictionary<int, Dictionary<int, ShopItemDefine>> ShopItems = null;
+    public Dictionary<int, EquipDefine> Equips = null;
 
     public Dictionary<int, MapDefine> IMaps
     {
@@ -114,6 +115,9 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "ShopItemDefine.txt");
         this.ShopItems = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, ShopItemDefine>>>(json);
+
+        json = File.ReadAllText(this.DataPath + "EquipDefine.txt");
+        this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
     }
 
 
@@ -156,6 +160,11 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "ShopItemDefine.txt");
         this.ShopItems = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, ShopItemDefine>>>(json);
+
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "EquipDefine.txt");
+        this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
 
         yield return null;
     }
