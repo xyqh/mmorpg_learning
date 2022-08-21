@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EntityManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\EquipManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EventManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MiniMapManager.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Assets\Scripts\UI\UIBackPack.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\UICharacterView.cs" />
+    <Compile Include="Assets\Scripts\UI\UICharEquip.cs" />
     <Compile Include="Assets\Scripts\UI\UICharInfo.cs" />
     <Compile Include="Assets\Scripts\UI\UILogin.cs" />
     <Compile Include="Assets\Scripts\UI\UIMain.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Assets\Scripts\UI\UIModel\ScrollView\ScrollView.cs" />
     <Compile Include="Assets\Scripts\UI\UIModel\ScrollView\ScrollViewEx.cs" />
     <Compile Include="Assets\Scripts\UI\UIModel\UICommonItem.cs" />
+    <Compile Include="Assets\Scripts\UI\UIModel\UIEquipItem.cs" />
     <Compile Include="Assets\Scripts\UI\UIModel\UIShopItem.cs" />
     <Compile Include="Assets\Scripts\UI\UINameBar.cs" />
     <Compile Include="Assets\Scripts\UI\UIPanelCreate.cs" />
