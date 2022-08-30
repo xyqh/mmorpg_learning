@@ -22,9 +22,16 @@ namespace GameServer.Services
             entities = new ExtremeWorldEntities();
         }
 
-        internal void Save()
+        internal void Save(bool async = false)
         {
-            entities.SaveChangesAsync();
+            if (async)
+            {
+                entities.SaveChangesAsync();
+            }
+            else
+            {
+                entities.SaveChanges();
+            }
         }
     }
 }

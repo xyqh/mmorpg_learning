@@ -83,6 +83,14 @@ public class DataManager : Singleton<DataManager>
         }
     }
 
+    public Dictionary<int, EquipDefine> IEquips
+    {
+        get
+        {
+            return Equips;
+        }
+    }
+
 
     public DataManager()
     {

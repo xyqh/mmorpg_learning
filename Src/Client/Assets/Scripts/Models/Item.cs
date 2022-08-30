@@ -11,20 +11,23 @@ namespace Models
     {
         public int id;
         public int count;
+        public EquipDefine equipDefine;
         public ItemDefine define;
 
         public Item(NItemInfo item)
         {
             this.id = item.Id;
             this.count = item.Count;
-            this.define = DataManager.Instance.IItems[item.Id];
+            DataManager.Instance.IItems.TryGetValue(item.Id, out this.define);
+            DataManager.Instance.IEquips.TryGetValue(item.Id, out this.equipDefine);
         }
 
         public Item(int id, int count)
         {
             this.id = id;
             this.count = count;
-            this.define = DataManager.Instance.IItems[id];
+            DataManager.Instance.IItems.TryGetValue(id, out this.define);
+            DataManager.Instance.IEquips.TryGetValue(id, out this.equipDefine);
         }
 
         public override string ToString()

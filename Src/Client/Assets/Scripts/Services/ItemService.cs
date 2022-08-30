@@ -17,11 +17,13 @@ namespace Services
         public ItemService()
         {
             MessageDistributer.Instance.Subscribe<ItemBuyResponse>(this.OnItemBuy);
+            MessageDistributer.Instance.Subscribe<ItemEquipResponse>(this.OnItemEquip);
         }
 
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<ItemBuyResponse>(this.OnItemBuy);
+            MessageDistributer.Instance.Unsubscribe<ItemEquipResponse>(this.OnItemEquip);
         }
 
         public void Init()
@@ -43,6 +45,48 @@ namespace Services
         private void OnItemBuy(object sender, ItemBuyResponse response)
         {
             MessageBox.Show("购买结果" + response.Result + "\n" + response.Errormsg, "购买完成");
+        }
+
+        Item pendingEquip = null;
+        bool isEquip;
+        public bool SendEquipItem(Item equip, bool isEquip)
+        {
+            if(pendingEquip != null)
+            {
+                return false;
+            }
+
+            pendingEquip = equip;
+            this.isEquip = isEquip;
+
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.itemEquip = new ItemEquipRequest();
+            message.Request.itemEquip.Slot = (int)equip.equipDefine.slot;
+            message.Request.itemEquip.itemId = equip.id;
+            message.Request.itemEquip.isEquip = isEquip;
+            NetClient.Instance.SendMessage(message);
+
+            return true;
+        }
+
+        private void OnItemEquip(object sender, ItemEquipResponse response)
+        {
+            if(response.Result == Result.Success)
+            {
+                if(pendingEquip != null)
+                {
+                    if (this.isEquip)
+                    {
+                        EquipManager.Instance.OnEquipItem(pendingEquip);
+                    }
+                    else
+                    {
+                        EquipManager.Instance.OnUnEquipItem(pendingEquip.equipDefine.slot);
+                    }
+                    pendingEquip = null;
+                }
+            }
         }
     }
 }

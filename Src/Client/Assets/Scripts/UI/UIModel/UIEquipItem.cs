@@ -23,10 +23,12 @@ public class UIEquipItem : MonoBehaviour, ISelectHandler
 		
 	}
 
-    public void updateShow()
+    public void updateShow(EquipDefine equipDefine)
     {
+        this.equipDefine = equipDefine;
+
         equipIcon.sprite = Resources.Load<Sprite>(string.Format("UI/Items/equip{0}.png", equipDefine.ID));
-        //equipName.text = equipDefine.
+        equipName.text = equipDefine.Name;
     }
 
     public void OnSelect(BaseEventData eventData)
