@@ -1,80 +1,60 @@
-2022-08-09 12:30:13,168 [ 1] INFO  Unity: LoadingManager start
-2022-08-09 12:30:16,189 [ 1] INFO  Unity: DataManager > DataManager()
-2022-08-09 12:30:21,931 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:123456
-2022-08-09 12:30:21,932 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-08-09 12:30:21,933 [ 1] INFO  Unity: DoConnect
-2022-08-09 12:30:21,934 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-08-09 12:30:21,935 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-10-10 00:38:02,010 [ 1] INFO  Unity: LoadingManager start
+2022-10-10 00:38:05,378 [ 1] INFO  Unity: DataManager > DataManager()
+2022-10-10 00:38:08,489 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-10-10 00:38:08,495 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-10-10 00:38:08,497 [ 1] INFO  Unity: DoConnect
+2022-10-10 00:38:08,498 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-10-10 00:38:08,500 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-08-09 12:30:21,937 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-08-09 12:30:23,503 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-08-09 12:30:23,504 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-08-09 12:30:23,505 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-08-09 12:30:23,548 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-08-09 12:30:23,554 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-08-09 12:30:23,559 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-08-09 12:30:23,561 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-08-09 12:30:24,691 [ 1] INFO  Unity: OnSelectCharacter 2
-2022-08-09 12:30:24,693 [ 1] INFO  Unity: changeShowCharacter find in dic
-2022-08-09 12:30:25,271 [ 1] INFO  Unity: SendGameEnter::charIdx :2
-2022-08-09 12:30:25,373 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-08-09 12:30:25,375 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
-2022-08-09 12:30:25,376 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
-2022-08-09 12:30:25,376 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
-2022-08-09 12:30:25,376 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
-2022-08-09 12:30:25,387 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-08-09 12:30:25,388 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-08-09 12:30:25,389 [ 1] INFO  Unity: AddCharacter:1:¼ÖÄ³ Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-08-09 12:30:25,391 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-08-09 12:30:25,760 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-08-09 12:30:25,763 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-08-09 12:30:25,767 [ 1] INFO  Unity: UIMainCity --------------------- 1
-2022-08-09 12:30:26,748 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,18,0) SPD:0 
-2022-08-09 12:30:26,814 [ 1] INFO  Unity: MoveForward
-2022-08-09 12:30:26,815 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,18,0) SPD:300 
-2022-08-09 12:30:26,847 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(94,35,0) SPD:300 
-2022-08-09 12:30:26,929 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,51,0) SPD:300 
-2022-08-09 12:30:27,029 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(74,68,0) SPD:300 
-2022-08-09 12:30:27,112 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(61,79,0) SPD:300 
-2022-08-09 12:30:27,195 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(46,89,0) SPD:300 
-2022-08-09 12:30:27,294 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(27,96,0) SPD:300 
-2022-08-09 12:30:27,377 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(10,100,0) SPD:300 
-2022-08-09 12:30:27,494 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-9,100,0) SPD:300 
-2022-08-09 12:30:28,603 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-9,100,0) SPD:300 
-2022-08-09 12:30:30,359 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-9,100,0) SPD:300 
-2022-08-09 12:30:32,115 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-9,100,0) SPD:300 
-2022-08-09 12:30:33,060 [ 1] INFO  Unity: Stop
-2022-08-09 12:30:33,060 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(-9,100,0) SPD:0 
-2022-08-09 12:30:33,541 [ 1] INFO  Unity: NPCManager.Interactive NPC:[ID:2 Name:¶àÀöË¿ Type:Functional]
-2022-08-09 12:30:33,541 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop :NPC:[2:¶àÀöË¿] Type:Functional Func:InvokeShop
-2022-08-09 12:30:35,732 [ 1] INFO  Unity: UIShop:OnClickButtonBuy:1
-2022-08-09 12:30:35,732 [ 1] INFO  Unity: ItemService:SendItemBuy 1, 1
-2022-08-09 12:30:36,025 [ 1] INFO  Unity: StatusNotify:[Item][Add]1:1
-2022-08-09 12:30:36,027 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:10
-2022-08-09 12:30:44,583 [ 1] INFO  Unity: NPCManager.Interactive NPC:[ID:2 Name:¶àÀöË¿ Type:Functional]
-2022-08-09 12:30:44,584 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop :NPC:[2:¶àÀöË¿] Type:Functional Func:InvokeShop
-2022-08-09 12:30:45,926 [ 1] INFO  Unity: UIShop:OnClickButtonBuy:1
-2022-08-09 12:30:45,926 [ 1] INFO  Unity: ItemService:SendItemBuy 1, 1
-2022-08-09 12:30:45,959 [ 1] INFO  Unity: StatusNotify:[Item][Add]1:1
-2022-08-09 12:30:45,960 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:10
-2022-08-09 12:30:50,315 [ 1] INFO  Unity: NPCManager.Interactive NPC:[ID:2 Name:¶àÀöË¿ Type:Functional]
-2022-08-09 12:30:50,315 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop :NPC:[2:¶àÀöË¿] Type:Functional Func:InvokeShop
-2022-08-09 12:30:52,883 [ 1] INFO  Unity: UIShop:OnClickButtonBuy:8
-2022-08-09 12:30:52,883 [ 1] INFO  Unity: ItemService:SendItemBuy 1, 8
-2022-08-09 12:30:52,916 [ 1] INFO  Unity: StatusNotify:[Item][Add]4:10
-2022-08-09 12:30:52,917 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:200
-2022-08-09 12:30:58,747 [ 1] INFO  Unity: NPCManager.Interactive NPC:[ID:2 Name:¶àÀöË¿ Type:Functional]
-2022-08-09 12:30:58,747 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop :NPC:[2:¶àÀöË¿] Type:Functional Func:InvokeShop
-2022-08-09 12:31:03,137 [ 1] INFO  Unity: NPCManager.Interactive NPC:[ID:2 Name:¶àÀöË¿ Type:Functional]
-2022-08-09 12:31:03,138 [ 1] INFO  Unity: TestManager.OnNpcInvokeShop :NPC:[2:¶àÀöË¿] Type:Functional Func:InvokeShop
-2022-08-09 12:31:04,147 [ 1] INFO  Unity: UIShop:OnClickButtonBuy:6
-2022-08-09 12:31:04,148 [ 1] INFO  Unity: ItemService:SendItemBuy 1, 6
-2022-08-09 12:31:04,182 [ 1] INFO  Unity: StatusNotify:[Item][Add]3:10
-2022-08-09 12:31:04,183 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:200
-2022-08-09 12:31:09,771 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-08-09 12:31:09,772 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-10-10 00:38:08,506 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-10-10 00:38:08,731 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-10-10 00:38:08,734 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-10-10 00:38:08,738 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-10-10 00:38:08,818 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-10 00:38:08,826 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-10 00:38:08,836 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-10 00:38:08,837 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-10-10 00:38:09,851 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-10-10 00:38:09,896 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-10-10 00:38:09,904 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
+2022-10-10 00:38:09,905 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-10-10 00:38:09,905 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-10-10 00:38:09,906 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-10-10 00:38:09,907 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
+2022-10-10 00:38:09,908 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
+2022-10-10 00:38:09,909 [ 1] INFO  Unity: ItemManager:Init[Id:1004, Count:1]
+2022-10-10 00:38:09,910 [ 1] INFO  Unity: ItemManager:Init[Id:1005, Count:1]
+2022-10-10 00:38:09,911 [ 1] INFO  Unity: ItemManager:Init[Id:3005, Count:1]
+2022-10-10 00:38:09,911 [ 1] INFO  Unity: ItemManager:Init[Id:3006, Count:1]
+2022-10-10 00:38:09,927 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-10 00:38:09,928 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-10 00:38:09,929 [ 1] INFO  Unity: AddCharacter:9:jia Map:1 Entity:(9:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-10-10 00:38:09,937 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-10-10 00:38:10,305 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-10 00:38:10,317 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-10-10 00:38:10,331 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-10-10 00:38:28,165 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:28,297 [ 1] INFO  Unity: Double Click!!!
+2022-10-10 00:38:28,300 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:36,485 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:36,668 [ 1] INFO  Unity: Double Click!!!
+2022-10-10 00:38:36,669 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:38,274 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:38,407 [ 1] INFO  Unity: Double Click!!!
+2022-10-10 00:38:38,408 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:39,286 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:39,451 [ 1] INFO  Unity: Double Click!!!
+2022-10-10 00:38:39,452 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:41,389 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:41,588 [ 1] INFO  Unity: Double Click!!!
+2022-10-10 00:38:41,588 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:44,620 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:44,769 [ 1] INFO  Unity: Double Click!!!
+2022-10-10 00:38:44,770 [ 1] INFO  Unity: Single Click!!!
+2022-10-10 00:38:49,068 [ 1] INFO  Unity: Character_9_jia OnDestroy :ID:9 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-10-10 00:38:49,069 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-10-10 00:38:49,069 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
 
-2022-08-09 12:31:09,773 [ 1] INFO  Unity: Character_1_¼ÖÄ³ OnDestroy :ID:1 POS:(4997, 5872, 820) DIR:(-9, 100, 0) SPD:0 

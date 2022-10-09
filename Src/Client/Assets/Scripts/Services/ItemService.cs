@@ -44,6 +44,7 @@ namespace Services
 
         private void OnItemBuy(object sender, ItemBuyResponse response)
         {
+            //BagManager.Instance.AddItem(response.)
             MessageBox.Show("购买结果" + response.Result + "\n" + response.Errormsg, "购买完成");
         }
 
@@ -85,6 +86,8 @@ namespace Services
                         EquipManager.Instance.OnUnEquipItem(pendingEquip.equipDefine.slot);
                     }
                     pendingEquip = null;
+
+                    EventManager.Instance.dispatchCustomEvent("EquipItemUpdate");
                 }
             }
         }

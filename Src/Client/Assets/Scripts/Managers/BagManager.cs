@@ -85,14 +85,7 @@ namespace Managers
             }
             if(addCount > 0)
             {
-                for(int i = 0; i < bagItems.Count; ++i)
-                {
-                    if(this.bagItems[i].itemId == 0)
-                    {
-                        this.bagItems[i] = new BagItem(itemId, addCount);
-                        break;
-                    }
-                }
+                this.bagItems.Add(new BagItem(itemId, addCount));
             }
         }
 

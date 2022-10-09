@@ -75,6 +75,7 @@ namespace Managers
                     }
                 }
             }
+            return this.data;
         }
 
         public void EquipItem(Item equip)

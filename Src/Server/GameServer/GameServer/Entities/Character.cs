@@ -31,6 +31,7 @@ namespace GameServer.Entities
             this.Info.mapId = cha.MapID;
             this.Info.Gold = cha.Gold;
             this.Info.Entity = EntityData;
+            this.Info.Equips = cha.Equips;
             this.Define = DataManager.Instance.Characters[Info.Tid];
 
             ItemManager = new ItemManager(this);
