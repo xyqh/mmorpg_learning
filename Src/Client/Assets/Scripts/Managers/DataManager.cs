@@ -57,6 +57,11 @@ public class DataManager : Singleton<DataManager>
         {
             return SpawnPoints;
         }
+
+        set
+        {
+            SpawnPoints = value;
+        }
     }
 
     public Dictionary<int, ItemDefine> IItems

@@ -115,7 +115,10 @@
     <Compile Include="Managers\EquipManager.cs" />
     <Compile Include="Managers\ItemManager.cs" />
     <Compile Include="Managers\MapManager.cs" />
+    <Compile Include="Managers\MonsterManager.cs" />
     <Compile Include="Managers\ShopManager.cs" />
+    <Compile Include="Managers\Spawner.cs" />
+    <Compile Include="Managers\SpawnManager.cs" />
     <Compile Include="Managers\StatusManager.cs" />
     <Compile Include="Models\BagItem.cs" />
     <Compile Include="Models\Item.cs" />

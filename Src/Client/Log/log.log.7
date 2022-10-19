@@ -1,114 +1,39 @@
-2022-10-10 00:21:12,304 [ 1] INFO  Unity: LoadingManager start
-2022-10-10 00:21:15,429 [ 1] INFO  Unity: DataManager > DataManager()
-2022-10-10 00:21:28,477 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-10-10 00:21:28,478 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-10-10 00:21:28,480 [ 1] INFO  Unity: DoConnect
-2022-10-10 00:21:28,482 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-10-10 00:21:28,484 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-10-10 00:27:31,331 [ 1] INFO  Unity: LoadingManager start
+2022-10-10 00:27:34,637 [ 1] INFO  Unity: DataManager > DataManager()
+2022-10-10 00:27:37,829 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-10-10 00:27:37,836 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-10-10 00:27:37,837 [ 1] INFO  Unity: DoConnect
+2022-10-10 00:27:37,839 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-10-10 00:27:37,841 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-10-10 00:21:28,486 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-10-10 00:21:28,556 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-10-10 00:21:28,556 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-10-10 00:21:28,557 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-10-10 00:21:28,602 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-10-10 00:21:28,608 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-10-10 00:21:28,613 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-10-10 00:21:28,615 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-10-10 00:21:29,432 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-10-10 00:21:29,471 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-10-10 00:21:29,474 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
-2022-10-10 00:21:29,475 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
-2022-10-10 00:21:29,476 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
-2022-10-10 00:21:29,476 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
-2022-10-10 00:21:29,477 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
-2022-10-10 00:21:29,478 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
-2022-10-10 00:21:29,479 [ 1] INFO  Unity: ItemManager:Init[Id:1004, Count:1]
-2022-10-10 00:21:29,480 [ 1] INFO  Unity: ItemManager:Init[Id:1005, Count:1]
-2022-10-10 00:21:29,481 [ 1] INFO  Unity: ItemManager:Init[Id:3005, Count:1]
-2022-10-10 00:21:29,482 [ 1] INFO  Unity: ItemManager:Init[Id:3006, Count:1]
-2022-10-10 00:21:29,486 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-10-10 00:21:29,488 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-10-10 00:21:29,490 [ 1] INFO  Unity: AddCharacter:2:jia Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-10-10 00:21:29,491 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-10-10 00:21:29,846 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-10-10 00:21:29,849 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-10-10 00:21:29,853 [ 1] INFO  Unity: UIMainCity --------------------- 1
-2022-10-10 00:21:43,846 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:21:43,979 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:21:43,980 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:22:18,673 [ 1] ERROR Unity: Message handler exception:, The given key was not present in the dictionary., mscorlib,   at System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) [0x000a2] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150 
-  at UICharEquip.updateEquipped (System.Object[] param) [0x00023] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\UI\UICharEquip.cs:112 
-  at EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) [0x00029] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\EventManager.cs:68 
-  at Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) [0x0006e] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\ItemService.cs:90 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) [0x00044] in D:\Unity_Learning\mmorpg_branch\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-10-10 00:22:18,675 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
-UICharEquip.updateEquipped (System.Object[] param) (at Assets/Scripts/UI/UICharEquip.cs:112)
-EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) (at Assets/Scripts/Managers/EventManager.cs:68)
-Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) (at Assets/Scripts/Services/ItemService.cs:90)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) (at D:/Unity_Learning/mmorpg_branch/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-10-10 00:22:29,592 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:22:29,758 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:22:29,759 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:22:29,847 [ 1] ERROR Unity: Message handler exception:, The given key was not present in the dictionary., mscorlib,   at System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) [0x000a2] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150 
-  at UICharEquip.updateEquipped (System.Object[] param) [0x00023] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\UI\UICharEquip.cs:112 
-  at EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) [0x00029] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\EventManager.cs:68 
-  at Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) [0x0006e] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\ItemService.cs:90 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) [0x00044] in D:\Unity_Learning\mmorpg_branch\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-10-10 00:22:29,849 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
-UICharEquip.updateEquipped (System.Object[] param) (at Assets/Scripts/UI/UICharEquip.cs:112)
-EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) (at Assets/Scripts/Managers/EventManager.cs:68)
-Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) (at Assets/Scripts/Services/ItemService.cs:90)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) (at D:/Unity_Learning/mmorpg_branch/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-10-10 00:22:36,660 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:22:36,842 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:22:36,843 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:23:11,338 [ 1] ERROR Unity: Message handler exception:, The given key was not present in the dictionary., mscorlib,   at System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) [0x000a2] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150 
-  at UICharEquip.updateEquipped (System.Object[] param) [0x00023] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\UI\UICharEquip.cs:112 
-  at EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) [0x00029] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\EventManager.cs:68 
-  at Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) [0x0006e] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\ItemService.cs:90 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) [0x00044] in D:\Unity_Learning\mmorpg_branch\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-10-10 00:23:11,340 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
-UICharEquip.updateEquipped (System.Object[] param) (at Assets/Scripts/UI/UICharEquip.cs:112)
-EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) (at Assets/Scripts/Managers/EventManager.cs:68)
-Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) (at Assets/Scripts/Services/ItemService.cs:90)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) (at D:/Unity_Learning/mmorpg_branch/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-10-10 00:23:15,364 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:23:15,513 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:23:15,513 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:23:59,064 [ 1] ERROR Unity: Message handler exception:, The given key was not present in the dictionary., mscorlib,   at System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) [0x000a2] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150 
-  at UICharEquip.updateEquipped (System.Object[] param) [0x00023] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\UI\UICharEquip.cs:112 
-  at EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) [0x00029] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\EventManager.cs:68 
-  at Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) [0x0006e] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\ItemService.cs:90 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) [0x00044] in D:\Unity_Learning\mmorpg_branch\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-10-10 00:23:59,066 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
-UICharEquip.updateEquipped (System.Object[] param) (at Assets/Scripts/UI/UICharEquip.cs:112)
-EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) (at Assets/Scripts/Managers/EventManager.cs:68)
-Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) (at Assets/Scripts/Services/ItemService.cs:90)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) (at D:/Unity_Learning/mmorpg_branch/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-10-10 00:24:28,214 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:24:28,363 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:24:28,363 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:25:07,042 [ 1] ERROR Unity: Message handler exception:, The given key was not present in the dictionary., mscorlib,   at System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) [0x000a2] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150 
-  at UICharEquip.updateEquipped (System.Object[] param) [0x00023] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\UI\UICharEquip.cs:112 
-  at EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) [0x00029] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Managers\EventManager.cs:68 
-  at Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) [0x0006e] in D:\Unity_Learning\mmorpg_branch\Src\Client\Assets\Scripts\Services\ItemService.cs:90 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) [0x00044] in D:\Unity_Learning\mmorpg_branch\Src\Lib\Common\Network\MessageDistributer.cs:105 
-2022-10-10 00:25:07,044 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[SkillBridge.Message.EquipSlot,UnityEngine.Transform].get_Item (EquipSlot key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
-UICharEquip.updateEquipped (System.Object[] param) (at Assets/Scripts/UI/UICharEquip.cs:112)
-EventManager.dispatchCustomEvent (System.String eventName, System.Object[] param) (at Assets/Scripts/Managers/EventManager.cs:68)
-Services.ItemService.OnItemEquip (System.Object sender, SkillBridge.Message.ItemEquipResponse response) (at Assets/Scripts/Services/ItemService.cs:90)
-Network.MessageDistributer`1[System.Object].RaiseEvent[ItemEquipResponse] (System.Object sender, SkillBridge.Message.ItemEquipResponse msg) (at D:/Unity_Learning/mmorpg_branch/Src/Lib/Common/Network/MessageDistributer.cs:105)
-}</args></log4net.Error>
-2022-10-10 00:26:10,073 [ 1] ERROR Unity: Assets/Scripts/UI/UICharEquip.cs(113,16): error CS1525: Unexpected symbol `slots'
+2022-10-10 00:27:37,847 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-10-10 00:27:38,071 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-10-10 00:27:38,073 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-10-10 00:27:38,076 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-10-10 00:27:38,148 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-10 00:27:38,155 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-10 00:27:38,164 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-10 00:27:38,165 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-10-10 00:27:39,155 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-10-10 00:27:39,199 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-10-10 00:27:39,207 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
+2022-10-10 00:27:39,208 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-10-10 00:27:39,208 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-10-10 00:27:39,209 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-10-10 00:27:39,210 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
+2022-10-10 00:27:39,211 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
+2022-10-10 00:27:39,212 [ 1] INFO  Unity: ItemManager:Init[Id:1004, Count:1]
+2022-10-10 00:27:39,213 [ 1] INFO  Unity: ItemManager:Init[Id:1005, Count:1]
+2022-10-10 00:27:39,213 [ 1] INFO  Unity: ItemManager:Init[Id:3005, Count:1]
+2022-10-10 00:27:39,214 [ 1] INFO  Unity: ItemManager:Init[Id:3006, Count:1]
+2022-10-10 00:27:39,229 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-10 00:27:39,230 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-10 00:27:39,231 [ 1] INFO  Unity: AddCharacter:3:jia Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-10-10 00:27:39,239 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-10-10 00:27:39,612 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-10 00:27:39,624 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-10-10 00:27:39,638 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-10-10 00:28:16,509 [ 1] WARN  Unity: Assets/Scripts/GameObject/NpcController.cs(13,25): warning CS0108: `NpcController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
 
-2022-10-10 00:27:08,781 [ 1] WARN  Unity: Assets/Scripts/GameObject/NpcController.cs(13,25): warning CS0108: `NpcController.renderer' hides inherited member `UnityEngine.Component.renderer'. Use the new keyword if hiding was intended
+2022-10-10 00:28:16,509 [ 1] WARN  Unity: Assets/Scripts/UI/UICharEquip.cs(27,61): warning CS0618: `UnityEngine.Transform.FindChild(string)' is obsolete: `FindChild has been deprecated. Use Find instead (UnityUpgradable) -> Find([mscorlib] System.String)'
 
