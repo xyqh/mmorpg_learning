@@ -31,6 +31,10 @@ namespace GameServer
         public int MapPosZ { get; set; }
         public long Gold { get; set; }
         public byte[] Equips { get; set; }
+        public long Exp { get; set; }
+        public int HP { get; set; }
+        public int MP { get; set; }
+        public int Level { get; set; }
     
         public virtual TPlayer Player { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

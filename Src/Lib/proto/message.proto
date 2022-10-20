@@ -79,18 +79,27 @@ message NPlayerInfo {
 
 message NCharacterInfo {
 	int32 id = 1;
-	int32 tid = 2;
-	string name = 3;
-	CHARACTER_TYPE type = 4;
-	CHARACTER_CLASS class = 5;
-	int32 level = 6;
-	int32 mapId = 7;
-	NEntity entity = 8;
-	int64 gold = 9;
+	int32 config_id = 2;
+	int32 entity_id = 3;
+	string name = 4;
+	CHARACTER_TYPE type = 5;
+	CHARACTER_CLASS class = 6;
+	int32 level = 7;
+	int64 exp = 8;
+	NAttributeDynamic attrDynamic = 9;
 
-	repeated NItemInfo Items = 10;
-	NBagInfo Bag = 11;
-	bytes Equips = 12;
+	int32 mapId = 10;
+	NEntity entity = 11;
+	int64 gold = 12;
+
+	repeated NItemInfo Items = 13;
+	NBagInfo Bag = 14;
+	bytes Equips = 15;
+}
+
+message NAttributeDynamic {
+	int32 HP = 1;
+	int32 MP = 2;
 }
 
 message NItemInfo
@@ -116,8 +125,9 @@ enum STATUS_TYPE
 {
 	MONEY = 0;
 	EXP = 1;
-	SKILL_POINT = 2;
-	ITEM = 3;
+	LEVEL = 2;
+	SKILL_POINT = 3;
+	ITEM = 4;
 }
 
 enum STATUS_SOURCE

@@ -34,9 +34,9 @@ namespace GameServer.Entities
             this.Info = new NCharacterInfo();
             this.Info.Type = type;
             this.Info.Level = level;
-            this.Info.Tid = tid;
+            this.Info.ConfigId = tid;
             this.Info.Entity = this.EntityData;
-            this.Define = DataManager.Instance.Characters[this.Info.Tid];
+            this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
             this.Info.Name = this.Define.Name;
         }
     }

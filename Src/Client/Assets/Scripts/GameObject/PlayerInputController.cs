@@ -46,13 +46,15 @@ public class PlayerInputController : MonoBehaviour {
             NCharacterInfo cinfo = new NCharacterInfo();
             cinfo.Id = 1;
             cinfo.Name = "Test";
-            cinfo.Tid = 1;
+            cinfo.EntityId = 1;
+            cinfo.ConfigId = 1;
             cinfo.Entity = new NEntity();
             cinfo.Entity.Position = new NVector3();
             cinfo.Entity.Direction = new NVector3();
             cinfo.Entity.Direction.X = 0;
             cinfo.Entity.Direction.Y = 100;
             cinfo.Entity.Direction.Z = 0;
+            cinfo.attrDynamic = new NAttributeDynamic();
             this.character = new Character(cinfo);
 
             if (entityController != null) entityController.entity = this.character;

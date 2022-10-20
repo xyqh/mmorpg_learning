@@ -93,6 +93,6 @@ public class UIShop : UIWindow {
 
     public void UpdateMoney()
     {
-        money.text = User.Instance.CurrentCharacter.Gold.ToString();
+        money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
     }
 }

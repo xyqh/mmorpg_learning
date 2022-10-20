@@ -1,4 +1,5 @@
 ﻿using Common.Data;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,12 +35,12 @@ namespace Models
         {
             this.userInfo = info;
         }
-
-        public SkillBridge.Message.NCharacterInfo CurrentCharacter { get; set; }
+        public Character CurrentCharacter { get; set; }
+        public SkillBridge.Message.NCharacterInfo CurrentCharacterInfo { get; set; }
 
         public void AddGold(int gold)
         {
-            this.CurrentCharacter.Gold += gold;
+            this.CurrentCharacterInfo.Gold += gold;
         }
     }
 }

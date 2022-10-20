@@ -63,7 +63,7 @@ namespace GameServer.Services
                     info.Name = c.Name;
                     info.Type = CharacterType.Player;
                     info.Class = (CharacterClass)c.Class;
-                    info.Tid = c.TID;
+                    info.ConfigId = c.TID;
                     sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
                 }
                
@@ -105,11 +105,14 @@ namespace GameServer.Services
                 Class = (int)request.Class,
                 TID = (int)request.Class,
                 MapID = 1,
+                Level = 1,
                 Gold = 100000,
                 Equips = new byte[28],
                 MapPosX = 5000,
                 MapPosY = 4000,
                 MapPosZ = 820,
+                HP = 1000,
+                MP = 1000
             };
 
             // 角色背包创建并赋值
@@ -133,7 +136,7 @@ namespace GameServer.Services
                 info.Id = c.ID;
                 info.Name = c.Name;
                 info.Class = (CharacterClass)c.Class;
-                info.Tid = c.TID;
+                info.ConfigId = c.TID;
                 sender.Session.Response.createChar.Characters.Add(info);
             }
 

@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SkillBridge.Message;
+using Common.Battle;
+using Common.Data;
 using UnityEngine;
+using Managers;
 
 namespace Entities
 {
@@ -12,6 +15,8 @@ namespace Entities
         public NCharacterInfo Info;
 
         public Common.Data.CharacterDefine Define;
+
+        public Attributes Attributes;
 
         public string Name
         {
@@ -26,13 +31,17 @@ namespace Entities
 
         public bool IsPlayer
         {
-            get { return this.Info.Id == Models.User.Instance.CurrentCharacter.Id; }
+            get { return this.Info.Id == Models.User.Instance.CurrentCharacterInfo.Id; }
         }
 
         public Character(NCharacterInfo info) : base(info.Entity)
         {
             this.Info = info;
-            this.Define = DataManager.Instance.ICharacters[info.Tid];
+            this.Define = DataManager.Instance.ICharacters[info.ConfigId];
+            this.Attributes = new Attributes();
+            var equips = EquipManager.Instance.GetEquipedDefines();
+            this.Attributes.Init(this.Define, this.Info.Level, equips, this.Info.attrDynamic);
+            int a = 1;
         }
 
         public void MoveForward()

@@ -115,4 +115,10 @@ public class UICharEquip : UIWindow
             }
         }
     }
+
+    void InitAttributes()
+    {
+        var charattr = User.Instance.CurrentCharacter.Attributes;
+        return;
+    }
 }

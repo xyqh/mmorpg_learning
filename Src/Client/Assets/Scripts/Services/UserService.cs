@@ -244,7 +244,7 @@ namespace Services
         void OnUserGameLeave(object sender, UserGameLeaveResponse response)
         {
             Debug.LogFormat("OnUserGameLeave:{0} [{1}]", response.Result, response.Errormsg);
-            User.Instance.CurrentCharacter = null;
+            User.Instance.CurrentCharacterInfo = null;
             SceneManager.Instance.LoadScene("CharSelect");
             MapService.Instance.currentMapId = 0;
         }
@@ -255,7 +255,7 @@ namespace Services
             if (MapService.Instance.currentMapId != response.mapId)
             {
                 NCharacterInfo info = response.Characters[0];
-                User.Instance.CurrentCharacter = info;
+                User.Instance.CurrentCharacterInfo = info;
                 //UnityEngine.SceneManagement.Scene curScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
                 //UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(curScene);
                 //MapService.Instance.currentMapId = response.mapId;

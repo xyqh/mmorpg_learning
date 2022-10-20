@@ -111,6 +111,6 @@ public class UICharacterSelect : MonoBehaviour {
         characters[curIdx].GetComponent<UICharInfo>().Selected = true;
         var cha = chars[idx];
         //User.Instance.CurrentCharacter = cha;
-        EventManager.Instance.dispatchCustomEvent("changeShowCharacter", cha.Tid);
+        EventManager.Instance.dispatchCustomEvent("changeShowCharacter", cha.ConfigId);
     }
 }

@@ -98,7 +98,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
         PlayerInputController pc = go.GetComponent<PlayerInputController>();
         if (pc != null)
         {
-            if (character.entityId == User.Instance.CurrentCharacter.Entity.Id)
+            if (character.entityId == User.Instance.CurrentCharacterInfo.Entity.Id)
             {
                 // 当前角色对象
                 User.Instance.currentCharacterObj = go;

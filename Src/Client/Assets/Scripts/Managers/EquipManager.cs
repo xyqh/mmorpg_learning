@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Common.Data;
+using Models;
 using Services;
 using SkillBridge.Message;
 using System;
@@ -37,6 +38,20 @@ namespace Managers
         public Item GetEquip(EquipSlot slot)
         {
             return this.equips[(int)slot];
+        }
+
+        public List<EquipDefine> GetEquipedDefines()
+        {
+            List<EquipDefine> list = new List<EquipDefine>();
+            for (int i = 0; i < this.equips.Length; ++i)
+            {
+                if (equips[i] != null)
+                {
+                    list.Add(equips[i].equipDefine);
+                }
+            }
+
+            return list;
         }
 
         unsafe void ParseEquipData(byte[] data)
