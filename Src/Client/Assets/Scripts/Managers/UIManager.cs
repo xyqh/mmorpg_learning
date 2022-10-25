@@ -19,6 +19,7 @@ public class UIManager : Singleton<UIManager> {
         UIResources.Add(typeof(UIBackPack), new UIElement() { Resources = "UI/UIBackPack", Cache = true });
         UIResources.Add(typeof(UIShop), new UIElement() { Resources = "UI/UIShop", Cache = true });
         UIResources.Add(typeof(UICharEquip), new UIElement() { Resources = "UI/UICharEquip", Cache = true });
+        UIResources.Add(typeof(UISkillView), new UIElement() { Resources = "UI/UISkillView", Cache = true });
     }
 
     ~UIManager()

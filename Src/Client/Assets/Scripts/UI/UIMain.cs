@@ -57,6 +57,11 @@ public class UIMain : MonoSingleton<UIMain> {
         charEquip.RefreshEquips();
     }
 
+    public void OnClickSkill()
+    {
+        UIManager.Instance.Show<UISkillView>();
+    }
+
     private void Test_OnClose(UIWindow sender, UIWindow.WindowResult result)
     {
         MessageBox.Show("点击了对话框的：" + result, "对话框响应结果", MessageBoxType.Information);

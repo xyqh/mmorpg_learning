@@ -1,59 +1,35 @@
-2022-10-10 00:38:02,010 [ 1] INFO  Unity: LoadingManager start
-2022-10-10 00:38:05,378 [ 1] INFO  Unity: DataManager > DataManager()
-2022-10-10 00:38:08,489 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-10-10 00:38:08,495 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-10-10 00:38:08,497 [ 1] INFO  Unity: DoConnect
-2022-10-10 00:38:08,498 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-10-10 00:38:08,500 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-10-26 00:00:25,371 [ 1] INFO  Unity: LoadingManager start
+2022-10-26 00:00:28,767 [ 1] INFO  Unity: DataManager > DataManager()
+2022-10-26 00:00:31,890 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-10-26 00:00:31,896 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-10-26 00:00:31,897 [ 1] INFO  Unity: DoConnect
+2022-10-26 00:00:31,898 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-10-26 00:00:31,899 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-10-10 00:38:08,506 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-10-10 00:38:08,731 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-10-10 00:38:08,734 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-10-10 00:38:08,738 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-10-10 00:38:08,818 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-10-10 00:38:08,826 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-10-10 00:38:08,836 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-10-10 00:38:08,837 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-10-10 00:38:09,851 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-10-10 00:38:09,896 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-10-10 00:38:09,904 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
-2022-10-10 00:38:09,905 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
-2022-10-10 00:38:09,905 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
-2022-10-10 00:38:09,906 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
-2022-10-10 00:38:09,907 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
-2022-10-10 00:38:09,908 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
-2022-10-10 00:38:09,909 [ 1] INFO  Unity: ItemManager:Init[Id:1004, Count:1]
-2022-10-10 00:38:09,910 [ 1] INFO  Unity: ItemManager:Init[Id:1005, Count:1]
-2022-10-10 00:38:09,911 [ 1] INFO  Unity: ItemManager:Init[Id:3005, Count:1]
-2022-10-10 00:38:09,911 [ 1] INFO  Unity: ItemManager:Init[Id:3006, Count:1]
-2022-10-10 00:38:09,927 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-10-10 00:38:09,928 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-10-10 00:38:09,929 [ 1] INFO  Unity: AddCharacter:9:jia Map:1 Entity:(9:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-10-10 00:38:09,937 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-10-10 00:38:10,305 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-10-10 00:38:10,317 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-10-10 00:38:10,331 [ 1] INFO  Unity: UIMainCity --------------------- 1
-2022-10-10 00:38:28,165 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:28,297 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:38:28,300 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:36,485 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:36,668 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:38:36,669 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:38,274 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:38,407 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:38:38,408 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:39,286 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:39,451 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:38:39,452 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:41,389 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:41,588 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:38:41,588 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:44,620 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:44,769 [ 1] INFO  Unity: Double Click!!!
-2022-10-10 00:38:44,770 [ 1] INFO  Unity: Single Click!!!
-2022-10-10 00:38:49,068 [ 1] INFO  Unity: Character_9_jia OnDestroy :ID:9 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2022-10-10 00:38:49,069 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-10-10 00:38:49,069 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-10-26 00:00:31,904 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-10-26 00:00:32,087 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-10-26 00:00:32,089 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-10-26 00:00:32,091 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-10-26 00:00:32,152 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-26 00:00:32,160 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-26 00:00:32,170 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-26 00:00:32,171 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-10-26 00:00:32,857 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-10-26 00:00:32,899 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-10-26 00:00:32,906 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
+2022-10-26 00:00:32,907 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-10-26 00:00:32,907 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-10-26 00:00:32,908 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-10-26 00:00:32,920 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-26 00:00:32,920 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-26 00:00:32,921 [ 1] INFO  Unity: AddCharacter:14:¼Ö Map:1 Entity:(14:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-10-26 00:00:32,929 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-10-26 00:00:33,288 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-26 00:00:33,300 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-10-26 00:00:33,314 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-10-26 00:01:31,903 [ 1] INFO  Unity: Character_14_¼Ö OnDestroy :ID:14 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-10-26 00:01:31,905 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-10-26 00:01:31,906 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)

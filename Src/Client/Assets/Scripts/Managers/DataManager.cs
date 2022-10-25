@@ -22,6 +22,9 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<int, ShopDefine> Shops = null;
     public Dictionary<int, Dictionary<int, ShopItemDefine>> ShopItems = null;
     public Dictionary<int, EquipDefine> Equips = null;
+    public Dictionary<int, Dictionary<int, SkillDefine>> Skills = null;
+    public Dictionary<int, BuffDefine> Buffs = null;
+    public Dictionary<int, SkillDefine> SkillMap = null;
 
     public Dictionary<int, MapDefine> IMaps
     {
@@ -96,6 +99,30 @@ public class DataManager : Singleton<DataManager>
         }
     }
 
+    public Dictionary<int, Dictionary<int, SkillDefine>> ISkills
+    {
+        get
+        {
+            return Skills;
+        }
+    }
+
+    public Dictionary<int, BuffDefine> IBuffs
+    {
+        get
+        {
+            return Buffs;
+        }
+    }
+
+    public Dictionary<int, SkillDefine> ISkillMap
+    {
+        get
+        {
+            return SkillMap;
+        }
+    }
+
 
     public DataManager()
     {
@@ -131,6 +158,14 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "EquipDefine.txt");
         this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
+        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
+
+        json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
+        this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
+
+        this.initSkillMap();
     }
 
 
@@ -180,6 +215,28 @@ public class DataManager : Singleton<DataManager>
         this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
 
         yield return null;
+
+        json = File.ReadAllText(this.DataPath + "SkillDefine.txt");
+        this.Skills = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SkillDefine>>>(json);
+        yield return null;
+
+        json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
+        this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
+        yield return null;
+
+        this.initSkillMap();
+    }
+
+    void initSkillMap()
+    {
+        this.SkillMap = new Dictionary<int, SkillDefine>();
+        foreach(var kv in this.Skills)
+        {
+            foreach(var _kv in kv.Value)
+            {
+                SkillMap[_kv.Key] = _kv.Value;
+            }
+        }
     }
 
 #if UNITY_EDITOR
