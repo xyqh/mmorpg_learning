@@ -56,10 +56,7 @@
   <ItemGroup>
     <Compile Include="Battle\AttributeData.cs" />
     <Compile Include="Battle\Attributes.cs" />
-    <Compile Include="Battle\BuffEffect.cs" />
     <Compile Include="Battle\Define.cs" />
-    <Compile Include="Battle\SkillType.cs" />
-    <Compile Include="Battle\TargetType.cs" />
     <Compile Include="BufferUtility.cs" />
     <Compile Include="Data\BuffDefine.cs" />
     <Compile Include="Data\CharacterDefine.cs" />

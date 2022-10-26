@@ -1,52 +1,53 @@
-2022-10-26 00:46:19,959 [ 1] INFO  Unity: LoadingManager start
-2022-10-26 00:46:22,990 [ 1] INFO  Unity: DataManager > DataManager()
-2022-10-26 00:46:25,774 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-10-26 00:46:25,775 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-10-26 00:46:25,775 [ 1] INFO  Unity: DoConnect
-2022-10-26 00:46:25,776 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-10-26 00:46:25,777 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-10-27 00:55:09,824 [ 1] INFO  Unity: LoadingManager start
+2022-10-27 00:55:12,860 [ 1] INFO  Unity: DataManager > DataManager()
+2022-10-27 00:55:21,954 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-10-27 00:55:21,956 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-10-27 00:55:21,957 [ 1] INFO  Unity: DoConnect
+2022-10-27 00:55:21,959 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-10-27 00:55:21,960 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-10-26 00:46:25,779 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-10-26 00:46:25,846 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-10-26 00:46:25,846 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-10-26 00:46:25,848 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-10-26 00:46:25,896 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-10-26 00:46:25,902 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-10-26 00:46:25,907 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-10-26 00:46:25,908 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-10-26 00:46:26,929 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-10-26 00:46:26,968 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-10-26 00:46:26,971 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
-2022-10-26 00:46:26,971 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
-2022-10-26 00:46:26,972 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
-2022-10-26 00:46:26,973 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
-2022-10-26 00:46:26,977 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-10-26 00:46:26,977 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-10-26 00:46:26,978 [ 1] INFO  Unity: AddCharacter:23:贾 Map:1 Entity:(23:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2022-10-26 00:46:26,980 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-10-26 00:46:27,329 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-10-26 00:46:27,333 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-10-26 00:46:27,337 [ 1] INFO  Unity: UIMainCity --------------------- 1
-2022-10-26 00:46:27,873 [ 1] INFO  Unity: 点击了技能：圣剑裁决，剩余冷却时间为：0
-2022-10-26 00:46:27,874 [ 1] INFO  Unity: 技能圣剑裁决释放成功
-2022-10-26 00:46:28,784 [ 1] INFO  Unity: 点击了技能：旋风斩，剩余冷却时间为：0
-2022-10-26 00:46:28,785 [ 1] INFO  Unity: 技能旋风斩释放成功
-2022-10-26 00:46:29,165 [ 1] INFO  Unity: 点击了技能：冲锋突刺，剩余冷却时间为：0
-2022-10-26 00:46:29,166 [ 1] INFO  Unity: 技能冲锋突刺释放成功
-2022-10-26 00:46:29,679 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：0
-2022-10-26 00:46:29,680 [ 1] INFO  Unity: 技能普通攻击释放成功
-2022-10-26 00:46:33,075 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：-0.01503257
-2022-10-26 00:46:33,076 [ 1] INFO  Unity: 技能普通攻击释放成功
-2022-10-26 00:46:33,572 [ 1] INFO  Unity: 点击了技能：旋风斩，剩余冷却时间为：2.212152
-2022-10-26 00:46:33,573 [ 1] INFO  Unity: 技能旋风斩cd中
-2022-10-26 00:46:34,135 [ 1] INFO  Unity: 点击了技能：冲锋突刺，剩余冷却时间为：3.029998
-2022-10-26 00:46:34,136 [ 1] INFO  Unity: 技能冲锋突刺cd中
-2022-10-26 00:46:34,532 [ 1] INFO  Unity: 点击了技能：圣剑裁决，剩余冷却时间为：5.340178
-2022-10-26 00:46:34,533 [ 1] INFO  Unity: 技能圣剑裁决cd中
-2022-10-26 00:46:37,571 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-10-26 00:46:37,572 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-10-27 00:55:21,962 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-10-27 00:55:23,983 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-10-27 00:55:23,984 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-10-27 00:55:23,985 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-10-27 00:55:24,043 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-27 00:55:24,048 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-27 00:55:24,053 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-10-27 00:55:24,054 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-10-27 00:55:25,055 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-10-27 00:55:25,157 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-10-27 00:55:25,159 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
+2022-10-27 00:55:25,159 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-10-27 00:55:25,160 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-10-27 00:55:25,160 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-10-27 00:55:25,162 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-27 00:55:25,163 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-10-27 00:55:25,163 [ 1] INFO  Unity: AddCharacter:1:贾 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-10-27 00:55:25,165 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-10-27 00:55:25,567 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-10-27 00:55:25,570 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-10-27 00:55:25,574 [ 1] INFO  Unity: UIMainCity --------------------- 1
+2022-10-27 00:55:26,390 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：0
+2022-10-27 00:55:26,391 [ 1] INFO  Unity: 技能普通攻击目标无效
+2022-10-27 00:55:28,795 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：0
+2022-10-27 00:55:28,796 [ 1] INFO  Unity: 技能普通攻击目标无效
+2022-10-27 00:55:29,805 [ 1] INFO  Unity: 点击了技能：冲锋突刺，剩余冷却时间为：0
+2022-10-27 00:55:29,806 [ 1] INFO  Unity: 技能冲锋突刺目标无效
+2022-10-27 00:55:30,999 [ 1] INFO  Unity: 点击了技能：旋风斩，剩余冷却时间为：0
+2022-10-27 00:55:30,999 [ 1] INFO  Unity: 技能旋风斩释放成功
+2022-10-27 00:55:31,001 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NotImplementedException: The requested feature is not implemented., Battle.Skill.Cast () (at Assets/Scripts/Battle/Skill.cs:54)
+UISkillSlot.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/Scripts/UI/UISkillSlot.cs:68)
+UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) (at D:/unity/Extensions/guisystem/UnityEngine.UI/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+}</args></log4net.Error>
+2022-10-27 00:55:36,193 [ 1] INFO  Unity: 点击了技能：圣剑裁决，剩余冷却时间为：0
+2022-10-27 00:55:36,194 [ 1] INFO  Unity: 技能圣剑裁决目标无效
+2022-10-27 00:55:39,347 [ 1] INFO  Unity: Character_1_贾 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-10-27 00:55:39,347 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-10-27 00:55:39,348 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
 
-2022-10-26 00:46:37,574 [ 1] INFO  Unity: Character_23_贾 OnDestroy :ID:23 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

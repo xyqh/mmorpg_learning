@@ -1,4 +1,5 @@
 ﻿using AillieoUtils;
+using Battle;
 using Common.Data;
 using Models;
 using System;
@@ -11,21 +12,18 @@ public class UISkillView : UIWindow {
 
     public ScrollView scrollView;
     public Text skillDesc;
-    private List<SkillDefine> defines = new List<SkillDefine>();
-    private Dictionary<int, SkillDefine> skillMap = new Dictionary<int, SkillDefine>();
+    private List<Skill> defines = new List<Skill>();
+    private Dictionary<int, Skill> skillMap = new Dictionary<int, Skill>();
     private int characterClass;
 
     // Use this for initialization
     void Start() {
         EventManager.Instance.addEventListener("onClickSkillItemInSkillView", this.updateSkillDesc);
-        this.characterClass = (int)User.Instance.CurrentCharacterInfo.Class;
-        DataManager.Instance.ISkills.TryGetValue(this.characterClass, out skillMap);
-        if (skillMap != null)
+        var skills = User.Instance.CurrentCharacter.SkillMgr.Skills;
+        for(int i = 0; i < skills.Count; ++i)
         {
-            foreach (var kv in skillMap)
-            {
-                defines.Add(kv.Value);
-            }
+            defines.Add(skills[i]);
+            skillMap[skills[i].Define.ID] = skills[i];
         }
 
         scrollView.SetItemCountFunc(() =>
@@ -40,7 +38,7 @@ public class UISkillView : UIWindow {
 
         scrollView.SetUpdateFunc((int index, RectTransform transform) =>
         {
-            transform.GetComponent<UISkillItem>().updateView(this.defines[index].ID);
+            transform.GetComponent<UISkillItem>().updateView(this.defines[index].Define.ID);
         });
 
         scrollView.UpdateData();
@@ -49,7 +47,7 @@ public class UISkillView : UIWindow {
     private void updateSkillDesc(object[] param)
     {
         int skillId = (int)param[0];
-        this.skillDesc.text = skillMap[skillId].Description;
+        this.skillDesc.text = skillMap[skillId].Define.Description;
     }
 
     // Update is called once per frame

@@ -38,7 +38,7 @@ public class UISkillItem : MonoBehaviour, ISelectHandler
         {
             this.skillIcon.sprite = Resloader.Load<Sprite>(define.Icon);
             this.skillName.text = define.Name;
-            this.skillLevel.text = define.UnlockLevel.ToString();
+            this.skillLevel.text = string.Format("lv.{0}", define.UnlockLevel.ToString());
         }
     }
 	

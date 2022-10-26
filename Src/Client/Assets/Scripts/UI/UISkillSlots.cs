@@ -1,4 +1,5 @@
-﻿using Common.Data;
+﻿using Battle;
+using Common.Data;
 using Models;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,20 +7,17 @@ using UnityEngine;
 
 public class UISkillSlots : MonoBehaviour {
     private List<UISkillSlot> slots = new List<UISkillSlot>();
-    private List<SkillDefine> defines = new List<SkillDefine>();
-    private Dictionary<int, SkillDefine> skillMap = new Dictionary<int, SkillDefine>();
+    private List<Skill> defines = new List<Skill>();
+    private Dictionary<int, Skill> skillMap = new Dictionary<int, Skill>();
     private int characterClass;
 
     // Use this for initialization
     void Start () {
-        this.characterClass = (int) User.Instance.CurrentCharacterInfo.Class;
-        DataManager.Instance.ISkills.TryGetValue(this.characterClass, out skillMap);
-        if (skillMap != null)
+        var skills = User.Instance.CurrentCharacter.SkillMgr.Skills;
+        for (int i = 0; i < skills.Count; ++i)
         {
-            foreach (var kv in skillMap)
-            {
-                defines.Add(kv.Value);
-            }
+            defines.Add(skills[i]);
+            skillMap[skills[i].Define.ID] = skills[i];
         }
 
         for (int i = 1; i <= 4; ++i)

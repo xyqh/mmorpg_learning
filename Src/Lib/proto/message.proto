@@ -95,6 +95,13 @@ message NCharacterInfo {
 	repeated NItemInfo Items = 13;
 	NBagInfo Bag = 14;
 	bytes Equips = 15;
+
+	repeated NSkillInfo Skills = 20;
+}
+
+message NSkillInfo{
+	int32 id = 1;
+	int32 level = 2;
 }
 
 message NAttributeDynamic {
