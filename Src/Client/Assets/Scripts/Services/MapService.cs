@@ -34,7 +34,7 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:{0}, {1}", response.mapId, currentMapId);
             foreach(var cha in response.Characters)
             {
-                if(User.Instance.CurrentCharacterInfo == null || User.Instance.CurrentCharacterInfo.Id == cha.Id)
+                if(User.Instance.CurrentCharacterInfo == null || User.Instance.CurrentCharacterInfo.EntityId == cha.EntityId)
                 {
                     User.Instance.CurrentCharacterInfo = cha;
                 }

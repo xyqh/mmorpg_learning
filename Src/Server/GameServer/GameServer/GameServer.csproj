@@ -139,6 +139,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Services\BattleService.cs" />
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Services\BagService.cs" />
     <Compile Include="Services\DBService.cs" />

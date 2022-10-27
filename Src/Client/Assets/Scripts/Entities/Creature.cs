@@ -21,6 +21,27 @@ namespace Entities
 
         public SkillManager SkillMgr;
 
+        bool battleState = false;
+        public bool BattleState
+        {
+            get { return battleState; }
+            set
+            {
+                if(battleState != value)
+                {
+                    battleState = value;
+                    this.SetStandby(value);
+                }
+            }
+        }
+
+        public int Id
+        {
+            get { return this.Info.Id; }
+        }
+
+        public Skill CastingSkill = null;
+
         public string Name
         {
             get
@@ -91,6 +112,35 @@ namespace Entities
         {
             //Debug.LogFormat("SetPosition:{0}", position);
             this.position = position;
+        }
+
+        public void CastSkill(int skillId, Creature target, NVector3 position)
+        {
+            this.SetStandby(true);
+            var skill = this.SkillMgr.GetSkill(skillId);
+            skill.BeginCast();
+        }
+
+        public void PlayAnim(string name)
+        {
+            if(this.Controller != null)
+            {
+                this.Controller.PlayAnim(name);
+            }
+        }
+
+        public void SetStandby(bool standby)
+        {
+            if (this.Controller != null)
+            {
+                this.Controller.SetStandBy(standby);
+            }
+        }
+
+        public override void OnUpdate(float delta)
+        {
+            base.OnUpdate(delta);
+            this.SkillMgr.OnUpdate(delta);
         }
     }
 }

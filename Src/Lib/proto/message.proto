@@ -214,6 +214,8 @@ message NetMessageRequest{
 
 	ItemBuyRequest itemBuy = 11;
 	ItemEquipRequest itemEquip = 12;
+
+	SkillCastRequest skillCast = 50;
 }
 
 message NetMessageResponse{
@@ -230,6 +232,8 @@ message NetMessageResponse{
 	
 	ItemBuyResponse itemBuy = 11;
 	ItemEquipResponse itemEquip = 12;
+
+	SkillCastResponse skillCast = 50;
 
 	StatusNotify statusNotify = 100;
 }
@@ -367,3 +371,34 @@ message ItemEquipResponse
 	RESULT result = 1;
 	string errormsg = 2;
 }
+
+// region begin Battle
+enum SKILL_RESULT
+{
+	OK = 0;				//成功
+	LACK_OF_MP = 1;		//本地
+	COOL_DOWN = 2;		//冷却中
+	INVALID_TARGET = 3;	//无效的目标
+	INVALID_POSITION = 4;//无效的位置
+}
+
+message NSkillCastInfo
+{
+	int32 skillId = 1;
+	int32 casterId = 2;
+	int32 targetId = 3;
+	NVector3 position = 4;
+}
+
+message SkillCastRequest
+{
+	NSkillCastInfo castInfo = 1;
+}
+
+message SkillCastResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	NSkillCastInfo castInfo = 3;
+}
+// region end Battle

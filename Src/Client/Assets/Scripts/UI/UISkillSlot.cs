@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 using Common.Data;
 using Battle;
 using Common.Battle;
+using SkillBridge.Message;
+using Managers;
 
 public class UISkillSlot : MonoBehaviour, IPointerClickHandler
 {
@@ -14,12 +16,12 @@ public class UISkillSlot : MonoBehaviour, IPointerClickHandler
     public Text cd;
     
     private Skill skill = null;
-    private float cdRemainTime = .0f;
 
     // Use this for initialization
     void Start () {
-		
-	}
+        this.mask.enabled = false;
+        this.cd.enabled = false;
+    }
 
     public void updateShow(Skill skill)
     {
@@ -29,25 +31,24 @@ public class UISkillSlot : MonoBehaviour, IPointerClickHandler
 	
 	// Update is called once per frame
 	void Update () {
-		if(this.cdRemainTime > .0f)
+		if(this.skill.CD > 0)
         {
-            this.mask.enabled = true;
-            this.cd.enabled = true;
-            this.mask.fillAmount = this.cdRemainTime / this.skill.Define.CD;
-            this.cd.text = string.Format("{0:f1}", this.cdRemainTime);
-            this.cdRemainTime -= Time.deltaTime;
+            if(!this.mask.enabled) this.mask.enabled = true;
+            if (!this.cd.enabled) this.cd.enabled = true;
+            this.mask.fillAmount = this.skill.CD / this.skill.Define.CD;
+            this.cd.text = string.Format("{0:f1}", this.skill.CD);
         }
         else
         {
-            this.mask.enabled = false;
-            this.cd.enabled = false;
+            if(this.mask.enabled) this.mask.enabled = false;
+            if (this.cd.enabled) this.cd.enabled = false;
         }
 	}
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.LogFormat("点击了技能：{0}，剩余冷却时间为：{1}", this.skill.Define.Name, this.cdRemainTime);
-        SkillResult result = this.skill.CanCast();
+        Debug.LogFormat("点击了技能：{0}，剩余冷却时间为：{1}", this.skill.Define.Name, this.skill.CD);
+        SkillResult result = this.skill.CanCast(BattleManager.Instance.CurrentTarget);
         switch (result)
         {
             case SkillResult.InvalidTarget:
@@ -56,18 +57,16 @@ public class UISkillSlot : MonoBehaviour, IPointerClickHandler
             case SkillResult.InvalidPosition:
                 Debug.LogFormat("技能{0}位置无效", this.skill.Define.Name);
                 break;
-            case SkillResult.LackOfMP:
+            case SkillResult.LackOfMp:
                 Debug.LogFormat("技能{0}MP不足", this.skill.Define.Name);
                 break;
             case SkillResult.CoolDown:
                 Debug.LogFormat("技能{0}冷却中", this.skill.Define.Name);
                 break;
-            case SkillResult.OK:
+            case SkillResult.Ok:
                 Debug.LogFormat("技能{0}释放成功", this.skill.Define.Name);
-                this.cdRemainTime = this.skill.Define.CD;
-                this.skill.Cast();
+                BattleManager.Instance.CastSkill(this.skill);
                 break;
-
         }
     }
 }

@@ -65,13 +65,4 @@ namespace Common.Battle
         None = 0,
         Stun
     }
-
-    public enum SkillResult
-    {
-        OK = 0,
-        InvalidTarget,
-        InvalidPosition,
-        LackOfMP,
-        CoolDown
-    }
 }

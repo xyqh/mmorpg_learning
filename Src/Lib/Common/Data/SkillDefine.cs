@@ -31,5 +31,6 @@ namespace Common.Data
         public float AP { get; set; }
         public float ADFactor { get; set; }
         public float APFactor { get; set; }
+        public string SkillAnim { get; set; }
     }
 }

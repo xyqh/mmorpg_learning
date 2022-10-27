@@ -33,6 +33,7 @@ namespace GameServer
             UserService.Instance.Init();
             MapService.Instance.Init();
             ItemService.Instance.Init();
+            BattleService.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
             return true;
         }

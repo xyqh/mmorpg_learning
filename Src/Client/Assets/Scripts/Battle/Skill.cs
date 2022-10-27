@@ -15,43 +15,79 @@ namespace Battle
         public NSkillInfo Info;
         public Creature Owner;
         public SkillDefine Define;
-        public float CD = 0;
+
+        private float cd = 0;
+        private float castTime = 0;
+        public bool IsCasting = false;
+
+        public float CD
+        {
+            get { return cd; }
+        }
 
         public Skill(NSkillInfo info, Creature owner)
         {
             this.Info = info;
             this.Owner = owner;
             this.Define = DataManager.Instance.ISkills[this.Owner.Define.TID][this.Info.Id];
+            this.cd = 0;
         }
 
-        public SkillResult CanCast()
+        public SkillResult CanCast(Creature target)
         {
-            if(this.Define.CastTarget == TargetType.Target && BattleManager.Instance.Target == null)
-            {
-                return SkillResult.InvalidTarget;
-            }
+            //if(this.Define.CastTarget == TargetType.Target)
+            //{
+            //    if(target == null || target == this.Owner)
+            //        return SkillResult.InvalidTarget;
+            //}
 
-            if(this.Define.CastTarget == TargetType.Position && BattleManager.Instance.Position == Vector3.negativeInfinity)
-            {
-                return SkillResult.InvalidPosition;
-            }
+            //if(this.Define.CastTarget == TargetType.Position && BattleManager.Instance.CurrentPosition == null)
+            //{
+            //    return SkillResult.InvalidPosition;
+            //}
 
             if(this.Owner.Attributes.MP < this.Define.MPCost)
             {
-                return SkillResult.LackOfMP;
+                return SkillResult.LackOfMp;
             }
 
-            if(this.CD > 0)
+            if(this.cd > 0)
             {
                 return SkillResult.CoolDown;
             }
 
-            return SkillResult.OK;
+            return SkillResult.Ok;
         }
 
-        internal void Cast()
+        public void BeginCast()
         {
-            throw new NotImplementedException();
+            this.IsCasting = true;
+            this.castTime = 0;
+            this.cd = this.Define.CD;
+
+            this.Owner.PlayAnim(this.Define.SkillAnim);
+        }
+
+        public void OnUpdate(float delta)
+        {
+            if (this.IsCasting)
+            {
+
+            }
+
+            UpdateCD(delta);
+        }
+
+        private void UpdateCD(float delta)
+        {
+            if(this.cd > 0)
+            {
+                this.cd -= delta;
+            }
+            if(this.cd < 0)
+            {
+                this.cd = 0;
+            }
         }
     }
 }

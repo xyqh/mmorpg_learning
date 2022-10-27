@@ -225,6 +225,7 @@ namespace Services
                 if(response.Character != null)
                 {
                     NCharacterInfo info = response.Character;
+                    User.Instance.CurrentCharacterInfo = info;
                     ItemManager.Instance.Init(info.Items);
                     BagManager.Instance.Init(info.Bag);
                     EquipManager.Instance.Init(info.Equips);
@@ -254,8 +255,8 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:{0}, {1}", response.mapId, MapService.Instance.currentMapId);
             if (MapService.Instance.currentMapId != response.mapId)
             {
-                NCharacterInfo info = response.Characters[0];
-                User.Instance.CurrentCharacterInfo = info;
+                //NCharacterInfo info = response.Characters[0];
+                //User.Instance.CurrentCharacterInfo = info;
                 //UnityEngine.SceneManagement.Scene curScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
                 //UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(curScene);
                 //MapService.Instance.currentMapId = response.mapId;
