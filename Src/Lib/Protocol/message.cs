@@ -889,6 +889,8 @@ namespace SkillBridge.Message
         InvalidTarget = 3,
         [global::ProtoBuf.ProtoEnum(Name = @"INVALID_POSITION")]
         InvalidPosition = 4,
+        [global::ProtoBuf.ProtoEnum(Name = @"OUT_OF_RANGE")]
+        OutOfRange = 5,
     }
 
 }

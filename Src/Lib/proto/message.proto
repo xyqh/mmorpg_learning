@@ -380,6 +380,7 @@ enum SKILL_RESULT
 	COOL_DOWN = 2;		//冷却中
 	INVALID_TARGET = 3;	//无效的目标
 	INVALID_POSITION = 4;//无效的位置
+	OUT_OF_RANGE = 5;//超出范围
 }
 
 message NSkillCastInfo

@@ -35,18 +35,24 @@ namespace Battle
 
         public SkillResult CanCast(Creature target)
         {
-            //if(this.Define.CastTarget == TargetType.Target)
-            //{
-            //    if(target == null || target == this.Owner)
-            //        return SkillResult.InvalidTarget;
-            //}
+            if (this.Define.CastTarget == TargetType.Target)
+            {
+                if (target == null || target == this.Owner)
+                    return SkillResult.InvalidTarget;
 
-            //if(this.Define.CastTarget == TargetType.Position && BattleManager.Instance.CurrentPosition == null)
-            //{
-            //    return SkillResult.InvalidPosition;
-            //}
+                int distance = (int)Vector3Int.Distance(this.Owner.position, target.position) - this.Owner.Define.Radius - target.Define.Radius;
+                if(distance > this.Define.CastRange)
+                {
+                    return SkillResult.OutOfRange;
+                }
+            }
 
-            if(this.Owner.Attributes.MP < this.Define.MPCost)
+            if (this.Define.CastTarget == TargetType.Position && BattleManager.Instance.CurrentPosition == null)
+            {
+                return SkillResult.InvalidPosition;
+            }
+
+            if (this.Owner.Attributes.MP < this.Define.MPCost)
             {
                 return SkillResult.LackOfMp;
             }

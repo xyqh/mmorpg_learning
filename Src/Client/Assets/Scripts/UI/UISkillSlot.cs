@@ -63,6 +63,9 @@ public class UISkillSlot : MonoBehaviour, IPointerClickHandler
             case SkillResult.CoolDown:
                 Debug.LogFormat("技能{0}冷却中", this.skill.Define.Name);
                 break;
+            case SkillResult.OutOfRange:
+                Debug.LogFormat("技能{0}目标超出范围", this.skill.Define.Name);
+                break;
             case SkillResult.Ok:
                 Debug.LogFormat("技能{0}释放成功", this.skill.Define.Name);
                 BattleManager.Instance.CastSkill(this.skill);
