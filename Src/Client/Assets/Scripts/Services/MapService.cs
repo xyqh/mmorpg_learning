@@ -1,4 +1,5 @@
 ﻿using Common.Data;
+using Entities;
 using Managers;
 using Models;
 using Network;
@@ -37,8 +38,18 @@ namespace Services
                 if(User.Instance.CurrentCharacterInfo == null || User.Instance.CurrentCharacterInfo.EntityId == cha.EntityId)
                 {
                     User.Instance.CurrentCharacterInfo = cha;
+                    if(User.Instance.CurrentCharacter == null)
+                    {
+                        User.Instance.CurrentCharacter = new Character(cha);
+                    }
+                    else
+                    {
+                        User.Instance.CurrentCharacter.UpdateInfo(cha);
+                    }
+                    CharacterManager.Instance.AddCharacter(User.Instance.CurrentCharacter);
+                    continue;
                 }
-                CharacterManager.Instance.AddCharacter(cha);
+                CharacterManager.Instance.AddCharacter(new Character(cha));
             }
             if(currentMapId != response.mapId)
             {
@@ -50,7 +61,7 @@ namespace Services
         void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
             Debug.LogFormat("OnMapCharacterLeave:{0}", response.characterId);
-            if(response.characterId != User.Instance.CurrentCharacterInfo.Id)
+            if(response.characterId != User.Instance.CurrentCharacterInfo.EntityId)
             {
                 CharacterManager.Instance.RemoveCharacter(response.characterId);
             }

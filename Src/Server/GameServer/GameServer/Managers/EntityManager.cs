@@ -27,6 +27,7 @@ namespace GameServer.Managers
                 MapEntities[mapId] = entities;
             }
             entities.Add(entity);
+            Log.InfoFormat("AddEntity:{0}", entity.entityId);
         }
 
         public void RemoveEntity(int mapId, Entity entity)

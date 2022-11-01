@@ -109,5 +109,10 @@ namespace GameServer.Entities
                 this.Info.Level = value;
             }
         }
+
+        public override List<EquipDefine> GetEquips()
+        {
+            return base.GetEquips();
+        }
     }
 }

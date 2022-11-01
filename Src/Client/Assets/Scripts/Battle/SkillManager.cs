@@ -8,6 +8,9 @@ namespace Battle
 {
     public class SkillManager
     {
+        public delegate void SkillInfoUpdateHandle();
+        public event SkillInfoUpdateHandle OnSkillInfoUpdate;
+
         Creature Owner;
         public List<Skill> Skills { get; private set; }
 
@@ -25,6 +28,31 @@ namespace Battle
             {
                 Skill skill = new Skill(skillInfo, this.Owner);
                 this.AddSkill(skill);
+            }
+            if(OnSkillInfoUpdate != null)
+            {
+                OnSkillInfoUpdate();
+            }
+        }
+
+        public void UpdateSkills()
+        {
+            foreach(var skillInfo in this.Owner.Info.Skills)
+            {
+                Skill skill = this.GetSkill(skillInfo.Id);
+                if(skill != null)
+                {
+                    skill.Info = skillInfo;
+                }
+                else
+                {
+                    skill = new Skill(skillInfo, this.Owner);
+                    this.AddSkill(skill);
+                }
+            }
+            if (OnSkillInfoUpdate != null)
+            {
+                OnSkillInfoUpdate();
             }
         }
 

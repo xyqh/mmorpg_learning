@@ -110,8 +110,11 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         Debug.LogFormat("OnEntityChanged:ID:{0} POS:{1} DIR:{2} SPD:{3}", entity.entityId, entity.position, entity.direction, entity.speed);
     }
 
-    void onMouseDown()
+    void OnMouseDown()
     {
+        Creature target = this.entity as Creature;
+        if (target.IsCurrentPlayer)
+            return;
         BattleManager.Instance.CurrentTarget = this.entity as Creature;
     }
 

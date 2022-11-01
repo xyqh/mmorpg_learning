@@ -1,4 +1,5 @@
-﻿using GameServer.Entities;
+﻿using Common;
+using GameServer.Entities;
 using GameServer.Models;
 using SkillBridge.Message;
 using System;
@@ -22,7 +23,8 @@ namespace GameServer.Managers
         internal Monster Create(int spawnMonID, int spawnLevel, NVector3 position, NVector3 direction){
             Monster monster = new Monster(spawnMonID, spawnLevel, position, direction);
             EntityManager.Instance.AddEntity(this.Map.ID, monster);
-            monster.Info.Id = monster.entityId;
+            Log.InfoFormat("CreateMonster:{0}, {1}", spawnMonID, monster.entityId);
+            monster.Info.EntityId = monster.entityId;
             monster.Info.mapId = this.Map.ID;
             Monsters[monster.Id] = monster;
 

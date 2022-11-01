@@ -1,4 +1,6 @@
-﻿using Models;
+﻿using Entities;
+using Managers;
+using Models;
 using Network;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,12 +12,13 @@ public class UIMain : MonoSingleton<UIMain> {
     public Text avatarName;
     public Text avatarLevel;
 
+    public UICreatureInfo targetUI;
+
     // Use this for initialization
     protected override void OnStart () {
-        ++NetClient.Instance.cnt;
-        Debug.LogFormat("UIMainCity --------------------- {0}", NetClient.Instance.cnt);
         this.UpdateAvatar();
-
+        this.targetUI.gameObject.SetActive(false);
+        BattleManager.Instance.OnTargetChanged += OnTargetChanged;
 	}
 
     void UpdateAvatar()
@@ -65,5 +68,21 @@ public class UIMain : MonoSingleton<UIMain> {
     private void Test_OnClose(UIWindow sender, UIWindow.WindowResult result)
     {
         MessageBox.Show("点击了对话框的：" + result, "对话框响应结果", MessageBoxType.Information);
+    }
+
+    void OnTargetChanged(Creature target)
+    {
+        if(target != null)
+        {
+            if (!targetUI.isActiveAndEnabled)
+            {
+                targetUI.gameObject.SetActive(true);
+                targetUI.Target = target;
+            }
+            else
+            {
+                targetUI.gameObject.SetActive(false);
+            }
+        }
     }
 }
