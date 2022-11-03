@@ -22,6 +22,8 @@ namespace GameServer.Entities
         public Attributes Attributes;
         public SkillManager SkillMgr;
 
+        public bool IsDeath = false;
+
         public Creature(CharacterType type, int configId, int level, Vector3Int pos, Vector3Int dir) :
            base(pos, dir)
         {
@@ -42,6 +44,16 @@ namespace GameServer.Entities
             this.Info.attrDynamic = this.Attributes.DynamicAttr;
         }
 
+        public void DoDamage(NDamageInfo damage)
+        {
+            this.Attributes.HP -= damage.Damage;
+            if(this.Attributes.HP <= 0)
+            {
+                this.IsDeath = true;
+                damage.WillDead = true;
+            }
+        }
+
         void InitSkills()
         {
             this.SkillMgr = new SkillManager(this);
@@ -51,6 +63,20 @@ namespace GameServer.Entities
         public virtual List<EquipDefine> GetEquips()
         {
             return null;
+        }
+
+        public void CastSkill(BattleContext context, int skillId)
+        {
+            Skill skill = this.SkillMgr.GetSkill(skillId);
+            if(skill != null)
+            {
+                context.Result = skill.Cast(context);
+            }
+        }
+
+        public override void Update()
+        {
+            this.SkillMgr.Update();
         }
     }
 }

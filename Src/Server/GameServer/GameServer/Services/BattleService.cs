@@ -27,12 +27,12 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnSkillCast: skill:{0} caster:{1} target:{2} pos:{3}", request.castInfo.skillId, request.castInfo.casterId, request.castInfo.targetId, request.castInfo.Position.ToString());
+            BattleManager.Instance.ProcessBattleMessage(sender, request);
+            //sender.Session.Response.skillCast = new SkillCastResponse();
+            //sender.Session.Response.skillCast.Result = Result.Success;
+            //sender.Session.Response.skillCast.castInfo = request.castInfo;
 
-            sender.Session.Response.skillCast = new SkillCastResponse();
-            sender.Session.Response.skillCast.Result = Result.Success;
-            sender.Session.Response.skillCast.castInfo = request.castInfo;
-
-            MapManager.Instance[character.Info.mapId].BroadcastBattleResponse(sender.Session.Response);
+            //MapManager.Instance[character.Info.mapId].BroadcastBattleResponse(sender.Session.Response);
         }
     }
 }

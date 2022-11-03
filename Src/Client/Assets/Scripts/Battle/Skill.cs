@@ -17,8 +17,13 @@ namespace Battle
         public SkillDefine Define;
 
         private float cd = 0;
+
+        public NDamageInfo Damage { get; private set; }
+
         private float castTime = 0;
+        private float skillTime;
         public bool IsCasting = false;
+        private int hit;
 
         public float CD
         {
@@ -40,8 +45,9 @@ namespace Battle
                 if (target == null || target == this.Owner)
                     return SkillResult.InvalidTarget;
 
-                int distance = (int)Vector3Int.Distance(this.Owner.position, target.position) - this.Owner.Define.Radius - target.Define.Radius;
-                if(distance > this.Define.CastRange)
+                int distance = (int)Vector3Int.Distance(this.Owner.position, target.position);
+                //int distance = (int)Vector3Int.Distance(this.Owner.position, target.position) - this.Owner.Define.Radius - target.Define.Radius;
+                if (distance > this.Define.CastRange)
                 {
                     return SkillResult.OutOfRange;
                 }
@@ -65,11 +71,13 @@ namespace Battle
             return SkillResult.Ok;
         }
 
-        public void BeginCast()
+        public void BeginCast(NDamageInfo damage)
         {
             this.IsCasting = true;
             this.castTime = 0;
+            this.skillTime = 0;
             this.cd = this.Define.CD;
+            this.Damage = damage;
 
             this.Owner.PlayAnim(this.Define.SkillAnim);
         }
@@ -78,10 +86,29 @@ namespace Battle
         {
             if (this.IsCasting)
             {
-
+                this.skillTime += delta;
+                if(this.skillTime > 0.5f && this.hit == 0)
+                //if(this.skillTime >= this.Define.HitTime && this.hit == 0)
+                {
+                    this.DoHit();
+                }
+                if(this.skillTime >= this.Define.CD)
+                {
+                    this.skillTime = 0;
+                }
             }
 
             UpdateCD(delta);
+        }
+
+        private void DoHit()
+        {
+            ++this.hit;
+            if(this.Damage != null)
+            {
+                var cha = CharacterManager.Instance.GetCharacter(this.Damage.entityId);
+                cha.DoDamage(this.Damage);
+            }
         }
 
         private void UpdateCD(float delta)
