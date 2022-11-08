@@ -1,4 +1,5 @@
-﻿using GameServer.Entities;
+﻿using GameServer.Core;
+using GameServer.Entities;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace GameServer.Battle
         public Battle Battle;
         public Creature Caster;
         public Creature Target;
+        public Vector3Int Position;
 
         public NSkillCastInfo CastSkill;
         public NDamageInfo Damage;

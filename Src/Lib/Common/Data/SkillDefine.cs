@@ -26,6 +26,7 @@ namespace Common.Data
         public float AOERange { get; set; }
         public float Duration { get; set; }
         public float Interval { get; set; }
+        public List<float> HitTimes { get; set; }
         public List<int> Buff { get; set; }
         public float AD { get; set; }
         public float AP { get; set; }

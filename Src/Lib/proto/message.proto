@@ -381,6 +381,14 @@ enum SKILL_RESULT
 	INVALID_TARGET = 3;	//无效的目标
 	INVALID_POSITION = 4;//无效的位置
 	OUT_OF_RANGE = 5;//超出范围
+	CASTING = 6;//技能正在释放中
+}
+
+enum SKILL_STATUS
+{
+	NONE = 0;
+	CASTING = 1; //施法中
+	RUNNING = 2; //执行中
 }
 
 message NSkillCastInfo
