@@ -234,6 +234,7 @@ message NetMessageResponse{
 	ItemEquipResponse itemEquip = 12;
 
 	SkillCastResponse skillCast = 50;
+	SkillHitResponse skillHits = 51;
 
 	StatusNotify statusNotify = 100;
 }
@@ -403,7 +404,16 @@ message NDamageInfo
 {
 	int32 entityId = 1; //Entity ID
 	int32 damage = 2; //伤害
-	bool will_dead = 3; //此次伤害后死亡
+	bool crit = 3; //暴击
+	bool will_dead = 4; //此次伤害后死亡
+}
+
+message NSkillHitInfo
+{
+	int32 skillId = 1;
+	int32 casterId = 2;
+	int32 hitId = 3;
+	repeated NDamageInfo damages = 4;
 }
 
 message SkillCastRequest
@@ -417,5 +427,12 @@ message SkillCastResponse
 	string errormsg = 2;
 	NSkillCastInfo castInfo = 3;
 	NDamageInfo damage = 4;
+}
+
+message SkillHitResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	repeated NSkillHitInfo hits = 3;
 }
 // region end Battle

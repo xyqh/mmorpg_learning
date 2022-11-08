@@ -126,7 +126,7 @@ namespace GameServer.Models
         void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
             conn.Session.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
-            conn.Session.Response.mapCharacterLeave.characterId = character.Id;
+            conn.Session.Response.mapCharacterLeave.characterId = character.entityId;
             conn.SendResponse();
         }
 
@@ -162,7 +162,10 @@ namespace GameServer.Models
         {
             foreach(var kv in this.MapCharacters)
             {
-                kv.Value.connection.Session.Response.skillCast = response.skillCast;
+                if(response.skillCast != null)
+                    kv.Value.connection.Session.Response.skillCast = response.skillCast;
+                if(response.skillHits != null)
+                    kv.Value.connection.Session.Response.skillHits = response.skillHits;
                 kv.Value.connection.SendResponse();
             }
         }

@@ -21,8 +21,13 @@ namespace Battle
             this.InitSkills();
         }
 
-        void InitSkills()
+        public void InitSkills(Creature owner = null)
         {
+            if (owner != null)
+            {
+                this.Owner = owner;
+            }
+
             this.Skills.Clear();
             foreach(var skillInfo in this.Owner.Info.Skills)
             {

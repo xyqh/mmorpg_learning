@@ -23,7 +23,11 @@ namespace Battle
         private float castTime = 0;
         private float skillTime;
         public bool IsCasting = false;
-        private int hit;
+        private int Hit = 0;
+        private SkillStatus Status;
+
+        // 缓存
+        private Dictionary<int, List<NDamageInfo>> HitMap = new Dictionary<int, List<NDamageInfo>>();
 
         public float CD
         {
@@ -44,9 +48,8 @@ namespace Battle
             {
                 if (target == null || target == this.Owner)
                     return SkillResult.InvalidTarget;
-
-                int distance = (int)Vector3Int.Distance(this.Owner.position, target.position);
-                //int distance = (int)Vector3Int.Distance(this.Owner.position, target.position) - this.Owner.Define.Radius - target.Define.Radius;
+                
+                int distance = this.Owner.Distance(target);
                 if (distance > this.Define.CastRange)
                 {
                     return SkillResult.OutOfRange;
@@ -76,39 +79,92 @@ namespace Battle
             this.IsCasting = true;
             this.castTime = 0;
             this.skillTime = 0;
+            this.Hit = 0;
             this.cd = this.Define.CD;
             this.Damage = damage;
 
             this.Owner.PlayAnim(this.Define.SkillAnim);
+
+            if(this.Define.CastTime > 0)
+            {
+                this.Status = SkillStatus.Casting;
+            }
+            else
+            {
+                this.Status = SkillStatus.Running;
+            }
         }
 
         public void OnUpdate(float delta)
         {
-            if (this.IsCasting)
+            UpdateCD(delta);
+            if (this.Status == SkillStatus.Casting)
             {
-                this.skillTime += delta;
-                if(this.skillTime > 0.5f && this.hit == 0)
-                //if(this.skillTime >= this.Define.HitTime && this.hit == 0)
+                this.UpdateCasting();
+            }
+            else if(this.Status == SkillStatus.Running)
+            {
+                this.UpdateSkill();
+            }
+        }
+
+        private void UpdateCasting()
+        {
+            if (this.castTime < this.Define.CastTime)
+            {
+                this.castTime += Time.deltaTime;
+            }
+            else
+            {
+                this.castTime = 0;
+                this.Status = SkillStatus.Running;
+                Debug.LogFormat("Skill[{0}].UpdateCasting Finish", this.Define.Name);
+            }
+        }
+
+        private void UpdateSkill()
+        {
+            this.skillTime += Time.deltaTime;
+            if (this.Define.Duration > 0)
+            {
+                if (this.skillTime > this.Define.Interval * (this.Hit + 1))
                 {
                     this.DoHit();
                 }
-                if(this.skillTime >= this.Define.CD)
+
+                if (this.skillTime >= this.Define.Duration)
                 {
-                    this.skillTime = 0;
+                    this.Status = SkillStatus.None;
+                    this.IsCasting = false;
+                    Debug.LogFormat("Skill[{0}].UpdateSkill Finish", this.Define.Name);
                 }
             }
-
-            UpdateCD(delta);
+            else if (this.Define.HitTimes != null && this.Define.HitTimes.Count > 0)
+            {
+                if (this.Hit < this.Define.HitTimes.Count)
+                {
+                    if (this.skillTime >= this.Define.HitTimes[this.Hit])
+                    {
+                        this.DoHit();
+                    }
+                }
+                else
+                {
+                    this.Status = SkillStatus.None;
+                    this.IsCasting = false;
+                    Debug.LogFormat("Skill[{0}].UpdateSkill Finish", this.Define.Name);
+                }
+            }
         }
 
         private void DoHit()
         {
-            ++this.hit;
-            if(this.Damage != null)
+            List<NDamageInfo> damages;
+            if(this.HitMap.TryGetValue(this.Hit, out damages))
             {
-                var cha = CharacterManager.Instance.GetCharacter(this.Damage.entityId);
-                cha.DoDamage(this.Damage);
+                DoHitDamages(damages);
             }
+            ++this.Hit;
         }
 
         private void UpdateCD(float delta)
@@ -120,6 +176,28 @@ namespace Battle
             if(this.cd < 0)
             {
                 this.cd = 0;
+            }
+        }
+
+        public void DoHit(int hitId, List<NDamageInfo> damages)
+        {
+            if(hitId <= this.Hit)
+            {
+                this.HitMap[hitId] = damages;
+            }
+            else
+            {
+                this.DoHitDamages(damages);
+            }
+        }
+
+        private void DoHitDamages(List<NDamageInfo> damages)
+        {
+            foreach(var dmg in damages)
+            {
+                Creature target = EntityManager.Instance.GetEntity(dmg.entityId) as Creature;
+                if (target == null) return;
+                target.DoDamage(dmg);
             }
         }
     }

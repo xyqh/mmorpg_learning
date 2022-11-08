@@ -11,5 +11,7 @@ namespace Common.Utils
         {
             return (int)Math.Round((double)f);
         }
+
+        public static Random Random = new Random();
     }
 }

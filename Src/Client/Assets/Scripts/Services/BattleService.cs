@@ -21,11 +21,13 @@ namespace Services
         public BattleService()
         {
             MessageDistributer.Instance.Subscribe<SkillCastResponse>(this.OnSkillCast);
+            MessageDistributer.Instance.Subscribe<SkillHitResponse>(this.OnSkillHit);
         }
-        
+
         public void Dispose()
         {
             MessageDistributer.Instance.Unsubscribe<SkillCastResponse>(this.OnSkillCast);
+            MessageDistributer.Instance.Unsubscribe<SkillHitResponse>(this.OnSkillHit);
         }
 
         public void SendSkillCast(int skillId, int casterId, int targetId, NVector3 position)
@@ -45,7 +47,7 @@ namespace Services
 
         private void OnSkillCast(object sender, SkillCastResponse message)
         {
-            Debug.LogFormat("OnSkillCast: skill:{0} caster:{1} target:{2} pos:{3} result:{4}", message.castInfo.skillId, message.castInfo.casterId, message.castInfo.targetId, message.castInfo.Position.ToString(), message.Result);
+            Debug.LogFormat("OnSkillCast: skill:{0} caster:{1} target:{2} pos:{3} result:{4}", message.castInfo.skillId, message.castInfo.casterId, message.castInfo.targetId, message.castInfo.Position.String(), message.Result);
             if(message.Result == Result.Success)
             {
                 Creature caster = EntityManager.Instance.GetEntity(message.castInfo.casterId) as Creature;
@@ -58,6 +60,22 @@ namespace Services
             else
             {
                 Debug.Log(message.Errormsg);
+            }
+        }
+
+        private void OnSkillHit(object sender, SkillHitResponse message)
+        {
+            Debug.LogFormat("OnSkillHit: count:{0}", message.Hits.Count);
+            if(message.Result == Result.Success)
+            {
+                foreach(var hit in message.Hits)
+                {
+                    Creature caster = EntityManager.Instance.GetEntity(hit.casterId) as Creature;
+                    if(caster != null)
+                    {
+                        caster.DoSkillHit(hit.skillId, hit.hitId, hit.Damages);
+                    }
+                }
             }
         }
     }

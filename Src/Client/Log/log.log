@@ -1,149 +1,86 @@
-2022-11-07 23:14:53,453 [ 1] INFO  Unity: LoadingManager start
-2022-11-07 23:14:56,558 [ 1] INFO  Unity: DataManager > DataManager()
-2022-11-07 23:15:06,967 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
-2022-11-07 23:15:06,968 [ 1] INFO  Unity: ConnectToServer() Start 
-2022-11-07 23:15:06,970 [ 1] INFO  Unity: DoConnect
-2022-11-07 23:15:06,971 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2022-11-07 23:15:06,973 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2022-11-09 02:26:04,308 [ 1] INFO  Unity: LoadingManager start
+2022-11-09 02:26:07,326 [ 1] INFO  Unity: DataManager > DataManager()
+2022-11-09 02:26:10,327 [ 1] INFO  Unity: UserLoginRequest::user :1 psw:1
+2022-11-09 02:26:10,329 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-11-09 02:26:10,330 [ 1] INFO  Unity: DoConnect
+2022-11-09 02:26:10,332 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-11-09 02:26:10,333 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2022-11-07 23:15:06,976 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2022-11-07 23:15:08,501 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2022-11-07 23:15:08,502 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
-2022-11-07 23:15:08,503 [ 1] INFO  Unity: LoadLevel: CharSelect
-2022-11-07 23:15:08,580 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-11-07 23:15:08,586 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-11-07 23:15:08,592 [ 1] INFO  Unity: OnSelectCharacter 0
-2022-11-07 23:15:08,593 [ 1] INFO  Unity: changeShowCharacter can not find in dic
-2022-11-07 23:15:09,618 [ 1] INFO  Unity: SendGameEnter::charIdx :0
-2022-11-07 23:15:09,722 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
-2022-11-07 23:15:09,724 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
-2022-11-07 23:15:09,725 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
-2022-11-07 23:15:09,726 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
-2022-11-07 23:15:09,727 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
-2022-11-07 23:15:09,731 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-11-07 23:15:09,731 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
-2022-11-07 23:15:09,733 [ 1] INFO  Unity: AddCharacter:1:贾 Map:1 Entity:SkillBridge.Message.NEntity
-2022-11-07 23:15:09,736 [ 1] INFO  Unity: LoadLevel: MainCity
-2022-11-07 23:15:10,170 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-11-07 23:15:10,176 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-11-07 23:15:11,088 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,-18,0) SPD:0 
-2022-11-07 23:15:11,187 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(93,-35,0) SPD:0 
-2022-11-07 23:15:11,271 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,-51,0) SPD:0 
-2022-11-07 23:15:11,353 [ 1] INFO  Unity: MoveForward
-2022-11-07 23:15:11,355 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,-51,0) SPD:300 
-2022-11-07 23:15:11,356 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(76,-65,0) SPD:300 
-2022-11-07 23:15:11,436 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(63,-77,0) SPD:300 
-2022-11-07 23:15:11,534 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(46,-89,0) SPD:300 
-2022-11-07 23:15:11,667 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(29,-96,0) SPD:300 
-2022-11-07 23:15:13,474 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(29,-96,0) SPD:300 
-2022-11-07 23:15:14,917 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(46,-89,0) SPD:300 
-2022-11-07 23:15:15,016 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(63,-78,0) SPD:300 
-2022-11-07 23:15:15,115 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(77,-63,0) SPD:300 
-2022-11-07 23:15:15,214 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(89,-46,0) SPD:300 
-2022-11-07 23:15:15,347 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(96,-29,0) SPD:300 
-2022-11-07 23:15:17,169 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(96,-29,0) SPD:300 
-2022-11-07 23:15:18,180 [ 1] INFO  Unity: TeleporterObject:OnTriggerEnter:4
-2022-11-07 23:15:18,181 [ 1] INFO  Unity: TeleporterObject:Character [贾] Enter Teleporter [4:出城传入点2]
-2022-11-07 23:15:18,876 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(96,-29,0) SPD:300 
-2022-11-07 23:15:19,157 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(99,-11,0) SPD:300 
-2022-11-07 23:15:19,323 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,9,0) SPD:300 
-2022-11-07 23:15:19,489 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(96,27,0) SPD:300 
-2022-11-07 23:15:21,013 [ 1] INFO  Unity: TeleporterObject:OnTriggerEnter:2
-2022-11-07 23:15:21,013 [ 1] INFO  Unity: TeleporterObject:Character [贾] Enter Teleporter [2:主城->副本]
-2022-11-07 23:15:21,014 [ 1] INFO  Unity: MapTeleportRequest :teleporterID:2
-2022-11-07 23:15:21,047 [ 1] INFO  Unity: OnMapCharacterLeave:1
-2022-11-07 23:15:21,048 [ 1] INFO  Unity: RemoveCharacter:1
-2022-11-07 23:15:21,050 [ 1] INFO  Unity: OnMapCharacterEnter:3, 1
-2022-11-07 23:15:21,050 [ 1] INFO  Unity: OnMapCharacterEnter:3, 1
-2022-11-07 23:15:21,051 [ 1] INFO  Unity: AddCharacter:1:贾 Map:3 Entity:SkillBridge.Message.NEntity
-2022-11-07 23:15:21,055 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-11-07 23:15:21,055 [ 1] INFO  Unity: LoadLevel: Map02
-2022-11-07 23:15:21,056 [ 1] INFO  Unity: Character_1_贾 OnDestroy :ID:1 POS:(2784, 3931, 7) DIR:(100, 0, 0) SPD:300 
-2022-11-07 23:15:21,215 [ 1] INFO  Unity: MoveForward
-2022-11-07 23:15:21,215 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
-2022-11-07 23:15:21,326 [ 1] INFO  Unity: LevelLoadCompleted:1
-2022-11-07 23:15:21,329 [ 1] INFO  Unity: Stop
-2022-11-07 23:15:21,330 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:0 
-2022-11-07 23:15:21,766 [ 1] INFO  Unity: MoveForward
-2022-11-07 23:15:21,766 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
-2022-11-07 23:15:22,179 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(98,-18,0) SPD:300 
-2022-11-07 23:15:22,279 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(94,-35,0) SPD:300 
-2022-11-07 23:15:22,362 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,-51,0) SPD:300 
-2022-11-07 23:15:22,462 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(74,-68,0) SPD:300 
-2022-11-07 23:15:22,560 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(59,-80,0) SPD:300 
-2022-11-07 23:15:22,726 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(44,-90,0) SPD:300 
-2022-11-07 23:15:22,875 [ 1] INFO  Unity: Stop
-2022-11-07 23:15:22,876 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(44,-90,0) SPD:0 
-2022-11-07 23:15:49,316 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,317 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,318 [ 1] INFO  Unity: AddCharacter:0:恶鬼 Map:3 Entity:SkillBridge.Message.NEntity
-2022-11-07 23:15:49,324 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-11-07 23:15:49,324 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,325 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,325 [ 1] INFO  Unity: AddCharacter:0:山丘巨人 Map:3 Entity:SkillBridge.Message.NEntity
-2022-11-07 23:15:49,333 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-11-07 23:15:49,334 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,334 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,335 [ 1] INFO  Unity: AddCharacter:0:小恶魔 Map:3 Entity:SkillBridge.Message.NEntity
-2022-11-07 23:15:49,347 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-11-07 23:15:49,348 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,349 [ 1] INFO  Unity: OnMapCharacterEnter:3, 3
-2022-11-07 23:15:49,349 [ 1] INFO  Unity: AddCharacter:0:死神 Map:3 Entity:SkillBridge.Message.NEntity
-2022-11-07 23:15:49,355 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
-2022-11-07 23:15:53,181 [ 1] INFO  Unity: MoveForward
-2022-11-07 23:15:53,181 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(44,-90,0) SPD:300 
-2022-11-07 23:15:53,529 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(59,-81,0) SPD:300 
-2022-11-07 23:15:53,628 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(73,-68,0) SPD:300 
-2022-11-07 23:15:53,728 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(86,-51,0) SPD:300 
-2022-11-07 23:15:53,827 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(95,-33,0) SPD:300 
-2022-11-07 23:15:53,829 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(95,-33,0) SPD:300 
-2022-11-07 23:15:53,943 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(99,-15,0) SPD:300 
-2022-11-07 23:15:55,517 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(95,-32,0) SPD:300 
-2022-11-07 23:15:55,617 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(87,-49,0) SPD:300 
-2022-11-07 23:15:55,783 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(77,-64,0) SPD:300 
-2022-11-07 23:15:56,409 [ 1] INFO  Unity: Stop
-2022-11-07 23:15:56,409 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(77,-64,0) SPD:0 
-2022-11-07 23:16:04,330 [ 1] INFO  Unity: MoveForward
-2022-11-07 23:16:04,330 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(77,-64,0) SPD:300 
-2022-11-07 23:16:05,241 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(87,-49,0) SPD:300 
-2022-11-07 23:16:06,783 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(87,-49,0) SPD:300 
-2022-11-07 23:16:07,510 [ 1] INFO  Unity: Stop
-2022-11-07 23:16:07,510 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(87,-49,0) SPD:0 
-2022-11-07 23:16:08,506 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：0
-2022-11-07 23:16:08,507 [ 1] INFO  Unity: 技能普通攻击目标无效
-2022-11-07 23:16:10,460 [ 1] INFO  Unity: MoveBack
-2022-11-07 23:16:10,460 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(87,-49,0) SPD:-300 
-2022-11-07 23:16:10,940 [ 1] INFO  Unity: Stop
-2022-11-07 23:16:10,940 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(87,-49,0) SPD:0 
-2022-11-07 23:16:11,587 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：0
-2022-11-07 23:16:11,587 [ 1] INFO  Unity: 技能普通攻击目标无效
-2022-11-07 23:16:13,293 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(77,-64,0) SPD:0 
-2022-11-07 23:16:13,425 [ 1] INFO  Unity: MapEntitySyncRequest :ID:1 POS:SkillBridge.Message.NVector3 DIR:(63,-77,0) SPD:0 
-2022-11-07 23:16:13,857 [ 1] INFO  Unity: BattleManager.SetTarget:[8:小恶魔]
-2022-11-07 23:16:15,049 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：0
-2022-11-07 23:16:15,050 [ 1] INFO  Unity: 技能普通攻击释放成功
-2022-11-07 23:16:15,051 [ 1] INFO  Unity: SendSkillCast: skill:101 caster:1 target:8 pos:SkillBridge.Message.NVector3
-2022-11-07 23:16:15,185 [ 1] INFO  Unity: OnSkillCast: skill:101 caster:1 target:8 pos:SkillBridge.Message.NVector3 result:Success
-2022-11-07 23:16:19,754 [ 1] INFO  Unity: 点击了技能：冲锋突刺，剩余冷却时间为：0
-2022-11-07 23:16:19,755 [ 1] INFO  Unity: 技能冲锋突刺释放成功
-2022-11-07 23:16:19,755 [ 1] INFO  Unity: SendSkillCast: skill:102 caster:1 target:8 pos:SkillBridge.Message.NVector3
-2022-11-07 23:16:19,870 [ 1] INFO  Unity: OnSkillCast: skill:102 caster:1 target:8 pos:SkillBridge.Message.NVector3 result:Success
-2022-11-07 23:16:24,144 [ 1] INFO  Unity: 点击了技能：旋风斩，剩余冷却时间为：0
-2022-11-07 23:16:24,145 [ 1] INFO  Unity: 技能旋风斩释放成功
-2022-11-07 23:16:24,145 [ 1] INFO  Unity: SendSkillCast: skill:103 caster:1 target:8 pos:SkillBridge.Message.NVector3
-2022-11-07 23:16:24,243 [ 1] INFO  Unity: OnSkillCast: skill:103 caster:1 target:8 pos:SkillBridge.Message.NVector3 result:Success
-2022-11-07 23:16:29,661 [ 1] INFO  Unity: 点击了技能：圣剑裁决，剩余冷却时间为：0
-2022-11-07 23:16:29,661 [ 1] INFO  Unity: 技能圣剑裁决释放成功
-2022-11-07 23:16:29,662 [ 1] INFO  Unity: SendSkillCast: skill:104 caster:1 target:8 pos:SkillBridge.Message.NVector3
-2022-11-07 23:16:29,694 [ 1] INFO  Unity: OnSkillCast: skill:104 caster:1 target:8 pos:SkillBridge.Message.NVector3 result:Success
-2022-11-07 23:16:41,767 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2022-11-07 23:16:41,768 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2022-11-09 02:26:10,336 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-11-09 02:26:10,410 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2022-11-09 02:26:10,411 [ 1] INFO  Unity: LoadingMesager::OnLoginSuccess
+2022-11-09 02:26:10,412 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-11-09 02:26:10,461 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-11-09 02:26:10,467 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-11-09 02:26:10,472 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-11-09 02:26:10,473 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-11-09 02:26:11,034 [ 1] INFO  Unity: SendGameEnter::charIdx :0
+2022-11-09 02:26:11,071 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-11-09 02:26:11,073 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
+2022-11-09 02:26:11,073 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-11-09 02:26:11,073 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-11-09 02:26:11,074 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-11-09 02:26:11,076 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-11-09 02:26:11,077 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-11-09 02:26:11,080 [ 1] INFO  Unity: AddCharacter:1:贾 Map:1 Entity:SkillBridge.Message.NEntity
+2022-11-09 02:26:11,081 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-11-09 02:26:11,441 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-11-09 02:26:11,445 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-11-09 02:26:11,868 [ 1] INFO  Unity: SendGameLeave
+2022-11-09 02:26:11,902 [ 1] INFO  Unity: OnMapCharacterLeave:18
+2022-11-09 02:26:11,903 [ 1] INFO  Unity: RemoveCharacter:18
+2022-11-09 02:26:11,904 [ 1] INFO  Unity: OnUserGameLeave:Success [None]
+2022-11-09 02:26:11,905 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-11-09 02:26:11,906 [ 1] INFO  Unity: Character_18_贾 OnDestroy :ID:18 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-11-09 02:26:11,952 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-11-09 02:26:11,956 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-11-09 02:26:11,959 [ 1] INFO  Unity: OnSelectCharacter 0
+2022-11-09 02:26:11,960 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-11-09 02:26:12,541 [ 1] INFO  Unity: OnSelectCharacter 2
+2022-11-09 02:26:12,543 [ 1] INFO  Unity: changeShowCharacter can not find in dic
+2022-11-09 02:26:13,256 [ 1] INFO  Unity: SendGameEnter::charIdx :2
+2022-11-09 02:26:13,290 [ 1] INFO  Unity: OnUserGameEnter:Success [None]
+2022-11-09 02:26:13,291 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:10]
+2022-11-09 02:26:13,292 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:200]
+2022-11-09 02:26:13,293 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
+2022-11-09 02:26:13,294 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:40]
+2022-11-09 02:26:13,295 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-11-09 02:26:13,295 [ 1] INFO  Unity: OnMapCharacterEnter:1, 0
+2022-11-09 02:26:13,299 [ 1] INFO  Unity: AddCharacter:5:546 Map:1 Entity:SkillBridge.Message.NEntity
+2022-11-09 02:26:13,300 [ 1] INFO  Unity: scene name:DontDestroyOnLoad
+2022-11-09 02:26:13,302 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-11-09 02:26:13,631 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-11-09 02:26:14,591 [ 1] INFO  Unity: MoveForward
+2022-11-09 02:26:14,592 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(100,0,0) SPD:300 
+2022-11-09 02:26:14,674 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(98,-19,0) SPD:300 
+2022-11-09 02:26:14,774 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(93,-37,0) SPD:300 
+2022-11-09 02:26:14,889 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(84,-54,0) SPD:300 
+2022-11-09 02:26:15,171 [ 1] INFO  Unity: Stop
+2022-11-09 02:26:15,172 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(84,-54,0) SPD:0 
+2022-11-09 02:26:15,237 [ 1] INFO  Unity: 点击了技能：普通攻击，剩余冷却时间为：0
+2022-11-09 02:26:15,238 [ 1] INFO  Unity: 技能普通攻击目标无效
+2022-11-09 02:26:16,347 [ 1] INFO  Unity: 点击了技能：火球术，剩余冷却时间为：0
+2022-11-09 02:26:16,348 [ 1] INFO  Unity: 技能火球术目标无效
+2022-11-09 02:26:17,507 [ 1] INFO  Unity: 点击了技能：火焰雨，剩余冷却时间为：0
+2022-11-09 02:26:17,508 [ 1] INFO  Unity: 技能火焰雨位置无效
+2022-11-09 02:26:18,203 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(73,-68,0) SPD:0 
+2022-11-09 02:26:18,285 [ 1] INFO  Unity: MoveForward
+2022-11-09 02:26:18,285 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(73,-68,0) SPD:300 
+2022-11-09 02:26:18,352 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(59,-81,0) SPD:300 
+2022-11-09 02:26:18,451 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(42,-91,0) SPD:300 
+2022-11-09 02:26:18,584 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(25,-97,0) SPD:300 
+2022-11-09 02:26:18,799 [ 1] INFO  Unity: Stop
+2022-11-09 02:26:18,799 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(25,-97,0) SPD:0 
+2022-11-09 02:26:18,948 [ 1] INFO  Unity: 点击了技能：火焰冲击，剩余冷却时间为：0
+2022-11-09 02:26:18,949 [ 1] INFO  Unity: 技能火焰冲击目标无效
+2022-11-09 02:26:19,594 [ 1] INFO  Unity: MoveForward
+2022-11-09 02:26:19,595 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(25,-97,0) SPD:300 
+2022-11-09 02:26:21,533 [ 1] INFO  Unity: Stop
+2022-11-09 02:26:21,534 [ 1] INFO  Unity: MapEntitySyncRequest :ID:19 POS:SkillBridge.Message.NVector3 DIR:(25,-97,0) SPD:0 
+2022-11-09 02:26:22,267 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-11-09 02:26:22,267 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:181)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:176)
 
-2022-11-07 23:16:41,771 [ 1] INFO  Unity: Character_1_贾 OnDestroy :ID:1 POS:(4641, 2963, 7) DIR:(63, -77, 0) SPD:0 
-2022-11-07 23:16:41,772 [ 1] INFO  Unity: Character_6_恶鬼 OnDestroy :ID:6 POS:(5887, 1573, 7) DIR:(9, 100, 0) SPD:0 
-2022-11-07 23:16:41,773 [ 1] INFO  Unity: Character_7_山丘巨人 OnDestroy :ID:7 POS:(5540, 1682, 4) DIR:(20, 98, 0) SPD:0 
-2022-11-07 23:16:41,773 [ 1] INFO  Unity: Character_8_小恶魔 OnDestroy :ID:8 POS:(4775, 2865, 14) DIR:(-30, 95, 0) SPD:0 
-2022-11-07 23:16:41,774 [ 1] INFO  Unity: Character_9_死神 OnDestroy :ID:9 POS:(5683, 4173, 0) DIR:(28, -96, 0) SPD:0 
+2022-11-09 02:26:22,268 [ 1] INFO  Unity: Character_19_546 OnDestroy :ID:19 POS:(5361, 3185, 820) DIR:(25, -97, 0) SPD:0 

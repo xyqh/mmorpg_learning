@@ -1,5 +1,7 @@
 ﻿using Common;
 using Common.Data;
+using Common.Utils;
+using GameServer.Core;
 using GameServer.Entities;
 using GameServer.Managers;
 using SkillBridge.Message;
@@ -28,6 +30,7 @@ namespace GameServer.Battle
         private float skillTime = 0;
         private int Hit = 0;
         BattleContext Context;
+        NSkillHitInfo HitInfo;
 
         public bool Instant
         {
@@ -127,18 +130,112 @@ namespace GameServer.Battle
             return result;
         }
 
-        private void DoHit()
+        private void InitHitInfo()
         {
-            ++this.Hit;
-            Log.InfoFormat("Skill[{0}].DoHit[{1}]", this.Define.Name, this.Hit);
+            this.HitInfo = new NSkillHitInfo();
+            this.HitInfo.casterId = this.Context.Caster.entityId;
+            this.HitInfo.skillId = this.Info.Id;
+            this.HitInfo.hitId = this.Hit;
+            Context.Battle.AddHitInfo(this.HitInfo);
         }
 
-        private void DoSkillDamage(BattleContext context)
+        private void DoHit()
         {
-            context.Damage = new NDamageInfo();
-            context.Damage.entityId = context.Target.entityId;
-            context.Damage.Damage = 100;
-            context.Target.DoDamage(context.Damage);
+            this.InitHitInfo();
+
+            Log.InfoFormat("Skill[{0}].DoHit[{1}]", this.Define.Name, this.Hit);
+            ++this.Hit;
+
+            if (this.Define.Bullet)
+            {
+                this.CastBullet();
+                return;
+            }
+            if(this.Define.AOERange > 0)
+            {
+                this.HitRange();
+                return;
+            }
+            if(this.Define.CastTarget == Common.Battle.TargetType.Target)
+            {
+                this.HitTarget(Context.Target);
+                return;
+            }
+        }
+
+        private void CastBullet()
+        {
+            Log.InfoFormat("Skill[{0}].CastBullet[{1}]", this.Define.Name, this.Define.BulletResource);
+        }
+
+        private void HitRange()
+        {
+            Vector3Int pos;
+            if(this.Define.CastTarget == Common.Battle.TargetType.Target)
+            {
+                pos = Context.Target.Position;
+            }
+            else if(this.Define.CastTarget == Common.Battle.TargetType.Position)
+            {
+                pos = Context.Position;
+            }
+            else
+            {
+                pos = this.Owner.Position;
+            }
+
+            List<Creature> units = this.Context.Battle.FindUnitsInRange(pos, this.Define.AOERange);
+            foreach(var target in units)
+            {
+                this.HitTarget(target);
+            }
+        }
+
+        private void HitTarget(Creature target)
+        {
+            if (this.Define.CastTarget == Common.Battle.TargetType.Self && (target != Context.Caster))
+            {
+                return;
+            }
+            else if(target == Context.Caster)
+            {
+                return;
+            }
+
+            NDamageInfo damage = this.CalcSkillDamage(Context.Caster, target);
+            Log.InfoFormat("Skill[{0}].HitTarget[{1}] Damage:{2} Crit:{3}", this.Define.Name, target.Define.Name, damage.Damage, damage.Crit);
+            target.DoDamage(damage);
+            this.HitInfo.Damages.Add(damage);
+        }
+
+        private NDamageInfo CalcSkillDamage(Creature caster, Creature target)
+        {
+            float ad = this.Define.AD + caster.Attributes.AD * this.Define.ADFactor;
+            float ap = this.Define.AP + caster.Attributes.AP * this.Define.APFactor;
+
+            float adDmg = ad * (1 - target.Attributes.DEF / (target.Attributes.DEF + 100));
+            float apDmg = ap * (1 - target.Attributes.MDEF / (target.Attributes.MDEF + 100));
+
+            float final = adDmg + apDmg;
+            bool isCrit = this.IsCrit(caster.Attributes.CRI);
+            if (isCrit)
+            {
+                final = final * 2f;
+            }
+
+            final *= (float)MathUtil.Random.NextDouble() * 0.1f - 0.05f;
+
+            NDamageInfo damage = new NDamageInfo();
+            damage.entityId = target.entityId;
+            damage.Damage = Math.Max(1, (int)final);
+            damage.Crit = isCrit;
+
+            return damage;
+        }
+
+        private bool IsCrit(float crit)
+        {
+            return MathUtil.Random.NextDouble() < crit;
         }
 
         public void Update()
@@ -195,20 +292,20 @@ namespace GameServer.Battle
                     this.Status = SkillStatus.None;
                     Log.InfoFormat("Skill[{0}].UpdateSkill Finish", this.Define.Name);
                 }
-                else if(this.Define.HitTimes != null && this.Define.HitTimes.Count > 0)
+            }
+            else if(this.Define.HitTimes != null && this.Define.HitTimes.Count > 0)
+            {
+                if(this.Hit < this.Define.HitTimes.Count)
                 {
-                    if(this.Hit < this.Define.HitTimes.Count)
+                    if(this.skillTime >= this.Define.HitTimes[this.Hit])
                     {
-                        if(this.skillTime >= this.Define.HitTimes[this.Hit])
-                        {
-                            this.DoHit();
-                        }
+                        this.DoHit();
                     }
-                    else
-                    {
-                        this.Status = SkillStatus.None;
-                        Log.InfoFormat("Skill[{0}].UpdateSkill Finish", this.Define.Name);
-                    }
+                }
+                else
+                {
+                    this.Status = SkillStatus.None;
+                    Log.InfoFormat("Skill[{0}].UpdateSkill Finish", this.Define.Name);
                 }
             }
         }

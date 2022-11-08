@@ -69,6 +69,11 @@ namespace Entities
             }
         }
 
+        public int Distance(Creature target)
+        {
+            return (int)Vector3Int.Distance(this.position, target.position);
+        }
+
         public Creature(NCharacterInfo info) : base(info.Entity)
         {
             this.Info = info;
@@ -81,10 +86,20 @@ namespace Entities
 
         public void UpdateInfo(NCharacterInfo info)
         {
+            bool isSameEntity = info.EntityId == this.entityId;
             this.SetEntityData(info.Entity);
             this.Info = info;
+            this.Define = DataManager.Instance.ICharacters[this.Info.ConfigId];
             this.Attributes.Init(this.Define, this.Info.Level, this.GetEquips(), this.Info.attrDynamic);
-            this.SkillMgr.UpdateSkills();
+            if (isSameEntity)
+            {
+                this.SkillMgr.UpdateSkills();
+            }
+            else
+            {
+                this.SkillMgr.InitSkills(this);
+            }
+            EventManager.Instance.dispatchCustomEvent("updateSkillShow");
         }
 
         public virtual List<EquipDefine> GetEquips()
@@ -156,6 +171,12 @@ namespace Entities
             Debug.LogFormat("DoDamage:{0}", damage);
             this.Attributes.HP -= damage.Damage;
             this.PlayAnim("Hurt");
+        }
+
+        public void DoSkillHit(int skillId, int hitId, List<NDamageInfo> damages)
+        {
+            Skill skill = this.SkillMgr.GetSkill(skillId);
+            skill.DoHit(hitId, damages);
         }
     }
 }

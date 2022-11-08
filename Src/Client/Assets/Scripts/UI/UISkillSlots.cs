@@ -13,6 +13,18 @@ public class UISkillSlots : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        this.UpdateSkillShow();
+        EventManager.Instance.addEventListener("updateSkillShow", this.UpdateSkillShow);
+    }
+
+    // Update is called once per frame
+    void Update () {
+		
+	}
+
+    public void UpdateSkillShow(params object[] param)
+    {
+        this.defines.Clear();
         var skills = User.Instance.CurrentCharacter.SkillMgr.Skills;
         for (int i = 0; i < skills.Count; ++i)
         {
@@ -27,9 +39,4 @@ public class UISkillSlots : MonoBehaviour {
             slots.Add(slot);
         }
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }
