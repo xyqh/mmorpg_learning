@@ -65,6 +65,7 @@
     <Compile Include="Assets\FX\Scripts\uv_l.cs" />
     <Compile Include="Assets\Login.cs" />
     <Compile Include="Assets\Scripts\Assets\Resloader.cs" />
+    <Compile Include="Assets\Scripts\Battle\Bullet.cs" />
     <Compile Include="Assets\Scripts\Battle\Skill.cs" />
     <Compile Include="Assets\Scripts\Battle\SkillManager.cs" />
     <Compile Include="Assets\Scripts\Common\ObjPool\SimpleObjPool.cs" />

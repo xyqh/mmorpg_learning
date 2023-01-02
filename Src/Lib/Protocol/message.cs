@@ -757,7 +757,10 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(3)]
         public int hitId { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4, Name = @"damages")]
+        [global::ProtoBuf.ProtoMember(4)]
+        public bool isBullet { get; set; }
+
+        [global::ProtoBuf.ProtoMember(5, Name = @"damages")]
         public global::System.Collections.Generic.List<NDamageInfo> Damages { get; } = new global::System.Collections.Generic.List<NDamageInfo>();
 
     }

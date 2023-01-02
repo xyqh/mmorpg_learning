@@ -73,7 +73,7 @@ namespace Services
                     Creature caster = EntityManager.Instance.GetEntity(hit.casterId) as Creature;
                     if(caster != null)
                     {
-                        caster.DoSkillHit(hit.skillId, hit.hitId, hit.Damages);
+                        caster.DoSkillHit(hit);
                     }
                 }
             }

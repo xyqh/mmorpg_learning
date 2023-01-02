@@ -413,7 +413,8 @@ message NSkillHitInfo
 	int32 skillId = 1;
 	int32 casterId = 2;
 	int32 hitId = 3;
-	repeated NDamageInfo damages = 4;
+	bool isBullet = 4;
+	repeated NDamageInfo damages = 5;
 }
 
 message SkillCastRequest
