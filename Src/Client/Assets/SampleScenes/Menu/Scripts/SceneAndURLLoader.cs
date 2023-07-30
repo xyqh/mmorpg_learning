@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneAndURLLoader : MonoBehaviour
 {
@@ -17,7 +16,7 @@ public class SceneAndURLLoader : MonoBehaviour
 	{
 		//PauseMenu pauseMenu = (PauseMenu)FindObjectOfType(typeof(PauseMenu));
 		m_PauseMenu.MenuOff ();
-		SceneManager.LoadScene(sceneName);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
 	}
 
 

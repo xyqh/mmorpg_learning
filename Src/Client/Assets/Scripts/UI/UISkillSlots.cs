@@ -39,4 +39,9 @@ public class UISkillSlots : MonoBehaviour {
             slots.Add(slot);
         }
     }
+
+    private void OnDestroy()
+    {
+        EventManager.Instance.removeEventListener("updateSkillShow", this.UpdateSkillShow);
+    }
 }
